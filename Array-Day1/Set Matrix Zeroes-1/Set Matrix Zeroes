@@ -1,0 +1,111 @@
+//https://leetcode.com/problems/set-matrix-zeroes/submissions/
+class Solution {
+
+    //time O(m*n) and space O(1)
+    public void setZeroes(int[][] matrix) {
+        //count zero
+        boolean flgRow = false, flgCol = false;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == 0) {
+                    matrix[i][0] = 0;
+                    matrix[0][j] = 0;
+                    if (i == 0) {
+                        // System.out.println("Yes row zero");
+                        flgRow = true;
+                    }
+                    if (j == 0) {
+                        flgCol = true;
+                    }
+                }
+            }
+        }
+        //fill zero to column
+        for (int i = 1; i < matrix[0].length; i++) {
+            if (matrix[0][i] == 0) {
+                for (int k = 0; k < matrix.length; k++) {
+                    matrix[k][i] = 0;
+                }
+            }
+        }
+        //fill zero to rows
+        for (int i = 1; i < matrix.length; i++) {
+            if (matrix[i][0] == 0) {
+                Arrays.fill(matrix[i], 0);
+            }
+        }
+        //first column
+        if (flgCol) {
+            for (int k = 0; k < matrix.length; k++) {
+                matrix[k][0] = 0;
+            }
+        }
+        //first row
+        if (flgRow) {
+            Arrays.fill(matrix[0], 0);
+        }
+    }
+}
+// class Solution {
+// //time O(M*n) and space O(m*n)
+//     public void setZeroes(int[][] matrix) {
+//         int row[] = new int[matrix.length];
+//         int col[] = new int[matrix[0].length];
+//         int x = 0, y = 0;
+//         //count zero
+//         for (int i = 0; i < matrix.length; i++) {
+//             for (int j = 0; j < matrix[0].length; j++) {
+//                 if (matrix[i][j] == 0) {
+//                     row[i] = 1;
+//                     col[j] = 1;
+//                     x++;
+//                     y++;
+//                 }
+//             }
+//         }
+//         //fill zero to column
+//         for (int i = 0; i < matrix[0].length; i++) {
+//            if(col[i]==1){
+//                for(int k=0;k<matrix.length;k++){
+//                 matrix[k][i]=0;
+//                }
+//            }
+//         }
+//         //fill zero to rows
+//          for (int i = 0; i < matrix.length; i++) {
+//            if(row[i]==1){
+//                Arrays.fill(matrix[i],0);
+//            }
+//          }
+//     }
+// }
+// class Solution {
+//time O(m*n)+O(m^2*n^2)+O(m*n) space O(m*n)
+//     public void setZeroes(int[][] matrix) {
+//         int res[][]=new int[matrix.length][matrix[0].length];
+//         for(int x[]:res){
+//             Arrays.fill(x,1);
+//         }
+//         // System.out.println(matrix[0].length+","+matrix.length);
+//         for(int i=0;i<matrix.length;i++){
+//             for(int j=0;j<matrix[0].length;j++){
+//                 if(matrix[i][j]==0){
+//                     //set entire rows as zero;
+//                     Arrays.fill(res[i],0);
+//                     //set entire column as zero
+//                     for(int y=0;y<matrix.length;y++){
+//                         res[y][j]=0;
+//                     }
+//                     // break;
+//                 }
+//             }
+//         }
+//         for(int i=0;i<matrix.length;i++){
+//             for(int j=0;j<matrix[0].length;j++){
+//                if(res[i][j]==0){
+//                    matrix[i][j]=res[i][j];
+//                }
+//             }
+//         }
+//     }
+// }
