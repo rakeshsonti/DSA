@@ -11,7 +11,7 @@ DSA Preparation start date 17 july 2022
 
   #### Second Approch Time O(m*n)+O(m*n)+O(m*n) space O(m)+O(n)
   * Take two array of size m and n
-  * Iterate array and store row in first array and column in second array
+  * Iterate array and store 0 element row index in first array and column index in second array
   * follows same step for all array element
   * iterate two auxilary array one by one and mark respective row and column as 0 in original array
 
