@@ -1,1 +1,1 @@
-### [Link: Recursively remove all adjacent duplicates](https://practice.geeksforgeeks.org/problems/recursively-remove-all-adjacent-duplicates0744/1) [folder](https://github.com/rambhajansonti/SDE-Sheet/tree/master/Recursion/Recursively%20remove%20all%20adjacent%20duplicates)
+Approach
