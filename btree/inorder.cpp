@@ -30,3 +30,33 @@ class Solution
         if (root->right != NULL) dfs(root->right, result);
     }
 };
+//=====================================
+
+class Solution
+{
+   	//tc->O(n) n is the number of node
+   	//space complexity O(n) in case of skewed tre 
+    public:
+        vector<int> inorderTraversal(TreeNode *root)
+        {
+            stack<TreeNode*> st;
+            vector<int> res;
+            while (true)
+            {
+                if (root != NULL)
+                {
+                    st.push(root);
+                    root = root->left;
+                }
+                else
+                {
+                    if (st.empty()) break;
+                    root = st.top();
+                    res.push_back(root->val);
+                    st.pop();
+                    root = root->right;
+                }
+            }
+            return res;
+        }
+};
