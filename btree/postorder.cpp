@@ -9,9 +9,43 @@
  *TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  *};
  */
-//https://leetcode.com/problems/binary-tree-postorder-traversal/submissions/
+
 class Solution
-//tc->O(n) sc->O(n+n)
+{
+    //tc->O(2N) sc->O(n)
+    public:
+        vector<int> postorderTraversal(TreeNode *root)
+        {
+            vector<int> rs;
+            if (root == NULL) return rs;
+            stack<TreeNode *> st;
+            while (root != NULL || !st.empty() ) {
+                if(root!=NULL){
+                    st.push(root);
+                    root=root->left;
+                }else{
+                    TreeNode * node=st.top()->right;
+                    if(node==NULL){
+                        node=st.top();
+                        st.pop();
+                        rs.push_back(node->val);
+                        while(!st.empty() && node==st.top()->right){
+                            node=st.top();
+                            st.pop();
+                            rs.push_back(node->val);
+                        }
+                        
+                    }else{
+                        root=node;
+                    }
+                }
+            }
+            return rs;
+        }
+};
+/*
+class Solution
+//tc->O(n) sc->O(n)
 {
     public:
         vector<int> postorderTraversal(TreeNode *root)
@@ -39,6 +73,7 @@ class Solution
             return vc;
         }
 };
+*/
 
 /*
 class Solution
