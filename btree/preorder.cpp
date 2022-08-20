@@ -9,7 +9,7 @@
  *TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  *};
  */
-
+//https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/
 class Solution
 {
     //tc->O(n) sc->O(n)
