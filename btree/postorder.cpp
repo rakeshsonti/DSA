@@ -11,7 +11,7 @@
  */
 //https://leetcode.com/problems/binary-tree-postorder-traversal/submissions/
 class Solution
-//tc->O(n) sc->O(n)
+//tc->O(n) sc->O(n+n)
 {
     public:
         vector<int> postorderTraversal(TreeNode *root)
