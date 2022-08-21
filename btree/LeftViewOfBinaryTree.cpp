@@ -135,23 +135,12 @@ void dfs(Node * root,vector<int> &vc,int level);
 vector<int> leftView(Node *root)
 {
     vector<int> vc;
-    if(root==NULL)return vc;
-    vc.push_back(root->data);
-   dfs(root,vc,1);
+   dfs(root,vc,0);
    return vc;
 }
 void dfs(Node * root,vector<int> &vc,int level){
     if(root==NULL)return;
-    if(root->left!=NULL){
-        if(vc.size()==level){
-            vc.push_back(root->left->data);
-        }
+        if(vc.size()==level)vc.push_back(root->data);
         dfs(root->left,vc,level+1);
-    }
-    if(root->right!=NULL){
-        if(vc.size()==level){
-            vc.push_back(root->right->data);
-        }
         dfs(root->right,vc,level+1);
-    }
 }
