@@ -1,4 +1,5 @@
 //https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1
+//https://www.codingninjas.com/codestudio/problems/920519?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website&leftPanelTab=1
 //{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
