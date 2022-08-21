@@ -17,6 +17,7 @@
     };
 //https://www.codingninjas.com/codestudio/problems/893110?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website&leftPanelTab=1
 //tc-O(n) sc->O(n)
+//https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
 *************************************************************/
 void bfs(BinaryTreeNode<int> *root,vector<int> &vc){
     if(root==NULL)return;
