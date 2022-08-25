@@ -1,7 +1,7 @@
 ## preorder
  #### Recursive approach
- `we can simply use the formula node->left->right to call recursive functions
- tc->O(n) and sc-> O(n)`
+ ```we can simply use the formula node->left->right to call recursive functions```
+ >Note : tc->O(n) and sc-> O(n)`
  #### Iterative approach
  ```we can use stack data structure
  1) push root to the stack and run a while loop til stack is not empty
@@ -16,9 +16,11 @@
   ### Recursive Approach
   ```
   1) Simply use the formula left->right->node
-  tc-> O(n) for visiting all the nodes sc->O(n) for recursion
-  ```
+   ```
+ > Note : tc-> O(n) for visiting all the nodes sc->O(n) for recursion
+ 
   ### Iterative Solution -1
+  ````
   1) We can use two stack 
   2) first stack for perform operation on input data and second stack for storing the result and later on we will pop all the element and store in resultant vector
   3) follow the same step as follows in preorder
@@ -27,4 +29,5 @@
   6) if right node of popped node is not empty then push it to stack
   7) if left node of popped node is not empty then push it to stack
   8) continue step 2->3->4 untill stack is not empty
-  Note: tc-> O(n)
+  ````
+  > Note: tc-> O(n)
