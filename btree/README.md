@@ -22,7 +22,8 @@
   ### Iterative Solution -1
   ````
   1) We can use two stack 
-  2) first stack for perform operation on input data and second stack for storing the result and later on we will pop all the element and store in resultant vector
+  2) first stack for perform operation on input data and second stack for storing the result and 
+  later on we will pop all the element and store in resultant vector
   3) follow the same step as follows in preorder
   4) push root to the stack and run a while loop til stack is not empty
   5) pop top element from stack and push it to resultant vector
@@ -32,6 +33,11 @@
   ````
   > Note: tc-> O(n) sc->O(n)+O(n)
  ### Iterative Solution -2
- 1) We will use stack data structure
- 2) if node root is not null then will simply push it to stack
- 3) pop stack top node and check if right is null
+ ````
+ 1) We will use an stack data structure
+ 2) if root node is not null then will simply push it to stack and change root to root->left else 
+ if stack top is not null change root to right else pop top stack node and push it to resultant 
+ vector and run a loop till stack is not empty and poped top node is equals to top right node 
+ and push it to resultant vector.
+ ````
+ > tc->O(n) sc->O(n)
