@@ -1,3 +1,54 @@
+//https://www.codingninjas.com/codestudio/problems/1062658?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website&leftPanelTab=1
+#include<algorithm>
+#include<bits/stdc++.h>
+struct Node{
+    int start;
+    int end;
+    int index;
+    Node(int a,int b,int c){
+        start=a;
+        end=b;
+        index=c;
+    };
+};
+static bool cmp(Node *a,Node *b){
+//     return a->end<b->end;
+    if(a->end<b->end)return true;
+    else if(a->end>b->end)return false;
+    else if(a->index<b->index)return true;
+    else return false;
+}
+vector<int> maximumMeetings(vector<int> &start, vector<int> &end) {
+  vector<int> vc;
+    vector<Node *> st;
+    for(int i=0;i<start.size();i++){
+        Node *nd=new Node(start[i],end[i],i+1);
+        st.push_back(nd);
+    }
+    sort(st.begin(),st.end(),cmp);
+//     for(auto y: st)cout<<y->end<<" ";
+    int prev=-1;;
+//     vc.push_back(1);
+    for(auto x : st){
+//         if(x==st.begin())continue;
+          if((x->start)>prev){
+            prev=x->end;
+            vc.push_back(x->index);
+        }        
+    }
+//     for(auto x=st.begin();x!=st.end();x++){
+//         if(x==st.begin())continue;
+//         if((x->start)>prev){
+//             prev=x->end;
+//             vc.push_back(x->index+1);
+//         }
+//     }
+    return vc;
+}
+
+//==============================================================================================================
+
+
 //{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
