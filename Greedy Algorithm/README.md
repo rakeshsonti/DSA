@@ -20,4 +20,5 @@
 3) If any previous plateform is free then next train will use that plateform
 ````
 > //tc->O(2nlong(n))for sort two array O(2n) for iterating the array
+
 > //sc-> O(1) not using any extra space
