@@ -9,6 +9,8 @@ DSA Preparation start date 17 july 2022
  ##### 2) [ Path Folder](https://github.com/rambhajansonti/SDE-Sheet/tree/master/Recursion/Subset%20Sum)  Subset Sum : [cdn Problem Link](https://www.codingninjas.com/codestudio/problems/subset-sum_3843086?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website&leftPanelTab=0) 
  
  ##### 3) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Recursion/Pascals_Triangle.cpp) Pascle Tringle : [cdn Problem Link](https://www.codingninjas.com/codestudio/problems/pascal-s-triangle_1089580?leftPanelTab=0) 
+ 
+ ##### 4) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Recursion/CombinationSum.cpp) Combination Sum : [ltc Problem Link](https://leetcode.com/problems/combination-sum/) 
 
 ### BTree
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/btree/preorder.cpp)  preorder : [lc Problem Link](https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/)
