@@ -21,3 +21,17 @@
  > tc-> tc->O(2^t*k) t is the target and k is the average length
  
  > sc-> O(t*k) 
+
+### Combination Sum 2
+````
+ 1) In base condition if target is 0 then will push the result
+ 3) Run a loop from current index to size, we can not check previos element because it cause duplicate
+ 2) Check if we can add value to ds so add and move ahead and decrease target by value
+ 3) if current index and previos index value are same then we will not add to ds
+ 4) if current value is greater than target then break the loop
+ ```` 
+ > tc-> tc->O(2^t*k) t is the target and k is the average length
+ 
+ > sc-> O(t*k) 
+
+
