@@ -19,6 +19,9 @@ DSA Preparation start date 17 july 2022
  ##### 5) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Recursion/CombinationSum2.cpp) Combination Sum 2 : [ltc Problem Link](https://leetcode.com/problems/combination-sum-ii/submissions/) 
  
  ##### 6) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Recursion/PalindromePartitioning.cpp) Palindrom Partitioning : [ltc Problem Link](https://leetcode.com/problems/palindrome-partitioning/) 
+ 
+ ##### 7) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Recursion/PermutationSequence.cpp) Permutation Sequence : [ltc Problem Link](https://leetcode.com/problems/permutation-sequence/) 
+ 
 ---------------------------------------------------------------------------------------------------------------------------
 ### BTree
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/btree/preorder.cpp)  preorder : [lc Problem Link](https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/)
