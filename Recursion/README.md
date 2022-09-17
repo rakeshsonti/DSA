@@ -48,4 +48,31 @@ Reason: O(2^n) to generate every substring and O(n/2)  to check if the substring
 >Space Complexity: O(k * x)
 Reason: The space complexity can vary depending upon the length of the answer. k is the average length of the list of palindromes and if we have x such list of palindromes in our final answer. The depth of the recursion tree is n, so the auxiliary space required is equal to the O(n).
 
+### Permutation Sequence
+
+ ##### First brute force approach
+ ````
+ 1. using for loop we will generate a number and store it to string
+ 2. call a recursive function who accept input string, index and resultant string
+ 3. base case if index == s.size() add to resultant string
+ 4. run a loop from index 0 to n
+ 5. swap index and i character and call func recursively
+ 6. swap back to original one
+ ````
+ > tc->O(n)-to generate a number+O(n! *n) recursion *push deep copy into data structure +O(n!log(n!)) sorting the array=O(n! log(n!))
+ 
+ > sc-> O(n) we are using a recursion
+
+ ##### Second approach
+ ````
+ 1. as we know we have n place to get the factorial. getenrate a number using loop.
+ 2. we will decide first place so we have n! way to decide first place
+ 3. formula to find the places number[k / fact]
+ 4. erase that number from original string
+ 5. k=k%fact and fact=fact/s.size()
+ 6. if s.size()==0 break loop and return result
+ ````
+ > tc->O(n) generating a number+O(n)-> remove sarch space in each step=O(n^2)
+   
+ > sc-> O(n) storing the number in each step
 
