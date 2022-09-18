@@ -76,3 +76,24 @@ Reason: The space complexity can vary depending upon the length of the answer. k
    
  > sc-> O(n) storing the number in each step
 
+### Permutations
+
+ ##### First brute force approach
+ ````
+ 1. use extra ds map to track whether element visited or not if visited mark it.
+ 2. in base case if index==s.size() then add ds to result
+ 3. call loop from 0 to n-1 and check if element unvisited call recursive function and add to ds and mark element as visited
+ 4. once recursion end mark the element as unvisited and pop back the element from ds
+ ````
+ > tc-> O(n!*n)-> run a loop n! time for n element
+
+ > sc-> O(n) we will use map and recursion to track element visited or unvisited
+
+ ##### Second approach
+ ````
+1. in base condition in size == ds.size() then add to ds
+2. run a loop from index to n time and swap the elemnt before recursive call and swap back after recursion
+ ````
+ > tc-> O(n!*n)-> run a loop n! time for n element
+   
+ > sc-> O(1) not using any exertal data structure
