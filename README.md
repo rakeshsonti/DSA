@@ -25,6 +25,10 @@ DSA Preparation start date 17 july 2022
  
  ##### 8) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Recursion/Permutations.cpp) Permutation Sequence : [ltc Problem Link](https://leetcode.com/problems/permutations/) 
  
+--------------------------------------------------------------------------------------------------------------------------
+### Recursion-Backtracking
+ ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Recursion-backtracking/N-Queens.cpp)  N-Queens : [ltc Problem Link](https://leetcode.com/problems/n-queens/) 
+
 ---------------------------------------------------------------------------------------------------------------------------
 ### BTree
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/btree/preorder.cpp)  preorder : [lc Problem Link](https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/)
