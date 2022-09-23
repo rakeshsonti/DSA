@@ -6,6 +6,8 @@ DSA Preparation start date 17 july 2022
  ---------------------------------------------------------------------------------------------------------------------------
  ### String
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/string/substring.cpp) 73-Set Matrix Zeroes : [ltc Problem Link](https://leetcode.com/problems/set-matrix-zeroes/) 
+ 
+ ##### 2) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/string/DecodeString.cpp) 394. Decode String : [ltc Problem Link](https://leetcode.com/problems/decode-string/) 
  ---------------------------------------------------------------------------------------------------------------------------
 ### Recursion
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/SDE-Sheet/tree/master/Recursion/Recursively%20remove%20all%20adjacent%20duplicates)  Recursively remove all adjacent duplicates : [gfg Problem Link](https://practice.geeksforgeeks.org/problems/recursively-remove-all-adjacent-duplicates0744/1) 
