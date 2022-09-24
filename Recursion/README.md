@@ -97,3 +97,31 @@ Reason: The space complexity can vary depending upon the length of the answer. k
  > tc-> O(n!*n)-> run a loop n! time for n element
    
  > sc-> O(1) not using any exertal data structure
+ 
+ --------------------------------------------------------------------------------------
+ ### 1823. Find the Winner of the Circular Game
+  ##### Itearative solution
+   1. use a queue to store n element
+   2. run a loop till queue size is greater than 1
+   3. maintain a index variable
+   4. if index value equals to index then pop one element from top of the queue and index=0
+   5. else pop element from back and push it to back of the queue and index++
+   6. return queue.front() once loop over
+   
+  > tc-> O(nk) for removing one element we are waiting till  index beacome equals to k.so for removing n-1 element we are running loop till n*k
+ 
+> sc-> O(1) if we ignore the size of vector to store the element in vector
+ 
+ ##### Second approach Recursive solution
+  1. Store n element in vector
+  2. in base condition if(vc.size()==k) then return vc[0]
+  3. In each recursive function ,increase the index by k and decrease the index by one because we are using o based indexing
+  4. and index=index%vc.size index become out of bound
+  5. remove the vc.begin() + index element from vector
+  
+>  tc-> O(n) calling recursion n time to remove n-1 element
+
+>  sc-> O(n) using recursion
+ 
+ -----------------------------------------------------------------------------------
+ 
