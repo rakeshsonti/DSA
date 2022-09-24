@@ -27,7 +27,7 @@ DSA Preparation start date 17 july 2022
  
  ##### 8) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Recursion/Permutations.cpp) Permutation Sequence : [ltc Problem Link](https://leetcode.com/problems/permutations/) 
  
- ##### 9) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Recursion/FindtheWinneroftheCircularGame.cpp) Permutation Sequence : [ltc Problem Link](https://leetcode.com/problems/find-the-winner-of-the-circular-game/) 
+ ##### 9) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Recursion/FindtheWinneroftheCircularGame.cpp) Find the Winner of the Circular Game : [ltc Problem Link](https://leetcode.com/problems/find-the-winner-of-the-circular-game/) 
  
 --------------------------------------------------------------------------------------------------------------------------
 ### Recursion-Backtracking
