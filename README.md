@@ -7,6 +7,9 @@ DSA Preparation start date 17 july 2022
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/SetMatrixZeroes.cpp) 73-Set Matrix Zeroes CPP: [ltc Problem Link](https://leetcode.com/problems/set-matrix-zeroes/)
  
  ##### 2) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/Pascal'sTriangle.cpp) 118. Pascal's Triangle: [ltc Problem Link](https://leetcode.com/problems/pascals-triangle/)
+ 
+ ##### 2) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/Pascal'sTriangle-2.cpp) 119. Pascal's Triangle II: [ltc Problem Link](https://leetcode.com/problems/pascals-triangle-ii/)
+ 
  ---------------------------------------------------------------------------------------------------------------------------
  ### String
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/string/substring.cpp) 73-Set Matrix Zeroes : [ltc Problem Link](https://leetcode.com/problems/set-matrix-zeroes/) 
