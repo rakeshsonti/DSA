@@ -1,19 +1,25 @@
 ### 73. Set Matrix Zeroes
  ##### First Approach
-  1. use extra O(mn) space to store 0 number position in row and count
-  2. take two vector of row and column size with default value 0 to store position of zero
-  3. iterate matrix each element and if 0 come mark it in extra vector row[i] = 1; col[j] = 1;
-  4. now iterate row and col vector and check if it is 1 then change matrix entire row or column to 0
-
+ 
+ ````
+   1. use extra O(mn) space to store 0 number position in row and count
+   2. take two vector of row and column size with default value 0 to store position of zero
+   3. iterate matrix each element and if 0 come mark it in extra vector row[i] = 1; col[j] = 1;
+   4. now iterate row and col vector and check if it is 1 then change matrix entire row or column to 0
+   ````
+   
 > tc-> O(mn)
 
 > sc-> O(mn)
 
  ##### Second Approach
+ 
+ ````
   1. instead of using extra space to store  0  position, use  first row and in first column
   2. while iterating matrix please take help of extra variable to check weather 0 exists in first row or first column
   3. based on first row and first column we can modify existing matrix except first row and first column
   4. first row and first column we will modify based on  extra variable
+````
 
 > tc-> O(mn)
 
@@ -22,17 +28,41 @@
 ----------------------------------------------------------------------------------------------
 ### 118. Pascal's Triangle
  ##### solution
+ 
+  ````
   1. run a loop from 0 to n
   2. run another loop from 0 to n and add 1 if n==0 and n-1 index
+  ````
   
   > tc-> O(n^2)
   
   > sc-> O(1)
   -------------------------------------------------------------------------------------------
+  ### 119. Pascal's Triangle II
+   ##### First Solution
+   
+   ````
+    1. run 0 to n a loop will call func to generate tringle for perticular index
+    2. in func run loop from 0 to n-1 and check if i==0 or i==n-1 store 1 else vc.push_back(ans[i - 1] + ans[i]);
+    3. here we used only O(n) extra space
+   ````
+    
+ >   tc-> O(n^2)
+    
+ >   sc-> O(n)
   
+   ##### Second approach
+   
+   ````
+    1. run a loop from 1 to n and use a formula to generate pascle trigle nCr=(n-r+1)/r
+    2. for tringle (prev(n-r+1))/r
+   ````
   
+>  tc-> O(n)
   
+>  sc-> O(1)
   
+  --------------------------------------------------------------------------------------------------------
   
   
   
