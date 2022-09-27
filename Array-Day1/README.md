@@ -64,6 +64,22 @@
   
   --------------------------------------------------------------------------------------------------------
   
+  ### 31. Next Permutation
+   ##### Approach
+   
+   ````
+    1. run a loop from n-1 to 1
+    2. find a number i-1 which is greater than its after no
+    3. if there is no break point that mean simply sort the array and return it
+    4. run the loop again from n-1 to 1 and find a no j which is greater than i-1 no
+    5. simply swap i-1 and j and revert the arr from i to n thats your ans
+   ````
+    
+  > tc-> O(n) find first no i-1 +(nlog(n))sorting+O(n) first second no+ )(n) reverse= O(n)
+    
+  > sc-> O(n)
+    
+ -----------------------------------------------------------------------------------------------------
   
   
   
