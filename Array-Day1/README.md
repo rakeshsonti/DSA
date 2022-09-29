@@ -110,8 +110,28 @@
  > sc-> O(1)
  
  ------------------------------------------------------------------------------------------------------
-
-    
+### 121. Best Time to Buy and Sell Stock
+ ##### First approach
+ ````
+  1. we run two loop 0 to n-1 and check each stock difference
+  2. choose the maximum differce
+  
+ ````
+  > tc-> O(n^2)
+  
+  > sc-> O(1)
+ 
+ ##### Second approach
+ ````
+  1. run a loop from 0 to n-1 and maintain a minimum value in each and value step
+  2. calculate difference b/w current value and min value
+  3. return maximum difference
+ ````
+  tc-> O(n)
+  
+  sc-> O(1)
+  
+ ---------------------------------------------------------
     
     
     
