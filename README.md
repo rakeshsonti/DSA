@@ -14,6 +14,9 @@ DSA Preparation start date 17 july 2022
 
 
 ##### 4) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/MaximumSubarray.cpp) 53. Maximum Subarray: [ltc Problem Link](https://leetcode.com/problems/maximum-subarray/)
+
+##### 5) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/SortColors.cpp) 75. Sort Colors: [ltc Problem Link](https://leetcode.com/problems/sort-colors/)
+ 
  
  ---------------------------------------------------------------------------------------------------------------------------
  ### String
