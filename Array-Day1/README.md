@@ -80,6 +80,41 @@
   > sc-> O(n)
     
  -----------------------------------------------------------------------------------------------------
+    
+  ### 53. Maximum Subarray
+   ##### First Approach
+   
+   ````
+    1. if vector size is 1 return nums[0]
+    2. run loop from 0 to n-1
+    3. if all vector value are less than 0 than we will return minValue value if(nums[i]>minValue)minValue=nums[i] maximum of al value flag will help to find all value are negative
+    4. if currSum is less than zero than than assign it to zero else add current value
+    5. if currSum is greater than max value than change the max value to curr value
+   ````
+    
+  > tc-> O(n)
+    
+  > sc-> O(1)
   
+##### Second approach
+````
+ 1. assign sum =INT_MIN, currSum=0;
+ 2. run loop from 0 to n-1
+ 3. add curr value to currSum and check if currSum is greater than max value than assign max=currSum;
+ 4. if currSum<0 assign currSum=0;
+ 5 return max
+ ````
+ 
+ > tc-> O(n)
+ 
+ > sc-> O(1)
+ 
+ ------------------------------------------------------------------------------------------------------
+
+    
+    
+    
+    
+    
   
   
