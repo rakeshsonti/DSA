@@ -11,6 +11,9 @@ DSA Preparation start date 17 july 2022
  ##### 2) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/Pascal'sTriangle-2.cpp) 119. Pascal's Triangle II: [ltc Problem Link](https://leetcode.com/problems/pascals-triangle-ii/)
  
  ##### 3) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/NextPermutation.cpp) 31. Next Permutation: [ltc Problem Link](https://leetcode.com/problems/next-permutation/)
+
+
+##### 4) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/MaximumSubarray.cpp) 53. Maximum Subarray: [ltc Problem Link](https://leetcode.com/problems/maximum-subarray/)
  
  ---------------------------------------------------------------------------------------------------------------------------
  ### String
