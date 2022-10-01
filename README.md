@@ -19,6 +19,7 @@ DSA Preparation start date 17 july 2022
  
 ##### 6) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/BestTimetoBuyandSellStock.cpp) 121. Best Time to Buy and Sell Stock: [ltc Problem Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
  
+##### 7) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/RotateImage.cpp) 48. Rotate Image: [ltc Problem Link](https://leetcode.com/problems/rotate-image/)
  
  ---------------------------------------------------------------------------------------------------------------------------
  ### String
