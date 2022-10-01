@@ -124,28 +124,32 @@
  >  sc-> O(1)
  
  ##### Second approach
- ````
+ 
+  ````
   1. run a loop from 0 to n-1 and maintain a minimum value in each and value step
   2. calculate difference b/w current value and min value
   3. return maximum difference
- ````
- tc-> O(n)
+  ````
   
- sc-> O(1)
+>  tc-> O(n)
+  
+>  sc-> O(1)
   
  ---------------------------------------------------------
   ### 48. Rotate Image
    ##### First approach
-    ````
+   
+   ````  
     1. take extra vector to store the result
     2. traverse the matrix from last and store in front of the array
     3. swap the last row with front row
     4. assign back to original matrix
-    ````
     
-    > tc-> O(n^2)
+   ````
     
-    > sc-> O(n)
+ > tc-> O(n^2)
+    
+ > sc-> O(n)
     
   ##### Second approach
    
@@ -153,11 +157,12 @@
    1. take one extra matrix
    2. ans[j][matrix.size()-i-1]=matrix[i][j]; assign to new array
    3. assign back to original array
+   
    ````
    
-  >  tc-> O(n^2)
+ >  tc-> O(n^2)
     
-  >  sc-> O(n)
+ >  sc-> O(n)
     
 ----------------------------------------------------------------------------------------------------------------------    
     
