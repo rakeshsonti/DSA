@@ -165,10 +165,30 @@
  >  sc-> O(n)
     
 ----------------------------------------------------------------------------------------------------------------------    
-    
-    
-    
-    
+### Merge Intervals
+ ##### First approach
+  
+  ````
+  1. take a map to store interval in key value pair
+  2. first value will put into the map and iterate the vector from 1 to n-1
+  3. if previous interval value is less than current key so will update the previous key value else insert it against new key
+  4. put map value back to original vector
+  ````
+  
+ > tc-> O(nlog(n))+O(n-1)+O(n)=O(nlog(n)) 
+ 
+ > sc-> O(n)
+
+ ##### Second approach
+  ````
+  1. in second approach instead of map we can maintain two variable to keep track previos interval key and value
+  2. rest of the approach will be the same as first approach
+ 
+  ````
+ > tc->O(nlong(n))+O(n)=O(nlog(n))
+ 
+ >  sc-> O(1)   
+-----------------------------------------------------------------------------------------------------------------    
     
     
     
