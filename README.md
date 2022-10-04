@@ -21,6 +21,9 @@ DSA Preparation start date 17 july 2022
  
 ##### 7) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/RotateImage.cpp) 48. Rotate Image: [ltc Problem Link](https://leetcode.com/problems/rotate-image/)
  
+ 
+##### 8) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/MergeIntervals.cpp) 56. Merge Intervals: [ltc Problem Link](https://leetcode.com/problems/merge-intervals/)
+ 
  ---------------------------------------------------------------------------------------------------------------------------
  ### String
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/string/substring.cpp) 73-Set Matrix Zeroes : [ltc Problem Link](https://leetcode.com/problems/set-matrix-zeroes/) 
