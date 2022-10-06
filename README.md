@@ -24,6 +24,8 @@ DSA Preparation start date 17 july 2022
  
 ##### 8) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/MergeIntervals.cpp) 56. Merge Intervals: [ltc Problem Link](https://leetcode.com/problems/merge-intervals/)
  
+##### 9) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/MergeSortedArray.cpp) 88. Merge Sorted Array: [ltc Problem Link](https://leetcode.com/problems/merge-sorted-array/)
+ 
  ---------------------------------------------------------------------------------------------------------------------------
  ### String
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/string/substring.cpp) 73-Set Matrix Zeroes : [ltc Problem Link](https://leetcode.com/problems/set-matrix-zeroes/) 
