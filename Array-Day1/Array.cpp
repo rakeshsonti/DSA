@@ -29,6 +29,28 @@ void OneDArray(int arr[],int n){
  }
 //-----------------------------------------------------------------------
 
-
+	vector<vector<int>> vc;
+	vc.push_back({1,2,3});
+	vc.push_back({5,4,5});
+	vc.push_back({6,7,9});
+	for(auto i:vc){
+		for(auto j:i)cout<<j<<" ";
+		cout<<endl;
+	}
+	
+	unordered_map<int,int> mp;
+	mp.insert({1,2});
+	mp.insert({2,3});
+	mp.insert({3,4});
+	mp.insert({4,5});
+	mp.insert({6,2});
+	mp.clear();
+	for(pair<int,int> i:mp){
+		cout<<i.first<<"-"<<i.second<<" \n";
+	}
+	for(auto i=mp.begin();i!=mp.end();i++){
+		cout<<i->first<<"-"<<i->second<<" \n";
+	}
+	-------------------------------------------------------------------------
 
 
