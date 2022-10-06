@@ -190,8 +190,41 @@
  >  sc-> O(1)   
 -----------------------------------------------------------------------------------------------------------------    
     
-    
-    
-    
+### 88. Merge Sorted Array
+ ##### First approach
+  ````
+  1. Take a auxilary array of size (m+n)
+  2. run a loop till i < m && j < n
+  3. put sorted value in auxilary array
+  4. copy back to original array
+  ````
   
+  >  tc->  O(m+n)  
   
+  > sc->   O(m+n)
+  
+ ##### Second approach
+  ````
+  1. copy all data from second array to first array after index m+i to m+n
+  2. sort the first array
+  ````  
+  >  tc->   O(n)+O(nlog(m+n))
+  
+  > sc->   O(1)
+
+ ##### Third approach
+ ````
+  1. run a loop till i<m && n>0
+  2. if nums1[i]>nums2[0] then swap nums1[i] and nums2[0] and sort the nums2 
+  3. copy all data from num2 to num1
+ ````
+  >  tc->   O(m*nlog(n))+O(n)
+  
+  > sc->   O(1)
+---------------------------------------------------------------------
+
+
+
+
+
+
