@@ -5,7 +5,7 @@
   ^ (bitwise XOR) even 1-> 0 odd 1-> 1
   << (left shift) 101-> 10100
   >> (right shift) 101->1
-  ~ (bitwise NOT) 
+  ~ (bitwise NOT) 101-> 010
   ````
 
 
