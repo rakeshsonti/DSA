@@ -22,8 +22,9 @@
   ~ (bitwise NOT) 101-> 010 e.g. 0 -> 1 and 1-> 0
   ````
 
+> Note: XOR operation of 0 with any number is result the same number 0^23=23, 0^-34=-34
 
-
+> Note: XOR with self is the 0 x^x=0, y^y=0
 
 
 
