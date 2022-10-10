@@ -186,6 +186,55 @@ int main(){
 	cout<<count<<endl;
 	}
 //---------------------------------------------------------------------------------	
-11. 	
+11. 	int main(){
+	/*
+	n|(1<<i) set a bit  n&(1<<i) check a bit set or not
+	
+	*/
+	// N integers given to you every integer appear twise excep two integer appears once
+	/*
+	1. find the XOR of all the number
+	2. all number will be cancled except the number which occurs twise
+	3. now the result will be the XOR of the unique number means the first different bit of both number
+	7->111
+	5->101
+	------
+	2->010
+	4. we will seperate out both the number into the seperate group
+	5. find out the XOR again for both the group , we will get the unique number from both the group, thats the ans
+	
+	
+	*/
+	int arr[]={1,1,2,56,3,2,3,4,8,4};
+	int n=10;
+	int xor0=0;
+	for(int num:arr)xor0=(xor0^num);
+	int cnt=0;
+	while(xor0){
+			if(xor0&1){
+			break;
+			}
+			cnt++;
+			xor0=(xor0>>1);
+	}
+	int xor1=0,xor2=0;
+	for(int i=0;i<n;i++){
+		if(arr[i]&(1<<cnt)){
+			xor1=(xor1^arr[i]);
+		}else{
+			xor2=(xor2^arr[i]);
+		}
+	}
+	cout<<xor1<<","<<xor2<<endl;
+	
+	}
+//---------------------------------------------------------------------------------	
+
+	
+	
+	
+	
+	
+	
 	
 	
