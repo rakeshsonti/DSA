@@ -119,7 +119,24 @@ int main(){
 	Note: tc-> O(1) we can use 3 question to get XOR of any number in O(1)
 	Reason: other number will be cancled out only particular range will be left
 //---------------------------------------------------------------------------------	
+7.	int main(){
+	// clear the i th bit
+	/*
+	ith=0
+	101 num=5
+      & 110 mask (~(1<<ith))
+	----
+	100 result
 	
+	*/
+	int num=5;
+	int ith=0;
+	int mask=(1<<ith);
+		mask=(~mask);
+	int result=(num&mask);
+	cout<<"result: "<<result<<endl;
+	}	
+//---------------------------------------------------------------------------------	
 	
 	
 	
