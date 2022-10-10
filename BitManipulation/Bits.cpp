@@ -20,7 +20,7 @@ int main(){
 	cout<<"Right Shift: "<<(5>>2)<<endl;
 	cout<<"Bitwise NOT: "<<(~5)<<endl;
 //---------------------------------------------------------
-	int main(){
+1	int main(){
 	//tc-> O(n) sc-> O(1) 
 	//approach-> 0^2^7^2^5^6^5^7^7^6= repetive number will be cancled and last number will be left that's our ans
 	//All element occurs twise except a number which occurs once only. find out the number the number which occurs once
@@ -33,7 +33,7 @@ int main(){
 	
 	}
 //---------------------------------------------------------
-	swaping of two numbers using XOR
+2	swaping of two numbers using XOR
 	a=5, b=7 => a=7, b=5
 	int main(){
 	//tc-> O(1) SC->O(1)
@@ -45,7 +45,7 @@ int main(){
 	cout<<"a: "<<a<<", b: "<<b<<endl;
 	}	
 //---------------------------------------------------------
-	print XOR of all the numbers
+3	print XOR of all the numbers
 	[1,2,3,4,5]
 	e.g. 1^2^3^4^5 
 	int main(){
@@ -71,6 +71,45 @@ int main(){
 	
 	}
 //---------------------------------------------------------
+4     	int main(){
+	// extract the ith bit of a number  OR  check the i th bit is set
+	/*
+	
+	check 3rd bit
+	1 1 0 0 1
+	0 1 0 0 0 (mask)
+	--------------
+	0 1 0 0 0
+	Note: if 3rd bit is not zero means bit is set else not set
+	create a mask: put 1 at ith position
+	1<<3 (i th)
+	*/
+	int num=5;//101
+	int ith=1;
+	int mask=(1<<ith);
+	cout<<"mask: "<<mask<<endl;
+	int result=(num&mask);
+	cout<<"result: "<<result<<endl;
+	}
+//---------------------------------------------------------	
+5.	int main(){
+	// check a number if even(odd) or not
+	/*Note: Last bit is set in case of odd number and last bit is not set in case of even number
+	 4-100, 5-101
+		101
+		001
+		-----
+		001 (always get non zero number in case of odd number)
+	*/
+	int num=8;
+	if((num &1)==0){
+		cout<<"even"<<endl;
+	}else{
+		cout<<"odd"<<endl;
+	}
+	
+	}	
+//---------------------------------------------------------------------------------
 
 	
 	
@@ -78,4 +117,5 @@ int main(){
 	
 	
 	
-}
+	
+	
