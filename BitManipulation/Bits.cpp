@@ -110,8 +110,15 @@ int main(){
 	
 	}	
 //---------------------------------------------------------------------------------
-
-	
+6.	/*given a range (L-R) print the XOR
+	XOR(L^L+1^L+2--------------R-1^1^2
+	e.g. 2-4 2^3^4
+	*/
+	int l=2,r=3;
+	XOR(R)^XOR(L-1)
+	Note: tc-> O(1) we can use 3 question to get XOR of any number in O(1)
+	Reason: other number will be cancled out only particular range will be left
+//---------------------------------------------------------------------------------	
 	
 	
 	
