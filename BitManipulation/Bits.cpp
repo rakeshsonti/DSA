@@ -145,16 +145,47 @@ int main(){
 	----------
 	     1100
 	Solution: n&(n-1)
+		
 	int main(){
 	int num=9;
 	int result=(num&(num-1));
 	cout<<result<<endl;
 	}
 //---------------------------------------------------------------------------------	
+9.	check a number is a powwer of 2
+	int main(){
+	int num=20;
+	int result=(num&(num-1));
+	if(result==0){
+		cout<<"number is a power of 2"<<endl;
+	}else{
+		cout<<"number is not a power of 2"<<endl;
+	}
+	}
+	
+//---------------------------------------------------------------------------------	
+10. count the no of set bit
+	int main(){
+	// 14-> 1110
+	// tc->O(no of bit in a number) or(position of most significant bit)
+	int count=0;
+	int n=5;
+	while(n!=0){
+		if((n&1)==1)count++;
+		n=(n>>1);
+	}
+	cout<<count<<endl;
+	//second approach
+	// tc-> O(no of set bits)
+	n=5;
+	count=0;
+	while(n!=0){
+		count++;
+		n=(n&(n-1));
+	}
+	cout<<count<<endl;
+	}
+//---------------------------------------------------------------------------------	
 
-	
-	
-	
-	
 	
 	
