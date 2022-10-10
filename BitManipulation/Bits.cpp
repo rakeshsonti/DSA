@@ -119,8 +119,8 @@ int main(){
 	Note: tc-> O(1) we can use 3 question to get XOR of any number in O(1)
 	Reason: other number will be cancled out only particular range will be left
 //---------------------------------------------------------------------------------	
-7.	int main(){
-	// clear the i th bit
+7.  clear the i th bit
+	int main(){
 	/*
 	ith=0
 	101 num=5
@@ -137,6 +137,21 @@ int main(){
 	cout<<"result: "<<result<<endl;
 	}	
 //---------------------------------------------------------------------------------	
+8. remove the last set bit
+	e.g. 110110
+	     110100 (last set bit removed)
+	13-> 1101
+	12-> 1100
+	----------
+	     1100
+	Solution: n&(n-1)
+	int main(){
+	int num=9;
+	int result=(num&(num-1));
+	cout<<result<<endl;
+	}
+//---------------------------------------------------------------------------------	
+
 	
 	
 	
