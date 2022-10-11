@@ -229,7 +229,7 @@ int main(){
 	
 	}
 //---------------------------------------------------------------------------------	
-12.
+12.	generate all subset
 	int main(){
 	//Time Complexity: O(n*2^n)
 	//Auxiliary Space: O(1)
