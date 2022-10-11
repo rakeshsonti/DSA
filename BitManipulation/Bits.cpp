@@ -229,7 +229,29 @@ int main(){
 	
 	}
 //---------------------------------------------------------------------------------	
-
+12.
+	int main(){
+	//Time Complexity: O(n*2^n)
+	//Auxiliary Space: O(1)
+	//applicable if value value is around 16/17/18
+	int arr[]={3,2,4};
+	unsigned int set_size=3;
+	//power set algorithm
+	vector<vector<int>> ans;
+	unsigned int power_set_size=pow(2,set_size);
+	int counter,j;
+	for(counter=0;counter<power_set_size;counter++){
+		vector<int> vc;
+		for(j=0;j<set_size;j++){
+			if(counter & (1<<j)){
+				vc.push_back(arr[j]);
+			}
+		}
+		if(vc.size()>0)ans.push_back(vc);
+	}
+	print(ans);
+	}
+//========================================================================
 	
 	
 	
