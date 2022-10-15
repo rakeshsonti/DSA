@@ -252,7 +252,120 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	//o(n) in the worst case, where n is the container size
 	//does not store any order	
 --------------------------------------------------------------------------------------	
+	int main(){
+	//can use multiple data structure
+	multimap<int,int> mp;
+	mp.insert({1,29});
+	mp.insert({1,23});
+	for(auto itr3:mp){
+		cout<<itr3.second<<endl;
+	}
+	/*
+	Pair 
+	pair can't be used with unordered_map intead use map
+	*/
+	pair<int,int> pr={1,2};
+	pair<pair<int,int>,int> pr1={{1,2},3};
+	pair<pair<int,int>,pair<int,int>>pr2={{1,2},{3,4}};
+	cout<<pr2.first.first<<endl;
+	//Stack 
+	/*
+	Last In First Out
+	 push emplace pop top size empty
 	
+	*/
+	stack<int> st;
+	st.push(1);
+	st.push(2);
+	st.push(3);
+	st.pop();
+	//clear does not exists
+	cout<<st.top()<<endl;// if empty then throw error
+	while(!st.empty()){
+		cout<<st.top()<<endl;
+		st.pop();
+	}
+	cout<<"stack"<<endl;
+	/*
+	can not iterate using begin() begin does not exists
+	for(auto itr4=st.begin();itr4!=st.end();itr4++){
+		cout<<itr4.top()<<endl;
+	}
+	
+	for(auto itr5: st){
+		cout<<itr5.top()<<endl;
+	}
+	*/
+	/*
+	Queue 
+	push,front,pop,size,empty
+	First in first out
+	all operation in O(1)
+	deletion in in O(n)
+	*/
+	cout<<"Queue"<<endl;
+	queue<int> q;
+	q.push(11);
+	q.push(12);
+	q.push(13);
+	q.push(14);
+	// can not iterate through the q.begin()
+	cout<<q.front()<<endl;
+	while(!q.empty()){
+		cout<<q.front()<<endl;
+		q.pop();
+	}
+	/*
+	Priority queue
+	store all in sorted order and log(n)
+	push,size,top empty
+	
+	(heap short, heapify
+	if we store into the pair then it will check if first element if equals then compare the second element
+	
+	default max priority queue
+	
+	for min queue have to store element as negative and get back by multiplying -1
+	
+	duplicate allowed
+	*/
+	//max heap
+	cout<<"priority queue"<<endl;
+	priority_queue<int> pq;
+	pq.push(1);
+	pq.push(2);
+	pq.push(3);
+	cout<<pq.top()<<endl;
+	pq.pop();
+	//pq.begin(); thrown an error
+	//min heap
+	priority_queue<int,vector<int>,greater<int>> pq2;
+	pq2.push(1);
+	pq2.push(2);
+	pq2.push(3);
+	cout<<pq2.top()<<endl;
+	//Deque double ended queue
+	/*
+	push_front,push_back,pop_front,pop_back
+	begin,cbegin,cend,rbegin,rend
+	method similar to vector
+	
+	*/
+	deque<int> dq;
+	cout<<"deque"<<endl;
+	
+	/*
+	List(doubly linked list)
+	push_front,push_back,pop_front,pop_back
+	begin,cbegin,cend,rbegin,rend
+	method similar to vector
+	remove O(1)
+	
+	*/
+	list<int> ls;
+	ls.push_back(12);
+	}
+-----------------------------------------------------------------------
 	
 	
 	
