@@ -70,23 +70,23 @@ int main(){
 	cout<<endl;
 ----------------------------------------------	
 // Vector
-int arr[10];
+	int arr[10];
 // 10^7 global array size-> int ,double,char
 //10^8 global boolean
 // max size of array 1000000 (10^6) -> int  ,double, char
 //10^7 -> boolean
-vector<int> vc;
-vc.push_back(23);
-cout<<vc.size()<<endl;
-vc.pop_back();
+	vector<int> vc;
+	vc.push_back(23);
+	cout<<vc.size()<<endl;
+	vc.pop_back();
 //segmentation fault if you push 10^7
-vc.clear(); // clear all the element at once
-vector<int>vc2(7,1);//{1,1,1,1,1,1,1}
+	vc.clear(); // clear all the element at once
+	vector<int>vc2(7,1);//{1,1,1,1,1,1,1}
 //copy
-vector<int> vc3(vc2.begin(),vc2.end());
-vector<int> vc4(vc2);
-vector<int> vc5={1,2,3,4,5};
-vector<int>vc6(vc5.begin(),vc5.begin()+2);
+	vector<int> vc3(vc2.begin(),vc2.end());
+	vector<int> vc4(vc2);
+	vector<int> vc5={1,2,3,4,5};
+	vector<int>vc6(vc5.begin(),vc5.begin()+2);
 	print(vc6);//{1 2}
 	vc6.emplace_back(34);// slightly fast than push_back
 	print(vc6);
@@ -118,8 +118,7 @@ vector<int>vc6(vc5.begin(),vc5.begin()+2);
 	
 	// 3d vector 10x20x30
 	vector<vector<vector<int>>> vc9(10,vector<vector<int>> (10,vector<int>(20,1)));
-	
-	
+
 	}	
 	
 --------------------------------------------------------------------------------------
