@@ -31,6 +31,9 @@ int main(){
 	Node* nm=new Node("raja",23);
 	cout<<nm->name<<","<<nm->age<<endl;
 	
+	//second way
+	Node node=Node("raja",23);
+	cout<<node.name<<endl;
 }
 -----------------------------------------
 //Array-> 
