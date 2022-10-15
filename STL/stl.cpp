@@ -157,18 +157,24 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	for(auto i:st)cout<<i<<" ";//1 2 3 4 5
 	cout<<endl;
 	st.erase(st.begin());
+
 	//st.erase(st.begin(),st.begin()+1); not possible // using c++ 11
 	st.erase(5);// delete perticular time
+
 	for(auto itr=st.begin();itr!=st.end();itr++)
 		cout<<*itr<<" ";//{1 2 3 4 5}
 		cout<<endl;
 	set<int> st1(st.begin(),st.end());
+
 	for(auto i:st1)cout<<i<<" ";
 	cout<<endl;
 	auto it1=st1.find(4); //tc-> log(n)
+
 	// if not exists then it will point st.end()
+
 	st.emplace(34);//similar to insert but slightly fast
 	cout<<st.size()<<endl;
+
 	//cout<<st[3]<<endl; not possible
 	st.erase(st.begin(),st.end());
 	
@@ -178,6 +184,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	st3.insert(3);
 	st3.insert(4);
 	st3.insert(3);
+
 	/*
 	average time complexity is o(1) but worst case o(n)
 	
@@ -186,6 +193,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	 all operation in o(1)
 	 
 	 All operations on the unordered_set takes constant time O(1) on an average which can go up to linear time O(n) in worst case which depends on the internally used hash function, but practically they perform very well and generally provide a constant time lookup operation. 
+	
 	*/
 	// multiset // store all the element in sorted order (stores duplicates)
 	multiset<int> ms;
