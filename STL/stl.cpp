@@ -214,7 +214,44 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	}
 ----------------------------------------------------------------------------
 	
+	/*
+	Map store value in key value pair
+	key maintain a linearly incresing order
+	sorted according to the keys
+	only store unique keys
+	emplace and insert does not update the value if key already exists intead use [] operator
+	log(n) for all the operation
 	
+	iterator means -> use
+	*/
+	
+	map<string,int> mp;
+	mp["ram"]=12;
+	mp["raja"]=34;
+	mp["ram"]=65;
+	mp["rajesh"]=78;
+	cout<<mp["ram"]<<endl;
+	mp.insert({"ram1",989});
+	mp.insert({"ram1",1000});
+	mp["ram"]=9;
+	cout<<mp["ram1"]<<endl;
+	mp.erase(mp.begin());
+	mp.erase("ram1");
+	bool isEmpty=mp.empty();
+	
+	for(auto itr: mp){
+		cout<<itr.first<<" -> "<<itr.second<<endl;
+	}
+	auto itr=mp.find("ram1");//find the first occurance of the element
+	
+	for(auto itr1=mp.begin();itr1!=mp.end();itr1++){
+		cout<<itr1->first<<"->"<<itr1->second<<endl;
+	}
+	unordered_map<int,int> mp1;
+	//o(1) in almost all cases
+	//o(n) in the worst case, where n is the container size
+	//does not store any order	
+--------------------------------------------------------------------------------------	
 	
 	
 	
