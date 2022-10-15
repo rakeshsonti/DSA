@@ -125,6 +125,89 @@ int main(){
 	}	
 	
 --------------------------------------------------------------------------------------
+	                |     set             | unordered_set
+---------------------------------------------------------
+Ordering        | increasing  order   | no ordering
+                | (by default)        |
+
+Implementation  | Self balancing BST  | Hash Table
+                | like Red-Black Tree |  
+
+search time     | log(n)              | O(1) -> Average 
+                |                     | O(n) -> Worst Case
+
+Insertion time  | log(n) + Rebalance  | Same as search
+                      
+Deletion time   | log(n) + Rebalance  | Same as search
+	
+	// set
+	/*
+	first element is smallest second is second smallest
+	can't do st[i] / can not access directly
+	store in ascending order
+	st.insert(1) tc-> log(n) n is size of set
+	st.erase(st.begin()) tc-> log(n)
+	vector method work here // not sure need to practice
+	*/
+	int n=8;
+	int arr[]={1,2,3,4,5,2,3,4};
+	// unique element
+	set<int> st;
+	for(auto i:arr)st.insert(i);
+	for(auto i:st)cout<<i<<" ";//1 2 3 4 5
+	cout<<endl;
+	st.erase(st.begin());
+	//st.erase(st.begin(),st.begin()+1); not possible // using c++ 11
+	st.erase(5);// delete perticular time
+	for(auto itr=st.begin();itr!=st.end();itr++)
+		cout<<*itr<<" ";//{1 2 3 4 5}
+		cout<<endl;
+	set<int> st1(st.begin(),st.end());
+	for(auto i:st1)cout<<i<<" ";
+	cout<<endl;
+	auto it1=st1.find(4); //tc-> log(n)
+	// if not exists then it will point st.end()
+	st.emplace(34);//similar to insert but slightly fast
+	cout<<st.size()<<endl;
+	//cout<<st[3]<<endl; not possible
+	st.erase(st.begin(),st.end());
+	
+	//unordered set // can be used & preffered in CP
+	unordered_set<int> st3;
+	st3.insert(1);
+	st3.insert(3);
+	st3.insert(4);
+	st3.insert(3);
+	/*
+	average time complexity is o(1) but worst case o(n)
+	
+	 if order not required then use if getting TLE then use set may be that is your worst case
+	 
+	 all operation in o(1)
+	 
+	 All operations on the unordered_set takes constant time O(1) on an average which can go up to linear time O(n) in worst case which depends on the internally used hash function, but practically they perform very well and generally provide a constant time lookup operation. 
+	*/
+	// multiset // store all the element in sorted order (stores duplicates)
+	multiset<int> ms;
+	ms.insert(1);
+	ms.insert(2);
+	ms.insert(2);
+	ms.insert(1);
+	ms.insert(3);
+	ms.insert(4);// ms.emplace(4)
+	ms.erase(1);// erase all the instances of 1
+	auto itr=ms.find(2);//used an iterator pointing to the 2
+	//ms.clear();
+	for(auto it=ms.cbegin();it!=ms.cend();it++){
+		cout<<*it<<" ";
+	}
+	cout<<endl;
+	ms.erase(ms.find(4));
+	}
+----------------------------------------------------------------------------
+	
+	
+	
 	
 	
 	
