@@ -10,7 +10,7 @@ int main(){
 	cout<<ram::val<<endl;	
 	cout<<ram::getVal()<<endl;	
 }
----------------------------------------------------------
+-------------------------------------------------------------------------------------------
  # structure
    struct Node{
 	  string name;
@@ -35,7 +35,7 @@ int main(){
 	Node node=Node("raja",23);
 	cout<<node.name<<endl;
 }
------------------------------------------
+------------------------------------------------------------------------------------------------
 //Array-> 
 	int arr2[10];//{?,?,?}
 	array<int,10> arr;//->{?,?,?}
@@ -47,7 +47,7 @@ int main(){
 	cout<<endl;
 //if want all zero
 	array<int,10>arr4={0};//{0,0,0,0,0} // work in int arr[10]={0}
-------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 //iterator
 	//begin(),end(),rbegin(),rend()
 	array<int,5> arr5={1,2,3,4,5};
@@ -71,7 +71,7 @@ int main(){
 		cout<<ch<<" ";
 	}
 	cout<<endl;
-----------------------------------------------	
+--------------------------------------------------------------------------------------------	
 // Vector
 	int arr[10];
 // 10^7 global array size-> int ,double,char
@@ -124,7 +124,7 @@ int main(){
 
 	}	
 	
---------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
 	                |     set             | unordered_set
 ---------------------------------------------------------
 Ordering        | increasing  order   | no ordering
@@ -212,7 +212,23 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	cout<<endl;
 	ms.erase(ms.find(4));
 	}
-----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+	Difference : 
+
+                  | map             | unordered_map
+-----------------------------------------------------------
+Ordering        | increasing  order   | no ordering
+                | (by default)        |
+
+Implementation  | Self balancing BST  | Hash Table
+                | like Red-Black Tree |  
+
+search time     | log(n)              | O(1) -> Average 
+                |                     | O(n) -> Worst Case
+
+Insertion time  | log(n) + Rebalance  | Same as search
+                      
+Deletion time   | log(n) + Rebalance  | Same as search
 	
 	/*
 	Map store value in key value pair
@@ -247,6 +263,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	for(auto itr1=mp.begin();itr1!=mp.end();itr1++){
 		cout<<itr1->first<<"->"<<itr1->second<<endl;
 	}
+
 	unordered_map<int,int> mp1;
 	//o(1) in almost all cases
 	//o(n) in the worst case, where n is the container size
@@ -260,6 +277,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	for(auto itr3:mp){
 		cout<<itr3.second<<endl;
 	}
+------------------------------------------------------------------------------------	
 	/*
 	Pair 
 	pair can't be used with unordered_map intead use map
@@ -268,6 +286,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	pair<pair<int,int>,int> pr1={{1,2},3};
 	pair<pair<int,int>,pair<int,int>>pr2={{1,2},{3,4}};
 	cout<<pr2.first.first<<endl;
+-----------------------------------------------------------------------------------------
 	//Stack 
 	/*
 	Last In First Out
@@ -296,6 +315,8 @@ Deletion time   | log(n) + Rebalance  | Same as search
 		cout<<itr5.top()<<endl;
 	}
 	*/
+	
+-------------------------------------------------------------------------------------	
 	/*
 	Queue 
 	push,front,pop,size,empty
@@ -315,6 +336,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 		cout<<q.front()<<endl;
 		q.pop();
 	}
+------------------------------------------------------------------------------------------
 	/*
 	Priority queue
 	store all in sorted order and log(n)
@@ -353,7 +375,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	*/
 	deque<int> dq;
 	cout<<"deque"<<endl;
-	
+----------------------------------------------------------------------------------	
 	/*
 	List(doubly linked list)
 	push_front,push_back,pop_front,pop_back
@@ -365,7 +387,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	list<int> ls;
 	ls.push_back(12);
 	}
------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 	
 	
 	
