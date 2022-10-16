@@ -125,21 +125,21 @@ int main(){
 	}	
 	
 -----------------------------------------------------------------------------------------------------
-	                |     set             | unordered_set
----------------------------------------------------------
+operation	|     set             | unordered_set
+================================================================
 Ordering        | increasing  order   | no ordering
                 | (by default)        |
-
+-----------------------------------------------------------------
 Implementation  | Self balancing BST  | Hash Table
                 | like Red-Black Tree |  
-
+-----------------------------------------------------------------
 search time     | log(n)              | O(1) -> Average 
                 |                     | O(n) -> Worst Case
-
+------------------------------------------------------------------
 Insertion time  | log(n) + Rebalance  | Same as search
-                      
+------------------------------------------------------------------                 
 Deletion time   | log(n) + Rebalance  | Same as search
-	
+======================================================================	
 	// set
 	/*
 	first element is smallest second is second smallest
@@ -213,23 +213,22 @@ Deletion time   | log(n) + Rebalance  | Same as search
 	ms.erase(ms.find(4));
 	}
 ------------------------------------------------------------------------------------------------
-	Difference : 
 
-                  | map             | unordered_map
+operation       | map                 | unordered_map
 -----------------------------------------------------------
 Ordering        | increasing  order   | no ordering
                 | (by default)        |
-
+-------------------------------------------------------------
 Implementation  | Self balancing BST  | Hash Table
                 | like Red-Black Tree |  
-
+-------------------------------------------------------------
 search time     | log(n)              | O(1) -> Average 
                 |                     | O(n) -> Worst Case
-
+------------------------------------------------------------
 Insertion time  | log(n) + Rebalance  | Same as search
-                      
+------------------------------------------------------------                
 Deletion time   | log(n) + Rebalance  | Same as search
-	
+-------------------------------------------------------------	
 	/*
 	Map store value in key value pair
 	key maintain a linearly incresing order
