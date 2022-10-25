@@ -135,4 +135,6 @@ Reason: The space complexity can vary depending upon the length of the answer. k
         }
         
         all opening bracket can be added even single closing bracket is not added , so once all closing bracket added that means our resultant string completed
+![image](https://user-images.githubusercontent.com/52101117/197733033-47e8929f-741a-461e-b963-81e3a6c89dd8.png)
+
 --------------------------------------------------------------------      
