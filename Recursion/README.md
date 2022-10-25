@@ -124,4 +124,15 @@ Reason: The space complexity can vary depending upon the length of the answer. k
 >  sc-> O(n) using recursion
  
  -----------------------------------------------------------------------------------
- 
+  ### 22. Generate Parentheses 
+   #### first approach tc-> 2^n sc-> O(1)
+    1. we will use two variable to manage count of ( and ) bracket
+    2. we have two choice either we add ( bracket and ) bracket but we can not add ) bracket before the ( bracket so open ( bracket is a good choice to start resultant string
+    3. for preventing resultant string from unwanted closing bracket or invalid resultant string first will check if opening bracket is greater than closing bracket then only will add ) brack
+    4. if(cl==n){
+            ans.push_back(s);
+            return;
+        }
+        
+        all opening bracket can be added even single closing bracket is not added , so once all closing bracket added that means our resultant string completed
+--------------------------------------------------------------------      
