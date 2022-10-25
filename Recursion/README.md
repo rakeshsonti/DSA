@@ -138,3 +138,10 @@ Reason: The space complexity can vary depending upon the length of the answer. k
 ![image](https://user-images.githubusercontent.com/52101117/197733033-47e8929f-741a-461e-b963-81e3a6c89dd8.png)
 
 --------------------------------------------------------------------      
+  ### 45. Jump Game II
+   ### First Approach tc-> O(n) sc-> O(1)
+    1. we will check all the possible way from the current index and decide which index will give maximum value
+    2. choose the index will give max value and jump for next value.
+    
+----------------------------------------------------------------------------
+
