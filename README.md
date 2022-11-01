@@ -60,6 +60,10 @@ DSA Preparation start date 17 july 2022
 
  ##### 12) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/DifferentWaystoAddParentheses.cpp) 241. Different Ways to Add Parentheses [ltc Problem Link](https://leetcode.com/problems/different-ways-to-add-parentheses/) 
 
+ ##### 13) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/PredicttheWinner.cpp) 486. Predict the Winner [ltc Problem Link](https://leetcode.com/problems/predict-the-winner/) 
+
+
+
 --------------------------------------------------------------------------------------------------------------------------
 ### Recursion-Backtracking
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Recursion-backtracking/N-Queens.cpp)  N-Queens : [ltc Problem Link](https://leetcode.com/problems/n-queens/) 
