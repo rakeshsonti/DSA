@@ -101,24 +101,26 @@ Reason: The space complexity can vary depending upon the length of the answer. k
  --------------------------------------------------------------------------------------
  ### 1823. Find the Winner of the Circular Game
   ##### Itearative solution
+   ````
    1. use a queue to store n element
    2. run a loop till queue size is greater than 1
    3. maintain a index variable
    4. if index value equals to index then pop one element from top of the queue and index=0
    5. else pop element from back and push it to back of the queue and index++
    6. return queue.front() once loop over
-   
+   ````
   > tc-> O(nk) for removing one element we are waiting till  index beacome equals to k.so for removing n-1 element we are running loop till n*k
  
 > sc-> O(1) if we ignore the size of vector to store the element in vector
  
  ##### Second approach Recursive solution
+  ````
   1. Store n element in vector
   2. in base condition if(vc.size()==k) then return vc[0]
   3. In each recursive function ,increase the index by k and decrease the index by one because we are using o based indexing
   4. and index=index%vc.size index become out of bound
   5. remove the vc.begin() + index element from vector
-  
+  ````
 >  tc-> O(n) calling recursion n time to remove n-1 element
 
 >  sc-> O(n) using recursion
@@ -126,6 +128,7 @@ Reason: The space complexity can vary depending upon the length of the answer. k
  -----------------------------------------------------------------------------------
   ### 22. Generate Parentheses 
    #### first approach tc-> 2^n sc-> O(1)
+    ````
     1. we will use two variable to manage count of ( and ) bracket
     2. we have two choice either we add ( bracket and ) bracket but we can not add ) bracket before the ( bracket so open ( bracket is a good choice to start resultant string
     3. for preventing resultant string from unwanted closing bracket or invalid resultant string first will check if opening bracket is greater than closing bracket then only will add ) brack
@@ -133,15 +136,40 @@ Reason: The space complexity can vary depending upon the length of the answer. k
             ans.push_back(s);
             return;
         }
-        
+      ````  
         all opening bracket can be added even single closing bracket is not added , so once all closing bracket added that means our resultant string completed
 ![image](https://user-images.githubusercontent.com/52101117/197733033-47e8929f-741a-461e-b963-81e3a6c89dd8.png)
 
 --------------------------------------------------------------------      
   ### 45. Jump Game II
    ### First Approach tc-> O(n) sc-> O(1)
+    ````
     1. we will check all the possible way from the current index and decide which index will give maximum value
     2. choose the index will give max value and jump for next value.
-    
+    ````
 ----------------------------------------------------------------------------
+### 241. Different Ways to Add Parentheses
+ ##### First approach tc-> 2^n sc-> O(1) if we ignore recursion space complexity
+  ````
+  1. iterate all the element of the string
+  2. check if current character is operator than call recursive function for the left substring and right substring
+  3. if string is a single character than convert entire string into the int and add to the ans
+  4.           for(auto i:left){
+               for(int j:right){
+                 if(curr=='+')ans.push_back(i+j);else if(curr=='-')ans.push_back(i-j); else if(curr=='*')ans.push_back(i*j);
+               }
+                }
+        this loop help us to handle multiple ans and calculate resultant string based on them
+   ````
+  ##### Second approach tc-> O(n) sc-> O(n) if we ignore recursion
+   ````
+   1. approach will be the same as above only we will memoize the repetive result
+   2. if left and right substring result alreay calculated then will simply use it else calculate it
+   ````
+![image](https://user-images.githubusercontent.com/52101117/199205848-6e7eb214-cccc-4001-aab5-88bdff7e44df.png)
+
+--------------------------------------------------------------------------------------------
+
+
+
 
