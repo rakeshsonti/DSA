@@ -155,9 +155,11 @@ Reason: The space complexity can vary depending upon the length of the answer. k
   2. check if current character is operator than call recursive function for the left substring and right substring
   3. if string is a single character than convert entire string into the int and add to the ans
   4.           for(auto i:left){
-               for(int j:right){
-                 if(curr=='+')ans.push_back(i+j);else if(curr=='-')ans.push_back(i-j); else if(curr=='*')ans.push_back(i*j);
-               }
+                   for(int j:right){
+                     if(curr=='+')ans.push_back(i+j);
+                     else if(curr=='-')ans.push_back(i-j); 
+                     else if(curr=='*')ans.push_back(i*j);
+                   }
                 }
         this loop help us to handle multiple ans and calculate resultant string based on them
    ````
@@ -167,6 +169,8 @@ Reason: The space complexity can vary depending upon the length of the answer. k
    2. if left and right substring result alreay calculated then will simply use it else calculate it
    ````
 ![image](https://user-images.githubusercontent.com/52101117/199205848-6e7eb214-cccc-4001-aab5-88bdff7e44df.png)
+
+![image](https://user-images.githubusercontent.com/52101117/199206312-09718168-48d9-46fc-8784-51b915ddf468.png)
 
 --------------------------------------------------------------------------------------------
 
