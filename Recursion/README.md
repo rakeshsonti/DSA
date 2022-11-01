@@ -173,7 +173,16 @@ Reason: The space complexity can vary depending upon the length of the answer. k
 ![image](https://user-images.githubusercontent.com/52101117/199206312-09718168-48d9-46fc-8784-51b915ddf468.png)
 
 --------------------------------------------------------------------------------------------
-
-
+### 486. Predict the Winner
+ ##### First Approach tc-> O(n) sc-> O(66)
+  ````
+  1. we will calculate the first person score by method and total score by loop. second person score will find through the second person score=total-first person score
+  2. for the first person we have two choices either that person choose start index or last index
+  3. once first person choose the value after that chance comes for the second person. second person can only choose from the remaining element that not choosed by first person. second person have the same choise either start element or last element.
+  4. for the first person we will include the value into the result but for the second person we will simply moved the index.
+  5. for first person we try to choose the max value so the that the first person could win but for the second person we will choose the min value so that it could not win
+  6. i , j and flag is a unique combination in our approach so for memoization we will use all three combinations
+  ````
+----------------------------------------------------------------------------------------------------
 
 
