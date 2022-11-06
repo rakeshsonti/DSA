@@ -62,6 +62,7 @@ DSA Preparation start date 17 july 2022
 
  ##### 13) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/PredicttheWinner.cpp) 486. Predict the Winner [ltc Problem Link](https://leetcode.com/problems/predict-the-winner/) 
 
+ ##### 14) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/MinimumPathSum.cpp) 64. Minimum Path Sum [ltc Problem Link](https://leetcode.com/problems/minimum-path-sum/submissions/) 
 
 
 --------------------------------------------------------------------------------------------------------------------------
