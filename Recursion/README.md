@@ -184,5 +184,25 @@ Reason: The space complexity can vary depending upon the length of the answer. k
   6. i , j and flag is a unique combination in our approach so for memoization we will use all three combinations
   ````
 ----------------------------------------------------------------------------------------------------
-
-
+### 64. Minimum Path Sum
+ ##### First approach tc-> //tc->O(m*n) sc-> O(m*n)+O(path length) or O((m-1)+(n-1)) (for recursion)
+   ````
+   1. if we devide our problem to sub problem we come to know that we can choose two way if we start from the end , go to up or left and if we start from the start point then move to down or right
+   2. we can take help of dp to reduce the unnecessary iteration
+   3. we will iterate m*n time and store min value from up and left at dp[i][j]
+   4. once we reached from right most corner to left most corner return the result
+   5. if we crossed the corner mean i<0 & j<0 means we are not couting that result into our result so we will try add a max value so that result could exclude from the pair result
+   ````
+   
+  ##### Second approach //tc->O(m*n) sc-> O(m*n)
+  ````
+  1. use tabulation approach to reduce recursion space complexity
+  2. appraoch would be the same instead of calling in recursion will call same thing in iteration
+  ````
+  
+  ##### Third approach //tc->O(m*n) sc-> O(m+n)
+  ````
+  1. we don't need m*n space , we can solve the problem in m+n space by maintaining curr and previous row
+  ````
+  
+ ---------------------------------------------------------------------------------------------
