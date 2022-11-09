@@ -213,9 +213,9 @@ Reason: The space complexity can vary depending upon the length of the answer. k
   2. we take minimum value from both the element
   3. at the end we will have minimum value
   4. for avoiding the repetive value we will use dp to store minimum result
-  
-  ![My Dashboard 1](https://user-images.githubusercontent.com/52101117/200887305-b7c6c023-7c95-4abf-ba62-d07da88eb463.png)
   ````
+  ![image](https://user-images.githubusercontent.com/52101117/200887716-e80cdcf5-6076-41d5-81aa-bd280f211dd4.png)
+
   ---------------------------------------------------------------------------------
   
   
