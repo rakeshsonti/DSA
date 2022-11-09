@@ -206,3 +206,19 @@ Reason: The space complexity can vary depending upon the length of the answer. k
   ````
   
  ---------------------------------------------------------------------------------------------
+### 120. Triangle
+ #### First Approach 
+  ````
+  1. we will add current element and call recursive function for next row i element and i+1 element
+  2. we take minimum value from both the element
+  3. at the end we will have minimum value
+  4. for avoiding the repetive value we will use dp to store minimum result
+  
+  ![My Dashboard 1](https://user-images.githubusercontent.com/52101117/200887305-b7c6c023-7c95-4abf-ba62-d07da88eb463.png)
+  ````
+  ---------------------------------------------------------------------------------
+  
+  
+  
+  
+  
