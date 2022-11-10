@@ -98,4 +98,13 @@ DSA Preparation start date 17 july 2022
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Greedy%20Algorithm/N_meetings_in_one_room.cpp)  N Meetings In A Room : [cdn Problem Link](https://www.codingninjas.com/codestudio/problems/1062658?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website&leftPanelTab=1) || [gfg](https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1)
 
   ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Greedy%20Algorithm/N_meetings_in_one_room.cpp)  Minimum Plateform : [cdn Problem Link](https://www.codingninjas.com/codestudio/problems/799400?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website&leftPanelTab=1) || [gfg](https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#)
+  
+ -----------------------------------------------------------------------------------------
+### Kadane
+ ##### 1) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/kadane/MaximumProductSubarray.cpp)  152. Maximum Product Subarray: [lc Problem Link](https://leetcode.com/problems/maximum-product-subarray/)
+ 
+ 
+ 
+ 
+ 
  
