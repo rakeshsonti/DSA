@@ -217,8 +217,32 @@ Reason: The space complexity can vary depending upon the length of the answer. k
   ![image](https://user-images.githubusercontent.com/52101117/200887716-e80cdcf5-6076-41d5-81aa-bd280f211dd4.png)
 
   ---------------------------------------------------------------------------------
-  
-  
-  
-  
-  
+### 198. House Robber 
+ #### First Approach (DP)  //tc->O(n) sc->O(n+2)dp array+O(n) recursion
+  ````
+  1. we have two option either we choose current or not choose current element
+  2. if we don't choose current element then no need add it to result simply move ahead with i+1 index
+  3. if we choose then current element then include current and move ahead with i+2 element 
+  4. choose max element of adjacent element.
+  5. use memoization to avoid unnecessary iteration
+  ````
+  ![image](https://user-images.githubusercontent.com/52101117/201303902-c7945e71-8555-4ef5-97ad-281151ab0a4e.png)
+
+  #### Second Approach (iterative-> bottom up)  //tc->O(n) sc->O(n+2)dp array
+   ````
+   1. In iterative approach we will run a loop from 1-n
+   2. i index in main array and in dp it's i+1 value so if we include means current value of main array+dp[i]
+   3. if don't want to include the current value then dp[i-1]
+   4. take max of both and store it to dp[i+1]
+   5. at the end return dp[n]
+  ````
+  #### Third Approach (iterative-> bottom up)  //tc->O(n) sc->O(1)
+   ````
+   1. If we observe properly we don't need entire dp array
+   2. two variable can sufficient
+   3. take prev1 and prev2 and approach would be the same as previous
+
+  ````
+  ![image](https://user-images.githubusercontent.com/52101117/201306243-4d052550-e907-4d7c-9b51-31c51a12fd0b.png)
+
+-----------------------------------------------------------------------
