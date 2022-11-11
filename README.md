@@ -66,6 +66,8 @@ DSA Preparation start date 17 july 2022
 
  ##### 15) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/MinimumPathSum.cpp) 64. Minimum Path Sum [ltc Problem Link](https://leetcode.com/problems/triangle/) 
 
+ ##### 16) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/HouseRobber.cpp) 198. House Robber [ltc Problem Link](https://leetcode.com/problems/house-robber/) 
+
 ---------------------------------------------------------------------------------------------------------------
 ### Recursion-Backtracking
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/Triangle.cpp) 120. Triangle : [ltc Problem Link](https://leetcode.com/problems/n-queens/) 
