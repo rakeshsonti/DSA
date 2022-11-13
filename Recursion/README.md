@@ -246,3 +246,20 @@ Reason: The space complexity can vary depending upon the length of the answer. k
   ![image](https://user-images.githubusercontent.com/52101117/201306243-4d052550-e907-4d7c-9b51-31c51a12fd0b.png)
 
 -----------------------------------------------------------------------
+### 213. House Robber II
+ #### First Approach (DP)  //tc->O(n) sc->O(2n)dp array+O(n) recursion
+  ````
+  1. we have two option either we choose current or not choose current element
+  2. if we don't choose current element then no need add it to result simply move ahead with i+1 index
+  3. if we choose then current element then include current and move ahead with i+2 element 
+  4. choose max element of adjacent element.
+  5. use memoization to avoid unnecessary iteration
+  6. In base condition check if(index>=n || (index==n-1 &&isFirst))return 0;
+  7. if first element is taking then avoid last element. for that we will maintain isFirst variable that insure if first element taking then it will be true else it will be false. based on that we will avoid first and last element condition
+  8. for dp array instead of vector we will take array of int dp[101][2] . in case of vector it will throw time limit exceed.
+  ````
+  ------------------------------------------------------------------------------------------------
+  
+  
+  
+  
