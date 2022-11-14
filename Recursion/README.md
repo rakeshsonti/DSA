@@ -259,7 +259,28 @@ Reason: The space complexity can vary depending upon the length of the answer. k
   8. for dp array instead of vector we will take array of int dp[101][2] . in case of vector it will throw time limit exceed.
   ````
   ------------------------------------------------------------------------------------------------
+### 300. Longest Increasing Subsequence
+ #### First Approach (DP)  //tc-> O(2^n) sc->O(n) recursion
+  ````
+  1. pick up current element if greater than previous element
+  2. don't pick current element may be further we get greater element which give optimal result
+  3. if current element smaller of equal so can not puckup
   
-  
-  
-  
+  ````
+ #### Second Approach (DP)  //tc-> O(2^n) sc->O(n*n)+O(n) recursion
+  ````
+  1. pick up current element if greater than previous element
+  2. don't pick current element may be further we get greater element which give optimal result
+  3. if current element smaller of equal so can not puckup
+  4. use dp to rid off repetive step
+  5. declare dp of N*N but we can store element in dp, value can be 1e8 that is not possible so we will store current and previous index that can be extend till 1e4
+  ````
+ #### Third Approach (DP)  //tc-> O(2^n) sc->O(n)+O(n) recursion
+  ````
+  1. pick up current element if greater than previous element
+  2. don't pick current element may be further we get greater element which give optimal result
+  3. if current element smaller of equal so can not puckup
+  4. use dp to rid off repetive step
+  5. no need to use O(n*n) space we can solve the problem in O(n) space.
+  ````
+  --------------------------------------------------------------------------------
