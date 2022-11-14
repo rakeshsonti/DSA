@@ -283,4 +283,6 @@ Reason: The space complexity can vary depending upon the length of the answer. k
   4. use dp to rid off repetive step
   5. no need to use O(n*n) space we can solve the problem in O(n) space.
   ````
+  ![image](https://user-images.githubusercontent.com/52101117/201735698-c861e6e6-dce3-4afd-9f5a-1ec225c093eb.png)
+
   --------------------------------------------------------------------------------
