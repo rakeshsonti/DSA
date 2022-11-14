@@ -69,6 +69,8 @@ DSA Preparation start date 17 july 2022
  ##### 16) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/HouseRobber.cpp) 198. House Robber [ltc Problem Link](https://leetcode.com/problems/house-robber/) 
 
  ##### 17) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/HouseRobberII.cpp) 213. House Robber II [ltc Problem Link](https://leetcode.com/problems/house-robber-ii/) 
+ 
+ ##### 18) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/LongestIncreasingSubsequence.cpp) 300. Longest Increasing Subsequence [ltc Problem Link](https://leetcode.com/problems/longest-increasing-subsequence/) 
 
 ---------------------------------------------------------------------------------------------------------------
 ### Recursion-Backtracking
