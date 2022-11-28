@@ -35,5 +35,11 @@ The second way is known as the Sliding window technique and the portion which is
 * It will ask to find subrange in that array or string will have to give longest, shortest, or target values.
 * Its concept is mainly based on ideas like the longest sequence or shortest sequence of something that satisfies a given condition perfectly.
 
+##### In general, any problem where the author is asking for any of the following return values can use a sliding window:
 
+* Minimum value
+* Maximum value
+* Longest value
+* Shortest value
+* K-sized value
 
