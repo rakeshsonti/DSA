@@ -70,10 +70,8 @@
  ##### 17) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/HouseRobberII.cpp) 213. House Robber II [ltc Problem Link](https://leetcode.com/problems/house-robber-ii/) 
  
  ##### 18) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/LongestIncreasingSubsequence.cpp) 300. Longest Increasing Subsequence [ltc Problem Link](https://leetcode.com/problems/longest-increasing-subsequence/) 
-
----------------------------------------------------------------------------------------------------------------
-### Recursion-Backtracking
- ##### 1) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/Triangle.cpp) 120. Triangle : [ltc Problem Link](https://leetcode.com/problems/n-queens/) 
+ 
+ ##### 19) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Recursion/N-Queens.cpp) 51. N-Queens: [ltc Problem Link](https://leetcode.com/problems/n-queens/) 
 
 ---------------------------------------------------------------------------------------------------------------
 ### BTree
