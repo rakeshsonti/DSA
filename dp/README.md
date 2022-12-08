@@ -1,6 +1,16 @@
 # Dynamic Programming
   * Memoization - Top Down
   * Tabulation  - Bottom Up
+  
+  ### Way to figure out it's an dp problem:
+   * count the total no of ways
+   * minimum or maximum result
+   * try all posible ways (recursion)
+
+ ### Shortcut of DP
+   * try to represent the problem in terms of index
+   * do all posible stuff on that index according to the problem statement
+   * sum of all stuff-> count all ways
 ------------------------------------------------------------------------------------------------------------
 ### 509. Fibonacci Number
 ##### Recursion+memoization  tc->O(n) sc->o(n) recursion +O(n) memoization=O(n)
