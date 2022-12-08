@@ -39,5 +39,24 @@
             prev2=curr;
   * return prev2;
 ------------------------------------------------------------------------------------------------------------
+ ### 70. Climbing Stairs
+  ##### Recursion+memoization  tc->O(n) sc->o(n) recursion +O(n) memoization=O(n)
+  * As question mentioned we have two choices either move two step or one step.
+  * We will move with both the step and calculate the total step if we reached at top.
+  * We will reach on top if count become 0 else if we crossed the top then simply ignore those path.
+  * Using memoization we can reduce unneccesary repeatation. 
+  
+  ##### Iterative solution with two pointer tc-> O(n) sc-> O(1)
+   * As we observe the diagram pattern its a fabonicci sereas question
+   * we can solve by maintaining two pointer prev1 and prev2
+   
+   ![image](https://user-images.githubusercontent.com/52101117/206392427-3b54e866-c39f-459d-b981-881755cac902.png)
+
+----------------------------------------------------------------------------------------------------------------
+  
+  
+  
+  
+  
   
   
