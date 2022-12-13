@@ -22,3 +22,24 @@
 > //tc->O(2nlong(n))for sort two array O(2n) for iterating the array
 
 > //sc-> O(1) not using any extra space
+--------------------------------------------------------------------------------------
+## 122. Best Time to Buy and Sell Stock II
+#### First approach tc-> O(n) sc-> O(1) 
+````
+1. if prices goes up don't sell
+2. if price goes down sell it and book profit
+3. if previous day buy prices is greater than current day prices then simply purchase a new stock without selling the prevois stock
+````
+#### Second approach tc-> O(n) sc-> O(1) 
+````
+1. if prices goes up just book the profit and if it goes down don't care about it
+2. at the end you will get max profit
+
+````
+----------------------------------------------------------------------------------------
+
+
+
+
+
+
