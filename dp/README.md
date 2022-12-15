@@ -65,6 +65,11 @@
    *    prev2=prev1;
         int curr=min(left,right);
         prev1=curr;
+        
+        ![image](https://user-images.githubusercontent.com/52101117/207913262-1573e5ae-9471-4e37-b201-1473a42737c5.png)
+        
+        ![image](https://user-images.githubusercontent.com/52101117/207913418-a1461832-09a4-48c6-9af4-ce6479e8a33a.png)
+
 ----------------------------------------------------------------------------------------------------------------
   
 
