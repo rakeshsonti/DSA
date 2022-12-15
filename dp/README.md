@@ -53,9 +53,21 @@
    ![image](https://user-images.githubusercontent.com/52101117/206392427-3b54e866-c39f-459d-b981-881755cac902.png)
 
 ----------------------------------------------------------------------------------------------------------------
+  ### Frog Jump
+  ##### Recursion+memoization  tc->O(n) sc->o(n) recursion +O(n) memoization=O(n)
+  * As question mentioned we have two choices either move two step or one step.
+  * We will move with both the step and choose the path which have minimum no of step requires
+  * We will reach if count become 0
+  * Using memoization we can reduce unneccesary repeatation. 
   
+  ##### Iterative solution with two pointer tc-> O(n) sc-> O(1)
+   * instead of using the dp array we can solve the problem using two pointer prev1 and prev2
+   *    prev2=prev1;
+        int curr=min(left,right);
+        prev1=curr;
+----------------------------------------------------------------------------------------------------------------
   
-  
+
   
   
   
