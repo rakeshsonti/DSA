@@ -71,6 +71,34 @@
         ![image](https://user-images.githubusercontent.com/52101117/207913418-a1461832-09a4-48c6-9af4-ce6479e8a33a.png)
 
 ----------------------------------------------------------------------------------------------------------------
+  ### Frog Jump K
+  ##### Recursion+memoization  tc->O(n*k) sc->o(n) recursion +O(n) memoization=O(n)
+  * As question mentioned we have two choices either move two step or one step.
+  * We will move with both the step and choose the path which have minimum no of step requires
+  * We will reach if count become 0
+  * Using memoization we can reduce unneccesary repeatation. 
+  * we have n subproblem and for each subproblem we will run a another look k time
+  * make sure we are not use negative index in array for that we have following condition   if(index-i>=0){
+   ###### Time Complexity: O(N *K)
+   ##### Reason: The overlapping subproblems will return the answer in constant time. Therefore the total number of new subproblems we solve is 'n'. At every new subproblem, we are running another loop for K times. Hence total time complexity is O(N * K).
+
+  ##### Iterative solution with two pointer tc-> O(n*k) sc-> O(1)
+   * instead of using the dp array we can solve the problem using iterative approach
+   * run a loop from 1 to n and run another loop from 1 to k for each subproblem.
+   * as check minimum value in above recursive approach similarly we check here.
+   * in this approach we can reduce extra rcursive approach
+   
+   ##### Way to reduce extra dp O(n) space to O(k) space
+   * Instead of extra kn space we can take a extra space of k
+   * as we move ahead in for loop of i we will add new i index into the k size dp array and remove previous element k-i
+   * but in case of k=n it will take similar O(n) space
+        
+        
+     ![image](https://user-images.githubusercontent.com/52101117/207913262-1573e5ae-9471-4e37-b201-1473a42737c5.png)
+
+     ![image](https://user-images.githubusercontent.com/52101117/207913418-a1461832-09a4-48c6-9af4-ce6479e8a33a.png)
+
+----------------------------------------------------------------------------------------------------------------
   
 
   
