@@ -114,6 +114,8 @@
   ##### 2) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/70.ClimbingStairs.cpp)  70. Climbing Stairs: [lc Problem Link](https://leetcode.com/problems/climbing-stairs/description/)
  
   ##### 3) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/FrogJump.cpp)  Frog Jump: [Problem Link](https://www.codingninjas.com/codestudio/problems/frog-jump_3621012?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTab=0)
+  
+  ##### 4) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/FrogJumpK.cpp)  Frog Jump K: [Problem Link](#)
 
  
  
