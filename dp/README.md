@@ -99,9 +99,26 @@
      ![image](https://user-images.githubusercontent.com/52101117/207913418-a1461832-09a4-48c6-9af4-ce6479e8a33a.png)
 
 ----------------------------------------------------------------------------------------------------------------
+### Maximum sum of non-adjacent elements
+ ##### Recursion+memozation tc-> O(n) sc-> O(n)memoization space + O(n)recursion 
+  *  we will a function based on approach if we pickup the current element and then choose current+2 as a next element
+  * else ignore current element and choose the next element
+  * choose max from pick and non pick element
+  * use dp to avoid repeatation
   
+ ##### Iterative sol tc-> O(n) sc-> O(n)
+  * In recursion we will call function recursively and start from the end to index 0
+  * In iteration we will start from 1 to n-1
+  * and first dp value initialize with first array value
+  * now for pick up or non pick up we will use dp value to currIndex-1 and currentIndex-2
+  * if we include the current element then include currentIndex-2 because it's not your adjacent
+  * if we don't include the current then include currentIndex-1 
+  * choose max value from pick and non pick and initialize it to dp[currentIndex]
+  
+##### Iterative sol tc-> O(n) sc-> O(1)
+ * for space optimization we will use two varable prev1 and prev2
+ * intead of storing the data into dp store data into only prev1 and prev2
+ 
+ ![maxsumproblem2](https://user-images.githubusercontent.com/52101117/208286618-81979c2b-77b5-4c9b-9355-d9f486e8e416.jpg)
 
-  
-  
-  
-  
+  --------------------------------------------------------------------------------------------------------------
