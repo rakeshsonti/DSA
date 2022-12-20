@@ -121,4 +121,32 @@
  
  ![maxsumproblem2](https://user-images.githubusercontent.com/52101117/208286618-81979c2b-77b5-4c9b-9355-d9f486e8e416.jpg)
 
-  --------------------------------------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------------------------------------
+### 62. Unique Paths
+ #####   //tc-> O(m*n) sc-> O(m*n)memoization space+ recursive space O(m-1)+O(n-1)
+  * In question they have provided eiather choose right path or down path
+  * we have two choices
+  * if left==m && right==n mean its reached to the goal then we will return 1 as we counted this path
+  * if frog went out of path either left path or right path we will return 0
+  * as they mentioned ans should be total number of path, so count both the way and return 
+  * for memory optimization we will use dp array to avoid unneccesarry repeatation
+ 
+ ##### tabulation with memoization  //tc-> O(m*n) sc-> O(m*n) memoization space
+  * as we know we can either move to right or down 
+  * so based on this approach we will start from the index 1 and assign dp[0][0]=1;
+  * we can easily count  dp[left][right]=dp[left-1][right]+dp[left][right-1]; and run two loop from m*n
+  
+  ###### tabulation with space optimization
+   * for space optimization instead of choosing dp of m*n we only need two array of size n
+   * for previous row and current row
+   * dp[left][right]=dp[left-1][right]+dp[left][right-1]; we can see row is always left-1 and left
+   *  handle first index case if(i==0 && j==0)  prev1[j]=1;
+   * if we follow our previous solution where we were count solution based on prev and current row but
+     row fetching from 2d array but here it is seperate 
+   if(i>0)left=prev[j];
+           if(j>0)right=prev1[j-1];
+           prev1[j]=left+right;
+           
+ ![Unique_Paths](https://user-images.githubusercontent.com/52101117/208712236-91547304-46c3-4dc3-b5a0-3f7e534ff7c4.jpg)
+-------------------------------------------------------------------------------------------------------------
+ 
