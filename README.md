@@ -119,4 +119,5 @@
 
   ##### 5) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/Maximum_sum_of_non-adjacent_elements.cpp)  Maximum sum of non-adjacent elements: [Problem Link](https://www.codingninjas.com/codestudio/problems/maximum-sum-of-non-adjacent-elements_843261?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTab=0)
 
- 
+  ##### 6) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/62.UniquePaths.cpp) 62. Unique Paths: [Problem Link](https://leetcode.com/problems/unique-paths/)
+
