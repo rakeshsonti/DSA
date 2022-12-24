@@ -121,5 +121,5 @@
 
   ##### 6) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/62.UniquePaths.cpp) 62. Unique Paths: [Problem Link](https://leetcode.com/problems/unique-paths/)
 
-  ##### 7) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/931.MinimumFallingPathSum.cpp) 62. Unique Paths: [Problem Link](https://leetcode.com/problems/minimum-falling-path-sum/)
+  ##### 7) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/931.MinimumFallingPathSum.cpp) 931. Minimum Falling Path Sum: [Problem Link](https://leetcode.com/problems/minimum-falling-path-sum/)
 
