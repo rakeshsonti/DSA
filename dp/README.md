@@ -149,4 +149,33 @@
            
  ![Unique_Paths](https://user-images.githubusercontent.com/52101117/208712236-91547304-46c3-4dc3-b5a0-3f7e534ff7c4.jpg)
 -------------------------------------------------------------------------------------------------------------
- 
+ ### 931. Minimum Falling Path Sum
+  ##### Memoization //tc-> O(m)+O(m*n)+O(n)=O(m*n) sc-> O(m*n)
+  * In case of two choices we can easily start but with three choices we need to take care of first row
+  * we will start our call from each element one by one and calculate
+  * at the end we will choose minimum as a result
+  * we start from the last row and end on row 0
+  * base condition       
+      if(j<0 ||j>=m)return 1e9; // if we go out of column return max value so that it will be not calcuated in final result
+      if(i==0)return mt[0][j]; // if we reached at the first row then include it to the result
+  * include current element from the current row and we have three choices from previous row-> 1) i-1,j-1 2) i-1,j 3) i-1, j+1
+  * choose mimimum and store it to DP
+  
+  ##### Tabulation  //tc-> O(m)+O(m*n)+O(n)=O(m*n) sc-> O(m*n)
+  * In case of three choices , its little bit difficult to decide way
+  * first check based on recursive solution we know we need previous row so we run a loop and store first row in dp
+  * we know in top down approach we start from n-1 and calculate result at 0 so in tabulation we need to think from where we could calculate the result so think about the base case of top down
+  * in previous approach we have tail recursion so we don't need to worry about first row, it will touch the first row and come back but here we don't have tail recursion so we first initialize the first row with first row of matrix
+  * now we can easily calculate the result of prev,curr and next from previous row of dp as we calculate in top down approach
+  * dp[i][j]=min(curr,min(prev,next));
+  * at the end we have to iterate the last row of the DP and find the minimum value , this minimum value is our result
+  ##### Tabulation with memory optimization //tc-> O(m)+O(m*n)+O(n)=O(m*n) sc-> O(m+1)+O(n+1)
+  * As we above tabulation approach we don't need m*n dp array two vector of m and n size are enough to provide the same result
+  * just replace the array in previous result
+  
+ ![image](https://user-images.githubusercontent.com/52101117/209432726-8810d696-3de1-41f3-b03d-029fda6e448e.png)
+ ![image](https://user-images.githubusercontent.com/52101117/209432654-d2499292-36c0-4eaf-8e54-a413029b1ce5.png)
+
+
+ ----------------------------------------------------------------------------------------------------------------
+      
