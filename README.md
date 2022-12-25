@@ -123,3 +123,12 @@
 
   ##### 7) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/931.MinimumFallingPathSum.cpp) 931. Minimum Falling Path Sum: [Problem Link](https://leetcode.com/problems/minimum-falling-path-sum/)
 
+--------------------------------------------------------------------------------------------------
+### Contest Weekly Contest 325
+ ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
+
+ ##### 2) 2515. Shortest Distance to Target String in a Circular Array: [Problem Link](https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/description/)
+ 
+ ##### 3) 2516. Take K of Each Character From Left and Right: [Problem Link](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/description/)
+
+
