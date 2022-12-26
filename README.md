@@ -123,6 +123,8 @@
 
   ##### 7) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/931.MinimumFallingPathSum.cpp) 931. Minimum Falling Path Sum: [Problem Link](https://leetcode.com/problems/minimum-falling-path-sum/)
 
+  ##### 8) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/1463.CherryPickupII.cpp) 1463. Cherry Pickup II: [Problem Link](https://leetcode.com/problems/cherry-pickup-ii/description/)
+
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
