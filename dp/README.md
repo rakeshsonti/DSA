@@ -178,4 +178,31 @@
 
 
  ----------------------------------------------------------------------------------------------------------------
-      
+  ### 931. Minimum Falling Path Sum
+  ##### Memoization //tc-> O(N*M*M) * 9 sc-> O(N) recursion stack space+ O(N*M*M) memoization space
+  * In this problem we have a situation where bob and alice can move bottom left, bottom and botttom right. If bob move to bottom left so alice have 3 choice to move so they have total 9 choices.
+  * there is we will take 3d dp space for memoization
+  * if we talk about the base case they should not cross the left border as well as right border of the row
+  *  if(colbob<0 || colalice<0 || colbob>=c || colalice>=c){
+        return -1e9;
+      }
+  * second base case when both reached the last row then we need to decide based on there position if both reached on the same block then we will return only the single value else we will return sum of both
+  * Now we will run a loop 3*3 time this loop we tell the relative position of bob and alice
+  * if bob at the bottom position then alice can be left bottom ,bottom, and right bottom position
+  * and we will also check if bob and alice both located on the same block in this case we will collect candy from only one block
+  * else collect from both the block
+  * collection the maximum candy and return it
+ ------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+  
+  
