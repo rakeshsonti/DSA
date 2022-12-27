@@ -125,6 +125,8 @@
 
   ##### 8) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/1463.CherryPickupII.cpp) 1463. Cherry Pickup II: [Problem Link](https://leetcode.com/problems/cherry-pickup-ii/description/)
 
+  ##### 9) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/SubsetSumEqualToK.cpp) Subset Sum Equal To K: [Problem Link](https://www.codingninjas.com/codestudio/problems/subset-sum-equal-to-k_1550954?leftPanelTab=0)
+
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
