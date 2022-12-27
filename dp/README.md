@@ -238,6 +238,14 @@
  * if total sum is even then we will find the target =totalSum/2 which we did in our previous question
  * if we get totalSum/2 in the array then definately we will get another part of the sub set
  ----------------------------------------------------------------------------------------------------------------------
+ ### Partition a set into two subsets such that the difference of subset sums is minimum.
+ ##### Follow above question for solution (Subset Sum Equal To K) in best case     //tc-> O(n*target) sc-> O(target)+O(target) memoization
+ * our k will be the total sum, instead of calculate the result for only the perticular value we will calculate the difference between total values
+ * for more explaination of below code refer the question https://github.com/rambhajansonti/DSA/blob/master/dp/SubsetSumEqualToK.cpp
+ * if tabulation last row is very important that tell us about that index if subset sum of that value is possible or not
+ * if it is possible then we will consider that value as a s1 and for finding the s2 we reduce s1 from the total sum
+ * if we carefully observe the pattern first half of the result has the oposite value of the second half so we no need to calculate the second half , we are just using the absolute difference in our answer
+ ----------------------------------------------------------------------------------------------------------------------
  
  
  
