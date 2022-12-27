@@ -193,10 +193,45 @@
   * else collect from both the block
   * collection the maximum candy and return it
  ------------------------------------------------------------------------------------------------------------------------
+ ## DP on Subsequences
+ ### Subset Sum Equal To K
+ ``
+ Note: difference between sequence and subset is sequence follow the order  but for subset it's not compulsary to follow a order
+ ``
+ ##### Memoization using recursion //tc-> O(n*target) sc-> O(n) recursion+ O(n*target) memoization
+ * we will start from n-1 to 0 row and use the technique include or not include
+ * if we include then make sure if(k>=arr[n]) else no need to include it
+ * base case : if target become 0 if(k==0) return true 
+ * base case : if we reached from n-1 to 0 row then check of first element in equals to zero
+ * if(n==0){
+        return (k==arr[0])?true:false;
+    }
+ * if we include then check the condition if we get after including
+ * if(k>=arr[n])
+ * we need only condition where we could get our answer so 
+ * return dp[n][k]=(res1 || res2)?true:false;
+ * Note: how you decide to take dp of size n*target ->>for getting the target value i need the values whose sum could help me to get target value , so i need the values whose always be less than the target value if it is greater than does not fit into my bucket so i choose the dp of size n*target
  
+ ##### Tabulation solution //tc-> O(n*target) sc->  O(n*target) memoization
+ * bottom up approach is completely different from top down approach. In this approach we will start from o to n-1
+ * first think about the base case 
+ *   target can be zero from 0 to n-1 column if we observe the picture properly
+ *    for(int i=0;i<n;i++)dp[i][0]=true;
+ * if index is zero then the only value can  be zero that is dp[i][0]
+ *  if(arr[0]<=k)dp[0][arr[0]]=true;
+ * follow the same approach as we follow in recurance
+ * previous row will help use to get the current row in case of take and non take case
+ * make sure if you include the value then it should be less than or equals to the target value
+ * if(arr[ind]<=target)
+                take=dp[ind-1][target-arr[ind]];
+ * at the end this will be our ans return dp[n-1][k];
  
+ ##### Space optimization-->  Tabulation solution //tc-> O(n*target) sc->  O(target)+O(target)=O(target)= memoization
  
- 
+ ![image](https://user-images.githubusercontent.com/52101117/209692527-a74852c7-9095-4c31-b75d-7a18d122f235.png)
+
+
+ -----------------------------------------------------------------------------------------------------------------------------
  
  
  
