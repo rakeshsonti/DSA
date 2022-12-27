@@ -127,6 +127,9 @@
 
   ##### 9) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/SubsetSumEqualToK.cpp) Subset Sum Equal To K: [Problem Link](https://www.codingninjas.com/codestudio/problems/subset-sum-equal-to-k_1550954?leftPanelTab=0)
 
+  ##### 10) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/416.PartitionEqualSubsetSum.cpp) 416. Partition Equal Subset Sum: [Problem Link](https://leetcode.com/problems/partition-equal-subset-sum/description/)
+
+
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
