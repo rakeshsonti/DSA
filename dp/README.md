@@ -232,7 +232,12 @@
 
 
  -----------------------------------------------------------------------------------------------------------------------------
- 
+ ### 416. Partition Equal Subset Sum
+ ##### Follow above question for solution (Subset Sum Equal To K) in best case //tc-> O(n) sum+o(n*target) sc-> O(target) memoization
+ * if total sum of a array is odd then it is not possible to devide the array into two equal subset sum
+ * if total sum is even then we will find the target =totalSum/2 which we did in our previous question
+ * if we get totalSum/2 in the array then definately we will get another part of the sub set
+ ----------------------------------------------------------------------------------------------------------------------
  
  
  
