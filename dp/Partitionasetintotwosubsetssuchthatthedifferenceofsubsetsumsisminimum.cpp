@@ -1,6 +1,7 @@
 #include <bits/stdc++.h> 
 int minSubsetSumDifference(vector<int>& arr, int n)
 {
+	//tc-> O(n*target) sc-> O(target)+O(target) memoization
     //our k will be the total sum, instead of calculate the result for only the perticular value we will calculate the difference between total values
     int k=0;
    for(int i=0;i<arr.size();i++)k+=arr[i];
