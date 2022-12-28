@@ -246,7 +246,40 @@
  * if it is possible then we will consider that value as a s1 and for finding the s2 we reduce s1 from the total sum
  * if we carefully observe the pattern first half of the result has the oposite value of the second half so we no need to calculate the second half , we are just using the absolute difference in our answer
  ----------------------------------------------------------------------------------------------------------------------
- 
+ ### Partitions With Given Difference
+ * given problem is based on the subset problem
+ * there is a change in base case
+ * new condition if(ind == 0){
+            if(target==0 && arr[0]==0)
+                return 2;
+            if(target==0 || target == arr[0])
+                return 1;
+            return 0;
+    }
+  * previous condition 
+  * if(k==0)return true;
+    if(n==0){
+        return (k==arr[0])?true:false;
+    }
+  * if target is zero simply return 1 , in this case we will miss few cases which form a combination with zero
+  * [0,0,1]
+  *  so instead of returning to zero we will explore deeply and check the new condition
+  *  ![image](https://user-images.githubusercontent.com/52101117/209782071-5a70a670-1066-42c5-8d69-65f1de0f46a4.png)
+  *  ![image](https://user-images.githubusercontent.com/52101117/209782360-2cf1642f-5abd-4b24-ae32-9fd6c594436c.png)
+  *  Rest of the code is similar to subset problem that's easy
+  
+  ##### tabulation approach
+  * for tabulation we need to understand the base case of new approach
+  * first we will check either we have a condition of pick or not pick
+  *     if(num[0] == 0) prev[0] =2;  // 2 cases -pick and not pick
+    else prev[0] = 1;  // 1 case - not pick
+    if(num[0]!=0 && num[0]<=tar) prev[num[0]] = 1;  // 1 case -pick
+  * Old case : ->
+  * prev[0]=1;
+    if(arr[0]<=k)prev[arr[0]]=1;
+ -------------------------------------------------------------------------------------------------------------------------------
+
+          
  
  
  
