@@ -113,11 +113,11 @@
  
   ##### 2) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/70.ClimbingStairs.cpp)  70. Climbing Stairs: [lc Problem Link](https://leetcode.com/problems/climbing-stairs/description/)
  
-  ##### 3) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/FrogJump.cpp)  Frog Jump: [Problem Link](https://www.codingninjas.com/codestudio/problems/frog-jump_3621012?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTab=0)
+  ##### 3) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/FrogJump.cpp)  Frog Jump: [Problem Link](https://www.codingninjas.com/codestudio/problems/frog-jump_3621012)
   
   ##### 4) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/FrogJumpK.cpp)  Frog Jump K: [Problem Link](#)
 
-  ##### 5) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/Maximum_sum_of_non-adjacent_elements.cpp)  Maximum sum of non-adjacent elements: [Problem Link](https://www.codingninjas.com/codestudio/problems/maximum-sum-of-non-adjacent-elements_843261?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTab=0)
+  ##### 5) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/Maximum_sum_of_non-adjacent_elements.cpp)  Maximum sum of non-adjacent elements: [Problem Link](https://www.codingninjas.com/codestudio/problems/maximum-sum-of-non-adjacent-elements_843261)
 
   ##### 6) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/62.UniquePaths.cpp) 62. Unique Paths: [Problem Link](https://leetcode.com/problems/unique-paths/)
 
@@ -131,7 +131,9 @@
 
  ##### 11) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/Partitionasetintotwosubsetssuchthatthedifferenceofsubsetsumsisminimum.cpp) Partition a set into two subsets such that the difference of subset sums is minimum.: [Problem Link](https://www.codingninjas.com/codestudio/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum_842494)
 
-##### 12) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/NumberOfSubsets.cpp) Partition a set into two subsets such that the difference of subset sums is minimum.: [Problem Link](https://www.codingninjas.com/codestudio/problems/number-of-subsets_3952532?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTab=0)
+##### 12) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/NumberOfSubsets.cpp) Partition a set into two subsets such that the difference of subset sums is minimum.: [Problem Link](https://www.codingninjas.com/codestudio/problems/number-of-subsets_3952532)
+
+##### 13) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/PartitionsWithGivenDifference.cpp) Partitions With Given Difference: [Problem Link](https://www.codingninjas.com/codestudio/problems/partitions-with-given-difference_3751628)
 
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
