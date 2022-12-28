@@ -129,8 +129,9 @@
 
   ##### 10) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/416.PartitionEqualSubsetSum.cpp) 416. Partition Equal Subset Sum: [Problem Link](https://leetcode.com/problems/partition-equal-subset-sum/description/)
 
-  ##### 11) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/Partitionasetintotwosubsetssuchthatthedifferenceofsubsetsumsisminimum.cpp) Partition a set into two subsets such that the difference of subset sums is minimum.: [Problem Link](https://www.codingninjas.com/codestudio/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum_842494)
+ ##### 11) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/Partitionasetintotwosubsetssuchthatthedifferenceofsubsetsumsisminimum.cpp) Partition a set into two subsets such that the difference of subset sums is minimum.: [Problem Link](https://www.codingninjas.com/codestudio/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum_842494)
 
+##### 12) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/NumberOfSubsets.cpp) Partition a set into two subsets such that the difference of subset sums is minimum.: [Problem Link](https://www.codingninjas.com/codestudio/problems/number-of-subsets_3952532?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTab=0)
 
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
