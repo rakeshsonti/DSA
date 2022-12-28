@@ -271,12 +271,12 @@
   ##### tabulation approach
   * for tabulation we need to understand the base case of new approach
   * first we will check either we have a condition of pick or not pick
-  *     if(num[0] == 0) prev[0] =2;  // 2 cases -pick and not pick
-    else prev[0] = 1;  // 1 case - not pick
-    if(num[0]!=0 && num[0]<=tar) prev[num[0]] = 1;  // 1 case -pick
+  *  if(num[0] == 0) prev[0] =2;  // 2 cases -pick and not pick
+  *  else prev[0] = 1;  // 1 case - not pick 
+  * if(num[0]!=0 && num[0]<=tar) prev[num[0]] = 1;  // 1 case -pick
   * Old case : ->
   * prev[0]=1;
-    if(arr[0]<=k)prev[arr[0]]=1;
+  * if(arr[0]<=k)prev[arr[0]]=1;
  -------------------------------------------------------------------------------------------------------------------------------
 
           
