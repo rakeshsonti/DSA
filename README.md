@@ -135,6 +135,9 @@
 
 ##### 13) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/PartitionsWithGivenDifference.cpp) Partitions With Given Difference: [Problem Link](https://www.codingninjas.com/codestudio/problems/partitions-with-given-difference_3751628)
 
+##### 14) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/0-1-Knapsack.cpp) 0 1 Knapsack : [Problem Link](https://www.codingninjas.com/codestudio/problems/0-1-knapsack_920542)
+
+
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
