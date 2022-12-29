@@ -278,12 +278,37 @@
   * prev[0]=1;
   * if(arr[0]<=k)prev[arr[0]]=1;
  -------------------------------------------------------------------------------------------------------------------------------
+### 0 1 Knapsack
+##### Memoization tc-> O(n*maxWeight) sc-> O(n) recursion +o(n*maxWeight) memoization  //without memoization //tc-> 2^n sc-> O(n)
+* for dp size choose the changing parameter , here index and maxWeight is changing parameter
+* we have two choices pick or not pick
+* when pick reduce the max weight by current pick weight and add value to picj variable
+* when not pick then simply decrease the index value by 1
+* if index become zero then we have two choices check wheigh max should be less than current zero index weight value
+* if fit into the bag then take it else return 0 because we don't have any other option
 
-          
+##### Tabulation tc-> O(n*maxWeight) sc-> o(n*maxWeight) memoization
+ * for tabulation dp will be the same only change is fill entire dp with 0 instead of -1 because -1 not required any more
+ * in bottom up we have started from n and maxweight to 0 so here we will start from 1-n and 1-maxweight just opposite
+ * first row will left for the base casses
+ * think about the base case. you can see for the first row i am completely dependent on previous row from 0 to maxweight index
+ * so you need to fill previous row from 0 to maxweight
+ * in subset i have filled with true so here we we fill with value[0]
+ * for take i will target current value + previous row maxWeight-weight[ind] need to reduce the current weight
+ * for non take simply target w because we didn't change the weight
+ * 
+ ##### Tabulation tc-> O(n*maxWeight) sc-> o(n+maxWeight) memoization
+ * change dp[ind-1][..] to prev row and curr row
  
- 
- 
-  
+ #####  Tabulation tc-> O(n*maxWeight) sc-> o(maxWeight) memoization 
+  * How it possible
+  * ![image](https://user-images.githubusercontent.com/52101117/209927988-7b210fe4-67aa-4512-abcb-e1bd4fd9be60.png)
+  * we can see we are running two loop one ind 1-n and second from 1-maxweight
+  * what if we run second loop from maxweight to 1 it fine beacuse we are completely depend on previous row not on current row
+  * if we observe the attached pic you can se we are decreasing the value of w to calcuate the next iteration and other two parameter value is fixed so it's confirm that we depend on the left side value of the previous row, so instead of using the two array if we use the single array that is previous row and fill the result to it's right side or current index, it will not effect the next result calculation   take=value[ind]+prev[w-weight[ind]];
+  ------------------------------------------------------------------------------------------------------------------
+
+
   
   
   
