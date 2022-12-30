@@ -310,8 +310,8 @@
 ### 322. Coin Change
 ##### Memoization //tc-> O(n*amount) sc->O(n)recursion+ O(n*amount) n is the no of counts //without memoization tc-> O(2^n) sc-> O(amount) n is the no of counts
   
-* Note : In problem they mentioned we can take infinite no of coins
-* why greedy not possible:[9,6,5,1]  11/9=>1 2/1=>2 total 3 coin   ; 11/6=> 1 5/5=>1 2 coin no uniformity
+* **Note :** In problem they mentioned we can take infinite no of coins
+* ``why greedy not possible:[9,6,5,1]  11/9=>1 2/1=>2 total 3 coin   ; 11/6=> 1 5/5=>1 2 coin no uniformity``
 * problem is simply based on take and not take problem
 * while not take we can simply choose next index but in case of take we have to take the same index
 * if i am not changing the index that means i will check for the same element again and again?
@@ -322,6 +322,17 @@
 *  if(amount%coins[ind]==0)return amount/coins[ind];
 
 ##### Tabulation  //tc-> O(n*amount) sc-> O(n*amount) n is the no of counts
- * 
-  
+ * **base condition:** convert recursive solution to tabulation base condition for the first row of the DP
+ * do reverse of the bottom up solution: start the condition from 1- n for ind and 0 to max amount
+ * in all previous solution we are completely dependent on the previous row but here for the case take we are not incresing the index so we depend on the current row
+ 
+ ##### Tabulation with space optimization //tc-> O(n*amount) sc-> O(n+amount) n is the no of counts 
+ * convert two row to one row by using two seperate maxamount row
+ ---------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
   
