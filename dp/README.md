@@ -329,8 +329,12 @@
  ##### Tabulation with space optimization //tc-> O(n*amount) sc-> O(n+amount) n is the no of counts 
  * convert two row to one row by using two seperate maxamount row
  ---------------------------------------------------------------------------------------------------------------------
- 
- 
+ ### 494. Target Sum
+##### Memoization //tc-> O(n*target) sc->O(n)recursion+ O(n*target) n is the no of counts //without memoization tc-> O(2^n) sc-> O(target) n is the no of counts
+ * This problem is similar to https://github.com/rambhajansonti/DSA/blob/master/dp/PartitionsWithGivenDifference.cpp
+ * only language is different
+ * i tried using + and - sign taken approach but only 132/140 cases passeed 
+ ------------------------------------------------------------------------------------------------------------------------
  
  
  
