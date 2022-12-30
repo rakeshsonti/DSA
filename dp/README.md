@@ -306,9 +306,22 @@
   * we can see we are running two loop one ind 1-n and second from 1-maxweight
   * what if we run second loop from maxweight to 1 it fine beacuse we are completely depend on previous row not on current row
   * if we observe the attached pic you can se we are decreasing the value of w to calcuate the next iteration and other two parameter value is fixed so it's confirm that we depend on the left side value of the previous row, so instead of using the two array if we use the single array that is previous row and fill the result to it's right side or current index, it will not effect the next result calculation   take=value[ind]+prev[w-weight[ind]];
-  ------------------------------------------------------------------------------------------------------------------
-
-
+ ------------------------------------------------------------------------------------------------------------------
+### 322. Coin Change
+##### Memoization //tc-> O(n*amount) sc->O(n)recursion+ O(n*amount) n is the no of counts //without memoization tc-> O(2^n) sc-> O(amount) n is the no of counts
   
+* Note : In problem they mentioned we can take infinite no of coins
+* why greedy not possible:[9,6,5,1]  11/9=>1 2/1=>2 total 3 coin   ; 11/6=> 1 5/5=>1 2 coin no uniformity
+* problem is simply based on take and not take problem
+* while not take we can simply choose next index but in case of take we have to take the same index
+* if i am not changing the index that means i will check for the same element again and again?
+* ans is no-> for eg i have a 8 and coin is 3 so i took the three and now next time target value is 5 so i have a choice either i will choose the same element again or not 
+* take=1+solve(coins,amount-coins[ind],ind,dp);
+*  int nottake=0+solve(coins,amount,ind-1,dp);
+*  Base case: in case of last index if we don't take then simply return 1e9 (max value) else if we can achive target by last element then check else return max value 
+*  if(amount%coins[ind]==0)return amount/coins[ind];
+
+##### Tabulation  //tc-> O(n*amount) sc-> O(n*amount) n is the no of counts
+ * 
   
   
