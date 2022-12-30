@@ -329,13 +329,20 @@
  ##### Tabulation with space optimization //tc-> O(n*amount) sc-> O(n+amount) n is the no of counts 
  * convert two row to one row by using two seperate maxamount row
  ---------------------------------------------------------------------------------------------------------------------
- ### 494. Target Sum
+### 494. Target Sum
 ##### Memoization //tc-> O(n*target) sc->O(n)recursion+ O(n*target) n is the no of counts //without memoization tc-> O(2^n) sc-> O(target) n is the no of counts
  * This problem is similar to https://github.com/rambhajansonti/DSA/blob/master/dp/PartitionsWithGivenDifference.cpp
  * only language is different
  * i tried using + and - sign taken approach but only 132/140 cases passeed 
  ------------------------------------------------------------------------------------------------------------------------
- 
+ ### 518. Coin Change II
+##### Memoization //tc-> O(n*target) sc->O(n)recursion+ O(n*target) n is the no of counts //without memoization tc-> O(2^n) sc-> O(target) n is the no of counts
+ * This problem is similar to https://github.com/rambhajansonti/DSA/blob/master/dp/322.CoinChange.cpp
+ * only language is different
+ * changes i did 1e9 with 1 and instead of min added take and no take result and return 
+ * instead of  if(amount%coins[ind]==0)return amount/coins[ind]; return
+ * if(amount%coins[ind]==0)return 1;
+ ------------------------------------------------------------------------------------------------------------------------
  
  
  
