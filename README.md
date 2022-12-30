@@ -139,6 +139,8 @@
 
 ##### 15) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/322.CoinChange.cpp) 322. Coin Change : [Problem Link](https://leetcode.com/problems/coin-change/description/)
 
+##### 16) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/494._Target_Sum.cpp) 494. Target Sum : [Problem Link](https://leetcode.com/problems/target-sum/description/)
+
 
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
