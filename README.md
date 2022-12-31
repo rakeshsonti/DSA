@@ -131,7 +131,7 @@
 
  ##### 11) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/Partitionasetintotwosubsetssuchthatthedifferenceofsubsetsumsisminimum.cpp) Partition a set into two subsets such that the difference of subset sums is minimum.: [Problem Link](https://www.codingninjas.com/codestudio/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum_842494)
 
-##### 12) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/NumberOfSubsets.cpp)Number Of Subsets: [Problem Link](https://www.codingninjas.com/codestudio/problems/number-of-subsets_3952532)
+##### 12) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/NumberOfSubsets.cpp) Number Of Subsets: [Problem Link](https://www.codingninjas.com/codestudio/problems/number-of-subsets_3952532)
 
 ##### 13) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/PartitionsWithGivenDifference.cpp) Partitions With Given Difference: [Problem Link](https://www.codingninjas.com/codestudio/problems/partitions-with-given-difference_3751628)
 
