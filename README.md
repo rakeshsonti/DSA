@@ -151,4 +151,15 @@
  
  ##### 3) 2516. Take K of Each Character From Left and Right: [Problem Link](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/description/)
 
+### Weekly Contest 326
+
+##### 1) 2520. Count the Digits That Divide a Numberr [Problem Link](https://leetcode.com/contest/weekly-contest-326/problems/count-the-digits-that-divide-a-number/)
+
+##### 2) 2521. Distinct Prime Factors of Product of Array [Problem Link](https://leetcode.com/contest/weekly-contest-326/problems/distinct-prime-factors-of-product-of-array/)
+
+##### 3) 2522. Partition String Into Substrings With Values at Most K [Problem Link](https://leetcode.com/contest/weekly-contest-326/problems/partition-string-into-substrings-with-values-at-most-k/)
+
+##### 4) 2523. Closest Prime Numbers in Range [Problem Link](https://leetcode.com/contest/weekly-contest-326/problems/closest-prime-numbers-in-range/)
+
+
 
