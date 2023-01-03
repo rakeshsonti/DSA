@@ -143,6 +143,9 @@
 
 ##### 17) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/518._Coin_Change_II.cpp) 518. Coin Change II : [Problem Link](https://leetcode.com/problems/coin-change-ii/description/)
 
+##### 18) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/Unbounded_Knapsack.cpp) Unbounded Knapsack : [Problem Link](https://www.codingninjas.com/codestudio/problems/unbounded-knapsack_1215029)
+
+
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
