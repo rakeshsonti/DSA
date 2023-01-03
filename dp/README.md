@@ -335,13 +335,22 @@
  * only language is different
  * i tried using + and - sign taken approach but only 132/140 cases passeed 
  ------------------------------------------------------------------------------------------------------------------------
- ### 518. Coin Change II
+### 518. Coin Change II
 ##### Memoization //tc-> O(n*target) sc->O(n)recursion+ O(n*target) n is the no of counts //without memoization tc-> O(2^n) sc-> O(target) n is the no of counts
  * This problem is similar to https://github.com/rambhajansonti/DSA/blob/master/dp/322.CoinChange.cpp
  * only language is different
  * changes i did 1e9 with 1 and instead of min added take and no take result and return 
  * instead of  if(amount%coins[ind]==0)return amount/coins[ind]; return
  * if(amount%coins[ind]==0)return 1;
+ ------------------------------------------------------------------------------------------------------------------------
+### Unbounded Knapsack
+##### tabulation with space optimation //tc-> O(n*target) sc->O(n)
+ * This problem is combination of https://github.com/rambhajansonti/DSA/blob/master/dp/0-1-Knapsack.cpp and https://github.com/rambhajansonti/DSA/blob/master/dp/322.CoinChange.cpp
+ * in coin base we have a infinity coin and in knapsack the idea is similar
+ * for tabulation in knapsack and unbounded knapsack we have one different that is infinity coin so in unbounded we are depend on current row in case of included
+ * so instead of starting second loop from n-1 to 0 we will start from 0 to n-1.
+ * **reason:-** in knapsack from included value we depend on previous row so we started from n-1 to 0  and for calculating n-2 we are only depend on 0 to n-3 value we don't even touch value from n-2 to n
+ * In unbounded knapsack for included value we are depend on current row so for calulating the current value we are depend on the value we are 0 to cap we are not touching the value from cap to n once cap calculated we replace it we new value and move ahead
  ------------------------------------------------------------------------------------------------------------------------
  
  
