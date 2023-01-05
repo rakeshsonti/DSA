@@ -352,7 +352,10 @@
  * **reason:-** in knapsack from included value we depend on previous row so we started from n-1 to 0  and for calculating n-2 we are only depend on 0 to n-3 value we don't even touch value from n-2 to n
  * In unbounded knapsack for included value we are depend on current row so for calulating the current value we are depend on the value we are 0 to cap we are not touching the value from cap to n once cap calculated we replace it we new value and move ahead
  ------------------------------------------------------------------------------------------------------------------------
+ ### Rod cutting problem
+ ##### problem similar to upnbounded knapsack
  
+ --------------------------------------------------------------------------------------------------------------------
  
  
   
