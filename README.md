@@ -145,6 +145,7 @@
 
 ##### 18) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/dp/Unbounded_Knapsack.cpp) Unbounded Knapsack : [Problem Link](https://www.codingninjas.com/codestudio/problems/unbounded-knapsack_1215029)
 
+##### 19) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Rod_cutting_problem.cpp) Rod cutting problem : [Problem Link](https://www.codingninjas.com/codestudio/problems/rod-cutting-problem_800284)
 
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
