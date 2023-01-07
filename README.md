@@ -147,6 +147,10 @@
 
 ##### 19) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Rod_cutting_problem.cpp) Rod cutting problem : [Problem Link](https://www.codingninjas.com/codestudio/problems/rod-cutting-problem_800284)
 
+**Dp On String**
+
+##### 20) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/1143.Longest_Common_Subsequence.cpp) 1143. Longest Common Subsequence : [Problem Link](https://leetcode.com/problems/longest-common-subsequence/description/)
+
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
