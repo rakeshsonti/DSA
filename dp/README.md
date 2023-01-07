@@ -356,6 +356,24 @@
  ##### problem similar to upnbounded knapsack
  
  --------------------------------------------------------------------------------------------------------------------
+ ## Dp On String 
+ -------------------------------------------------------------------------------------------------------------------
+ ### 1143. Longest Common Subsequence
+ ##### recursion with memoization    in case of non memoization tc-> 2^m * 2^n=exponancialy  sc-> O(n) recursion || tc->O(m*n) sc->O(m*n) memoization+O(m+n) auxiliary stack space
+* if we reached the out of boundary simply return 0 beacause we are not going to count it
+* we maintain two indexes to maintain two string simultaneously
+* if the current character matched from both the string then deduct the both index and count this into the result
+* if not match then we have two choices either we stood on the  index1 and deduct the index2 or stood on index2 and deduct index1
+* store the max result out of this two
+* auxilary stack space is O(m+n) **reason**: we are choosing two option in case of not match 
  
- 
-  
+##### Index shifting to understand the dp solution easily
+* Don't touch the index which belong to the dp on change the index which belong to the string1 and string 2
+
+##### tabulation + memoization //tc->O(m*n) sc->O(m*n) memoization
+* for base case we already know below two line based on recursive solution but it's not needed as dp declared with 0
+* for(int i=0;i<=m;i++)dp[i][0]=0;
+* for(int j=0;j<=n;j++)dp[0][j]=0;
+* run two loop from 1 to m and 1 to n and copy the condition of recursion and return dp[m][n] as a ans
+##### As we did space optimization earliar , follow the same from O(m*n) to O(m+n) and O(m+n) to (N)
+----------------------------------------------------------------------------------
