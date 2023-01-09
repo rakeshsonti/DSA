@@ -376,7 +376,7 @@
 * for(int j=0;j<=n;j++)dp[0][j]=0;
 * run two loop from 1 to m and 1 to n and copy the condition of recursion and return dp[m][n] as a ans
 ##### As we did space optimization earliar , follow the same from O(m*n) to O(m+n) and O(m+n) to (N)
-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 ### Print Longest Common Subsequence 
 ##### tabulation solution: //tc->O(m*n) sc->O(m*n) memoization+ O(n)
 * Solution is similar to previous question solution when we find out the length of longest common subsequence
@@ -390,5 +390,7 @@
 * we need sequence and exploring all the path is the best choice if we find out that current matching so instead of checking only the both previous element we will check first string previos and second one current and first on current and second one previous
 * previous result will help to find the value of current element
 *   return dp[ind1][ind2]=take;
------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------------------------------------------------
+### 516. Longest Palindromic Subsequence
+* reverse the string and solve the question as is it as LCS(Longest common subsequence)
+--------------------------------------------------------------------------------------------------------------------------------
