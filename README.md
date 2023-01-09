@@ -155,6 +155,8 @@
 
 ##### 22) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Longest_Common_Substring.cpp) Longest Common Substring : [Problem Link](https://www.codingninjas.com/codestudio/problems/longest-common-substring_1235207)
 
+##### 23) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/516.Longest_Palindromic_Subsequence.cpp) 516. Longest Palindromic Subsequence : [Problem Link](https://leetcode.com/problems/longest-palindromic-subsequence/submissions/874902127/)
+
 
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
