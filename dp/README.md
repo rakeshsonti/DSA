@@ -394,3 +394,7 @@
 ### 516. Longest Palindromic Subsequence
 * reverse the string and solve the question as is it as LCS(Longest common subsequence)
 --------------------------------------------------------------------------------------------------------------------------------
+### 1312. Minimum Insertion Steps to Make a String Palindrome
+* similar to Longest Palindromic Subsequence(previous question) just need to return the result from size of string
+* longest palindrom subsequence is valid string and remaining string need to change
+--------------------------------------------------------------------------------------------------------------------------------
