@@ -377,3 +377,12 @@
 * run two loop from 1 to m and 1 to n and copy the condition of recursion and return dp[m][n] as a ans
 ##### As we did space optimization earliar , follow the same from O(m*n) to O(m+n) and O(m+n) to (N)
 ----------------------------------------------------------------------------------
+### Print Longest Common Subsequence 
+##### tabulation solution: //tc->O(m*n) sc->O(m*n) memoization+ O(n)
+* Solution is similar to previous question solution when we find out the length of longest common subsequence
+* initialize the dp array similar to Longest Common Subsequence question and then start from the end and check both the index character if its similar , so include into the ans 
+* if the character is not similar then we have two choices we can move towards [i-1][j] or [i][j-1]
+* if(dp[i-1][j]>dp[i][j-1]) i--;  else j--;
+* **reason** : index which is max we will include . decreasing index means incude that into the ans
+-----------------------------------------------------------------------------------
+
