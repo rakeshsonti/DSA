@@ -151,7 +151,10 @@
 
 ##### 20) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/1143.Longest_Common_Subsequence.cpp) 1143. Longest Common Subsequence : [Problem Link](https://leetcode.com/problems/longest-common-subsequence/description/)
 
-##### 21) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/PrintLongestCommonSubsequence.cpp)Print Longest Common Subsequence : [Problem Link](https://www.codingninjas.com/codestudio/problems/longest-common-subsequence_624879)
+##### 21) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/PrintLongestCommonSubsequence.cpp) Print Longest Common Subsequence : [Problem Link](https://www.codingninjas.com/codestudio/problems/longest-common-subsequence_624879)
+
+##### 22) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Longest_Common_Substring.cpp) Longest Common Substring : [Problem Link](https://www.codingninjas.com/codestudio/problems/longest-common-substring_1235207)
+
 
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
