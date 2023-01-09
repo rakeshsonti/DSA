@@ -395,6 +395,12 @@
 * reverse the string and solve the question as is it as LCS(Longest common subsequence)
 --------------------------------------------------------------------------------------------------------------------------------
 ### 1312. Minimum Insertion Steps to Make a String Palindrome
-* similar to Longest Palindromic Subsequence(previous question) just need to return the result from size of string
+* similar to Longest Palindromic Subsequence(previous question) just need to return the result =size of string -longest common subsequence
+* longest palindrom subsequence is valid string and remaining string need to change
+--------------------------------------------------------------------------------------------------------------------------------
+### Minimum Number of Deletions and Insertions
+* similar to Longest Common Subsequence(previous question) just need to return the result=return (m+n)-(2*res);
+* m= size of first string , n= size of second string, res=common sub sequence
+* if i remove the common result from the both of the string , remaining part either i can remove or add so total size of both the string - common from the both string = result which need to remove or add
 * longest palindrom subsequence is valid string and remaining string need to change
 --------------------------------------------------------------------------------------------------------------------------------
