@@ -157,6 +157,7 @@
 
 ##### 23) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/516.Longest_Palindromic_Subsequence.cpp) 516. Longest Palindromic Subsequence : [Problem Link](https://leetcode.com/problems/longest-palindromic-subsequence/submissions/874902127/)
 
+##### 24) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/1312.Minimum_Insertion_Steps_to_Make_a_String_Palindrome.cpp) 1312. Minimum Insertion Steps to Make a String Palindrome : [Problem Link](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/)
 
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
