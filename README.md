@@ -159,6 +159,8 @@
 
 ##### 24) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/1312.Minimum_Insertion_Steps_to_Make_a_String_Palindrome.cpp) 1312. Minimum Insertion Steps to Make a String Palindrome : [Problem Link](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/)
 
+##### 25) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Minimum_Number_of_Deletions_and_Insertions.cpp) Minimum Number of Deletions and Insertions : [Problem Link](https://www.codingninjas.com/codestudio/problems/can-you-make_4244510)
+
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
@@ -177,5 +179,6 @@
 
 ##### 4) 2523. Closest Prime Numbers in Range [Problem Link](https://leetcode.com/contest/weekly-contest-326/problems/closest-prime-numbers-in-range/)
 
+----------------------------------------------------------------------------------------------------------------------------------
 
 
