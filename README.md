@@ -151,7 +151,8 @@
 
 ##### 20) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/1143.Longest_Common_Subsequence.cpp) 1143. Longest Common Subsequence : [Problem Link](https://leetcode.com/problems/longest-common-subsequence/description/)
 
-##### 19) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/PrintLongestCommonSubsequence.cpp) 1143. Longest Common Subsequence : [Problem Link](https://leetcode.com/problems/longest-common-subsequence/description/)
+##### 20) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/PrintLongestCommonSubsequence.cpp)Print Longest Common Subsequence : [Problem Link]()
+
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
