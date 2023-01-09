@@ -384,5 +384,11 @@
 * if the character is not similar then we have two choices we can move towards [i-1][j] or [i][j-1]
 * if(dp[i-1][j]>dp[i][j-1]) i--;  else j--;
 * **reason** : index which is max we will include . decreasing index means incude that into the ans
+
+##### memoization with dp soution sc-> O(m*n) +O(m+n) auxilary space stack
+*  not putted into the else part beacause we need to explore both the choices
+* we need sequence and exploring all the path is the best choice if we find out that current matching so instead of checking only the both previous element we will check first string previos and second one current and first on current and second one previous
+* previous result will help to find the value of current element
+*   return dp[ind1][ind2]=take;
 -----------------------------------------------------------------------------------
 
