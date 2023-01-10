@@ -161,6 +161,8 @@
 
 ##### 25) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Minimum_Number_of_Deletions_and_Insertions.cpp) Minimum Number of Deletions and Insertions : [Problem Link](https://www.codingninjas.com/codestudio/problems/can-you-make_4244510)
 
+##### 26) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/1092._Shortest_Common_Supersequence.cpp) 1092. Shortest Common Supersequence  : [Problem Link](https://leetcode.com/problems/shortest-common-supersequence/description/)
+
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
