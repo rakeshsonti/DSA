@@ -404,3 +404,8 @@
 * if i remove the common result from the both of the string , remaining part either i can remove or add so total size of both the string - common from the both string = result which need to remove or add
 * longest palindrom subsequence is valid string and remaining string need to change
 --------------------------------------------------------------------------------------------------------------------------------
+### 1092. Shortest Common Supersequence 
+* similar to Longest Common Subsequence
+* * in lcs we are including the common character into the ans but here we will include once if common in both the string else include only once.
+* reverse the result which we got
+---------------------------------------------------------------------------------------------------------------------------------
