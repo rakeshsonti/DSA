@@ -427,6 +427,17 @@
 * based on that we can fill zero column of all the rows as 1
 
 ---------------------------------------------------------------------------------------------------------------------------------
+### 72. Edit Distance
+#####   tc-> without memoization 3^n * 3^m * 2^m=exponantially sc->O(n+m) ||   Memoization tc->O(n*m) sc-> O(n*m)
+* if any of the index exausted we need the no of operation required so that we could insert||delete to find the result
+* if both the string matched || no operation required ||
+* we have done with both the character so decrease it
+* insert delete and replcae will be performed on s1
+* insert-> hypothetically we inserted at front position but did not change the position of i
+* delete-> we have delete the element at position i so deacrese the i
+* replace-> if we replaced means now we are looking for the new element from both the string 
+
+-----------------------------------------------------------------------------------------------------------------------------
 
 
 
