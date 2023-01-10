@@ -165,6 +165,9 @@
 
 ##### 27) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/115._Distinct_Subsequences.cpp) 115. Distinct Subsequences  : [Problem Link](https://leetcode.com/problems/distinct-subsequences/description/)
 
+##### 28) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/72._Edit_Distance.cpp) 72. Edit Distance : [Problem Link](https://leetcode.com/problems/edit-distance/description/)
+
+
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
