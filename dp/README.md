@@ -406,6 +406,29 @@
 --------------------------------------------------------------------------------------------------------------------------------
 ### 1092. Shortest Common Supersequence 
 * similar to Longest Common Subsequence
-* * in lcs we are including the common character into the ans but here we will include once if common in both the string else include only once.
+* in lcs we are including the common character into the ans but here we will include once if common in both the string else include only once.
 * reverse the result which we got
 ---------------------------------------------------------------------------------------------------------------------------------
+### 115. Distinct Subsequences
+##### without memoization tc-> 2^m *2^n =exponantialy sc-> O(m+n) ASS || tc-> O(n*m) sc->O(m*n)+O(m+n) ASS
+* take two indexes to maintain two string one string is base string in which we will search and another string which will be searched by us
+* i=main string index , j=substring (which will be searched  by us
+* **base condition:       
+* if search string find then we are returning 1
+*  **if(j<0)return 1;
+*  if base string is finished but search string still available then no way to find the result
+*  **if(i<0)return 0;
+*  if string found then reduce the index of both the string+keep searching in remaining string for the next remaining search string 
+*  not found means simply search in remaining part of the string
+* shift the index is easy . The index which depend on the main string ill be changed
+
+##### Tabulation solution: tc-> O(m*n) sc-> O(m*n)
+* from recursive solution we can see **if(j<0)return 1;
+* based on that we can fill zero column of all the rows as 1
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
