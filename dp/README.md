@@ -438,8 +438,24 @@
 * replace-> if we replaced means now we are looking for the new element from both the string 
 
 -----------------------------------------------------------------------------------------------------------------------------
+### 44. Wildcard Matching
+##### tc-> O(n*m) sc-> O(n*m)RS+O(n+m)ASS memoization with recursive approach
+* we have two index first one for text and another for pattern
+* base case: if ind1<0 && ind2<0 no character to compare return true
+* text still left to compare return false
+* pattern left to compare : - if remaining pattern contains only * then return true else return false
+* if character matched or pattern is ? then do ind1-1 and ind2-1 # ? mark can match with any character
+* else we have two choices match with * or treat * as nothing and move ahead
+* solve(text,pattern,i-1,j,dp) ||solve(text,pattern,i,j-1,dp);
+* else return false;
 
-
-
+##### Tabulation tc-> O(n*m) sc-> O(n*m)RS
+* first shift the index
+* declare two vector of size m+1
+* dp[0][0]=true; because of this->  if(i==0 &&j==0)return true;
+*  for(int i=1;i<=n;i++)dp[i][0]=false; because of if(j==0 && i>0)return false;
+*  remaining condition copy paste as is it
+##### only approax 1500 cases passing in case of space ooptimization
+----------------------------------------------------------------------------------------------------------------------
 
 
