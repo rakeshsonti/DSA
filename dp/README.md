@@ -457,5 +457,32 @@
 *  remaining condition copy paste as is it
 ##### only approax 1500 cases passing in case of space ooptimization
 ----------------------------------------------------------------------------------------------------------------------
+### 122. Best Time to Buy and Sell Stock II
+#####  tc-> O(n) sc-> O(1) iterative soln 1
+* if prices goes up don't sell
+* if price goes down sell it and book profit
+* if previous day buy prices is greater than current day prices then simply purchase a new stock without selling the prevois stock
+##### tc-> O(n) sc-> O(1) iterative soln 2
+* Just think about the profit and if price goes up simply book your profit and if it goes doun do nothing
+*  at the end you will have lot of profit
+
+#####   Memoization tc-> 2^n exponantial sc-> O(n) ASS || tc-> O(2*n) sc-> O(2*n)+O(2*n)ASS=O(n)
+* we have two choice buy it or sell it
+* if we **Buy** then we have two choices either buy it or don't buy it
+* if we **Sell** then we have two choices either sell it or don't sell it
+* profit=+sell-buy=that's the reason we put minus in buy include and minus in sell include
+* choose maximum in case of buy and sell
+
+##### Tabulation  tc-> O(2*n) sc-> O(2*n)=O(n)
+* tabulation is just opposite of recursive
+* start from n-1 to 0
+* here n+1 will be our prev and n will be the curr
+---------------------------------------------------------------------------------------------------------------------
 
 
+
+
+
+
+
+    
