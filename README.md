@@ -173,8 +173,6 @@
 
 ##### 6) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Array-Day1/BestTimetoBuyandSellStock.cpp) 121. Best Time to Buy and Sell Stock: [ltc Problem Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
-  ##### 3) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Greedy%20Algorithm/122.BestTimetoBuyandSellStockII.cpp)  122. Best Time to Buy and Sell Stock II : [ Problem Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
-
 ##### 30) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/122._Best_Time_to_Buy_and_Sell_Stock_II.cpp) 122. Best Time to Buy and Sell Stock II : [Problem Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
 
 --------------------------------------------------------------------------------------------------
