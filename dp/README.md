@@ -478,8 +478,24 @@
 * start from n-1 to 0
 * here n+1 will be our prev and n will be the curr
 ---------------------------------------------------------------------------------------------------------------------
+### 123. Best Time to Buy and Sell Stock III
+##### Memoization tc-> 2^n exponantial sc-> O(n) ASS || tc-> O(3*2*n) sc-> O(3*2*n)MS+O(n)ASS=O(n)
+* This question is similar to **Best Time to Buy and Sell Stock II**   
+* Additional is cap . We can perform only two transaction
+* if we have a cap of two . If cap become 0 we will return as 0 because we can not perform any transaction at this position
+* when we sell then only a transaction would be consider as a completed so in case of sell include we will reduce the cap
 
-
+##### Tabulation tc-> O(3*2*n) sc-> O(3*2*n)MS
+* base case is important when come to tabulation
+* if(cap==0)return 0;// cap will be 0 when ind and buy can be anything
+* if(ind==n)return 0;
+* when ind==n then cap and buy can be anything
+##### Space optimization tc-> O(3*2*n) sc-> O(2*3)+O(2*3) MZ= constant
+*  vector<vector<int>> after(2,vector<int>(3,0));
+*  vector<vector<int>> curr(2,vector<int>(3,0));
+* dp[ind+1] consider as a after
+* d[ind] consider as a curr
+------------------------------------------------------------------------------------------------------------------------------
 
 
 
