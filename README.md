@@ -181,6 +181,7 @@
 
 ##### 33) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/309._Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.cpp) 309. Best Time to Buy and Sell Stock with Cooldown : [Problem Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/)
 
+##### 34) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/714._Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.cpp) 714. Best Time to Buy and Sell Stock with Transaction Fee : [Problem Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/)
 
 
 
