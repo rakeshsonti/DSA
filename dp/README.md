@@ -495,9 +495,23 @@
 *  vector<vector<int>> curr(2,vector<int>(3,0));
 * dp[ind+1] consider as a after
 * d[ind] consider as a curr
-------------------------------------------------------------------------------------------------------------------------------
+ 
+--------------------------------------------------------------------------------------------------
+### 123. Best Time to Buy and Sell Stock III
+ ##### First Approach
+* First approach is similar to **123. Best Time to Buy and Sell Stock III** previous problem only difference is in previous problem we have transaction was 2 but here k
 
-
+ ##### Second approach memoization  || tc-> O(n*k) sc-> O(n*k)
+ * as practically we can see in case of k=2 4 transaction needed
+ * buy sell buy sell ||0 1 2 4 -> transaction is even then sell the stock
+ * if(transaction%2==0){} means buys else //sell
+ * we will keep track transaction, when we sell increse transaction by 1
+ * Now problem become similar to first approach
+ * **Base case**: if(ind==n || transaction==2*k)return 0; if there is no element left || transaction equals to 2*k
+ ---------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
 
 
 
