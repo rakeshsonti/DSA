@@ -509,8 +509,20 @@
  * Now problem become similar to first approach
  * **Base case**: if(ind==n || transaction==2*k)return 0; if there is no element left || transaction equals to 2*k
  ---------------------------------------------------------------------------------------------------------------------
- 
- 
+ ### 309. Best Time to Buy and Sell Stock with Cooldown
+ ##### Recursion memoization     tc-> 2^n exponantial sc-> O(n) ASS || tc-> O(2*n) sc-> O(2*n)=O(n)
+ * Small modification in previous problem(** 123. Best Time to Buy and Sell Stock III **) when we are selling and booking a profit instead of calling next day just call ind+2
+ * profit=max(prices[ind]+solve(prices,**ind+2**,1,n,dp),0+solve(prices,ind+1,0,n,dp));
+ * if day crossed the boundaries return 0 as we can do nothing
+ ##### Tabulation tc-> O(2*n) sc-> O(2*n)=O(n)
+ * code will be similar just increase the size of vector vector<vector<int>> dp(n+2,vector<int>(**2**,0));
+##### Space optimization 1 || tc-> O(n) sc-> O(2*n)=O(n)
+* remove the second loop which running twice instead direct write 0 and 1
+##### Space optimization 2 || tc-> O(n) sc-> O(2)+O(2)+O(2)=O(6) constant
+* instead of using **vector<vector<int>> dp(n+2,vector<int>(2,0));** 
+* vector use three vector of size 2
+* vector<int> curr(2,0),after1(2,0),after2(2,0);
+-----------------------------------------------------------------------------------------------------------------------------
  
 
 
