@@ -175,6 +175,8 @@
 
 ##### 30) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/122._Best_Time_to_Buy_and_Sell_Stock_II.cpp) 122. Best Time to Buy and Sell Stock II : [Problem Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
 
+##### 31) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/123._Best_Time_to_Buy_and_Sell_Stock_III.cpp) 123. Best Time to Buy and Sell Stock III : [Problem Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/)
+
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
