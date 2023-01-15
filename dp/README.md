@@ -523,8 +523,10 @@
 * vector use three vector of size 2
 * vector<int> curr(2,0),after1(2,0),after2(2,0);
 -----------------------------------------------------------------------------------------------------------------------------
- 
+ ### 714. Best Time to Buy and Sell Stock with Transaction Fee
+ ##### There is nothing special just add fee with minus sign (-) while purchasing the stock , so that whenever we sell it no need to think about the fee it's already included at buy time
+ * refer question **122. Best Time to Buy and Sell Stock II**
 
-
+-------------------------------------------------------------------------------------------------------------------------------
 
     
