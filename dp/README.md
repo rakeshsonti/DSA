@@ -561,6 +561,7 @@
  * if value dones not exists but occur in between the array value then it will replace the just greater of the search value
  * we are finding the length of the longest subsequence but maintaining a temp array
  * this temp array is developed by replacing the value
+ * lower bound work on binary search
  -----------------------------------------------------------------------------------------------------------------------
  ### print longest increasing subsequence
  ##### extention of previous solution only maintain on more array from storing the correct prev index so that we could find longest increasing subsequence 
