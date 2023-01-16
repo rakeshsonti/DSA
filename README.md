@@ -183,9 +183,11 @@
 
 ##### 34) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/714._Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.cpp) 714. Best Time to Buy and Sell Stock with Transaction Fee : [Problem Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/)
 
+### DP On LIS 
 
+##### 35) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Longest_Increasing_Subsequence.cpp) Longest Increasing Subsequence : [Problem Link](https://www.codingninjas.com/codestudio/problems/longest-increasing-subsequence_630459)
 
-
+##### 36) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Print_Longest_Increasing_Subsequence.cpp) Print Longest Increasing Subsequence : [Problem Link](https://www.codingninjas.com/codestudio/problems/longest-increasing-subsequence_630459)
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
  ##### 1) 2517. Maximum Tastiness of Candy Basket: [Problem Link](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/)
