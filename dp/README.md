@@ -522,11 +522,42 @@
 * instead of using **vector<vector<int>> dp(n+2,vector<int>(2,0));** 
 * vector use three vector of size 2
 * vector<int> curr(2,0),after1(2,0),after2(2,0);
------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
  ### 714. Best Time to Buy and Sell Stock with Transaction Fee
  ##### There is nothing special just add fee with minus sign (-) while purchasing the stock , so that whenever we sell it no need to think about the fee it's already included at buy time
  * refer question **122. Best Time to Buy and Sell Stock II**
 
--------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+### Longest Increasing Subsequence
+##### Memoization recursion TC-> O(N*N) SC-> O(N*M)+O(N)
+ * Run time error || contraints 10^5 * 10^5 -> not possible to declare a array of size 10^10
+ * maintain two index prev and current
+ *  if(index>=n)return 0;//do not proceed with next step
+ * have only two either take or not take
+ * donttake-> increase the current index and prev will be the as is it
+ * if prev==-1 then we will buy because first time we need to purchase 
+ * include current element if it is greater than previos element
+ * return whichever is maximum
+ 
+ ##### Tabulation TC-> o(N*N) SC-> O(N*M)
+ * while converting to DP make sure you did cordinate shift on second parameter
+ * in tabulation solution we need to maintain cordinate shift for prev index . **Reason:** we are using prev from -1 index
+ * run first loop from the n-1 to 0
+ * run second loop from ind-1 to -1. prev can not be greater than curr element that the reson we start from curr-1
+ 
+ ##### Another mthod based on prediction:
+ * take a dp array of size n
+ * take maximum as 1 because atleast one element will be there 
+ * run first loop from 0 to n
+ * run second loop from 0 to curr
+ * if prev is small than current then replace current dp value with current or prev+1
+ -----------------------------------------------------------------------------------------------------------------------
+ ### print longest increasing subsequence
+ ##### extention of previous solution only maintain on more array from storing the correct prev index so that we could find longest increasing subsequence 
+ * need to dry run
+ * https://www.youtube.com/watch?v=IFfYfonAFGc
+--------------------------------------------------------------------------------------------------------------
 
-    
+ 
+ 
+ 
