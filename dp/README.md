@@ -574,6 +574,8 @@
  * in case of 16 we have options [5,16][4,16][11,16] and [1,16] but 16 choose 11 as a prev index because 11 has count bigger
  * keep track of maximum LIS value so that at the end we could start backtracking our result from that index
  * once LIS found we backtrack
+ ![image](https://user-images.githubusercontent.com/52101117/213391169-7f9d3158-aa4c-4e18-bae8-ae884fe942cc.png)
+
 --------------------------------------------------------------------------------------------------------------
 ### 368. Largest Divisible Subset
  * question similar to **print longest increasing subsequence** only change is we changed > to % and sorted the array so that we could decide he order to devide the value nums[i]%nums[j]
