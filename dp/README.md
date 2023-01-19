@@ -581,6 +581,9 @@
  * question similar to **print longest increasing subsequence** only change is we changed > to % and sorted the array so that we could decide he order to devide the value nums[i]%nums[j]
  
  -----------------------------------------------------------------------------------------------------------------------
- 
- 
- 
+ ### Longest Bitonic Sequence
+ ##### Tabulation solution tc-> O(n*n) sc-> O(n)+O(n)
+ * This problem is similar to **Longest Increasing Subsequence**
+* In case of LIS we were finding the incresing subsequence from left to right but here we find incresing subsequence from left to right and then left to right
+ * after that we will add both of them and decrease by 1 and find the max value which is our ans
+ ------------------------------------------------------------------------------------------------------------------- 
