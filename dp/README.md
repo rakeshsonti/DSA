@@ -588,3 +588,15 @@
 * In case of LIS we were finding the incresing subsequence from left to right but here we find incresing subsequence from left to right and then left to right
  * after that we will add both of them and decrease by 1 and find the max value which is our ans
  ------------------------------------------------------------------------------------------------------------------- 
+### 673. Number of Longest Increasing Subsequence
+##### Tabulation || tc-> O(n*n) sc-> O(n)+O(n)
+* this question is similar to LIS question only difference is that here we need to count the total no of subsequence 
+* we maintain the length of the each subsequence at current index in dp
+* if we found at current index , one more subsequence exists with the same length then update it to cnt vector else update the current count to cnt vector
+* at the end count the all subsequence in cnt vector of size maxi (max length LIS)
+ -------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
