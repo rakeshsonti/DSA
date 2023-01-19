@@ -191,6 +191,9 @@
 
 ##### 37) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/368._Largest_Divisible_Subset.cpp) 368. Largest Divisible Subset : [Problem Link](https://leetcode.com/problems/largest-divisible-subset/description/)
 
+##### 38) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Longest_Bitonic_Sequence.cpp) Longest Bitonic Sequence : [Problem Link](https://www.codingninjas.com/codestudio/problems/longest-bitonic-sequence_1062688)
+
+
 
 --------------------------------------------------------------------------------------------------
 ### Contest Weekly Contest 325
