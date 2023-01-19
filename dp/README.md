@@ -565,8 +565,8 @@
  -----------------------------------------------------------------------------------------------------------------------
  ### print longest increasing subsequence
  ##### extention of previous solution only maintain on more array from storing the correct prev index so that we could find longest increasing subsequence 
- * need to dry run
- * https://www.youtube.com/watch?v=IFfYfonAFGc
+ * this question is similar to the LIS(Longest incresing subsequence) question. In LIS question we are finding the LIS index.
+ * while finding the LIS we will keep track of prev index eg. [5 4 11 1 16 8] for 
 --------------------------------------------------------------------------------------------------------------
 
  
