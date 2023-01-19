@@ -193,6 +193,8 @@
 
 ##### 38) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Longest_Bitonic_Sequence.cpp) Longest Bitonic Sequence : [Problem Link](https://www.codingninjas.com/codestudio/problems/longest-bitonic-sequence_1062688)
 
+##### 39) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Longest_Bitonic_Sequence.cpp) 673. Number of Longest Increasing Subsequence : [Problem Link](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/)
+
 
 
 --------------------------------------------------------------------------------------------------
