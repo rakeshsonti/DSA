@@ -1,6 +1,7 @@
 //print longest incresing subsequence
+//Algorithmic approach
 #include<bits/stdc++.h>
-//TC-> o(N*N) SC-> O(N)
+//TC-> O(N*N) SC-> O(N)
 int longestIncreasingSubsequence(int nums[], int n)
 {
   vector<int>dp(n,1),hash(n);
@@ -13,17 +14,22 @@ int longestIncreasingSubsequence(int nums[], int n)
                 hash[i]=prev;
             }
         }
+        //keep track if we found any other maximum till now
         if(dp[i]>maximum){
             maximum=dp[i];
+            //lastindex tell me this is the index where i putted the maximum LIS value in DP
             lastIndex=i;
         }
     }
     vector<int> tmp;
-    tmp.push_back(nums[lastIndex]);    
+    tmp.push_back(nums[lastIndex]); 
+    //there no prev element before first element or the element which don't have any lesser element before it contains the same index
     while(hash[lastIndex]!=lastIndex){
+    //tracing the prev element
         lastIndex=hash[lastIndex];
          tmp.push_back(nums[lastIndex]);    
     }
+    //according to the question result
     reverse(tmp.begin(),tmp.end());
     for(auto x:tmp)cout<<x<<" ";
     cout<<endl;
