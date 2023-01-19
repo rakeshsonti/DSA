@@ -566,9 +566,19 @@
  ### print longest increasing subsequence
  ##### extention of previous solution only maintain on more array from storing the correct prev index so that we could find longest increasing subsequence 
  * this question is similar to the LIS(Longest incresing subsequence) question. In LIS question we are finding the LIS index.
- * while finding the LIS we will keep track of prev index eg. [5 4 11 1 16 8] for 
+ * while finding the LIS we will keep track of prev index eg. [5 4 11 1 16 8] 
+ * declare a hash array and initially assign with 1 because each element is a MIN LIS
+ * dp[1 1 2 1 3 2] and hash[0 1 0 3 2 0]
+ * in case of 11 we have two subset with prev element [5,11] and [4,11] but as a prev index and counting we choose 0(5) not 1(4) 
+ * because we are getting the desired value from the first element and getting the same value from 4 so ignore it
+ * in case of 16 we have options [5,16][4,16][11,16] and [1,16] but 16 choose 11 as a prev index because 11 has count bigger
+ * keep track of maximum LIS value so that at the end we could start backtracking our result from that index
+ * once LIS found we backtrack
 --------------------------------------------------------------------------------------------------------------
-
+### 368. Largest Divisible Subset
+ * question similar to **print longest increasing subsequence** only change is we changed > to % and sorted the array so that we could decide he order to devide the value nums[i]%nums[j]
+ 
+ -----------------------------------------------------------------------------------------------------------------------
  
  
  
