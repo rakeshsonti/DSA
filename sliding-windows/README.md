@@ -55,13 +55,16 @@ The second way is known as the Sliding window technique and the portion which is
 * calculate the max length ||  maxValue=max(maxValue,(right-left+1)); +1 because of o based indexing
 * if value exists then remove the first index value and increse the left pointer by 1
 
-##### tc-> O(n) sc->O(n) || frequency array is sliatly faster than map
+##### tc-> O(n) sc->O(n) || frequency array is slightly faster than map
 * use a map to store the index of element occurs previously 
 * iterate the string from 0 to n-1
 * if value exists then increase the left pointer and assign the left value to max of left and mp[ch]
 * left=max(mp[ch]+1,left);
 * there can be a situation where left moved ahead and mp[ch] has a lower value so instead of mp[ch] we will choose left e.g. "abba"
 -----------------------------------------------------------------------------------------------------------------------
-
-
-
+### 1004. Max Consecutive Ones III
+##### tc-> O(N) sc-> O(1) 
+* we use two pointer left and right 
+* we will keep moving right pointer till we got 1 and k zeros.
+* once we lost k zeros , shift left pointer to first zero and again start counting the window size
+-------------------------------------------------------------------------------------------------------------
