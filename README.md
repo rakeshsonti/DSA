@@ -220,4 +220,6 @@
 
 ##### 1) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/3._Longest_Substring_Without_Repeating_Characters.cpp) 3. Longest Substring Without Repeating Characters : [Problem Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
 
+##### 2) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/1004._Max_Consecutive_Ones_III.cpp) 1004. Max Consecutive Ones III : [Problem Link](https://leetcode.com/problems/max-consecutive-ones-iii/description/)
+
 
