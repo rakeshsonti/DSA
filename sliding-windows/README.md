@@ -1,4 +1,4 @@
-# Sliding Winodws
+# Sliding Winodws || Two Pointer
   ### Definations: 
   ````
 The Sliding window is a problem-solving technique of data structure and algorithm for problems that apply arrays or lists.
