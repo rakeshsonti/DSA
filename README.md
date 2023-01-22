@@ -216,22 +216,8 @@
 ##### 4) 2523. Closest Prime Numbers in Range [Problem Link](https://leetcode.com/contest/weekly-contest-326/problems/closest-prime-numbers-in-range/)
 
 -----------------------------------------------------------------------------------------------------------------------------
-## Sliding Winodws || Two Pointer
+### Sliding Winodws || Two Pointer
 
-### 3. Longest Substring Without Repeating Characters
-##### tc-> O(n+n)=O(2n) sc-> O(n) || not passing all the test case
-* We will use two pointer left and right
-* use set to find duplicate value
-* iterate string 0 to n-1
-* if value does not exists into the set then increse the right pointer by one and insert the value into the set 
-* calculate the max length ||  maxValue=max(maxValue,(right-left+1)); +1 because of o based indexing
-* if value exists then remove the first index value and increse the left pointer by 1
+##### 1) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/3._Longest_Substring_Without_Repeating_Characters.cpp) 3. Longest Substring Without Repeating Characters : [Problem Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
 
-##### tc-> O(n) sc->O(n) || frequency array is sliatly faster than map
-* use a map to store the index of element occurs previously 
-* iterate the string from 0 to n-1
-* if value exists then increase the left pointer and assign the left value to max of left and mp[ch]
-* left=max(mp[ch]+1,left);
-* there can be a situation where left moved ahead and mp[ch] has a lower value so instead of mp[ch] we will choose left e.g. "abba"
------------------------------------------------------------------------------------------------------------------
 
