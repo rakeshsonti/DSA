@@ -222,4 +222,7 @@
 
 ##### 2) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/1004._Max_Consecutive_Ones_III.cpp) 1004. Max Consecutive Ones III : [Problem Link](https://leetcode.com/problems/max-consecutive-ones-iii/description/)
 
+##### 3) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/904._Fruit_Into_Baskets.cpp) 904. Fruit Into Baskets : [Problem Link](https://leetcode.com/problems/fruit-into-baskets/description/)
+
+
 
