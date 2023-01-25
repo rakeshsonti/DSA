@@ -68,3 +68,16 @@ The second way is known as the Sliding window technique and the portion which is
 * we will keep moving right pointer till we got 1 and k zeros.
 * once we lost k zeros , shift left pointer to first zero and again start counting the window size
 -------------------------------------------------------------------------------------------------------------
+### 904. Fruit Into Baskets
+##### Two pointer approach || tc-> O(n) sc-> O(constant)
+* we will take one map to count the frequency
+* iterate value from 0 to n-1
+* if value does not exists into the map simply add else increase the count
+* if map contains more than two type of fruits then simply start removing the fruits from the map
+* remove or descrease the frequency till map contains less then equals 2 type of fruits
+* calculate the max windows size till now
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
