@@ -232,5 +232,7 @@
 
 ##### 7) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/1358._Number_of_Substrings_Containing_All_Three_Characters.cpp) 1358. Number of Substrings Containing All Three Characters : [Problem Link](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/)
 
+##### 8) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/1423._Maximum_Points_You_Can_Obtain_from_Cards.cpp) 1423. Maximum Points You Can Obtain from Cards : [Problem Link](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/description/)
+
 
 
