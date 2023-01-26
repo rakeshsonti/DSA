@@ -100,6 +100,22 @@ The second way is known as the Sliding window technique and the portion which is
 * if value if even change it to 0 else 1
 * similar to : 930. Binary Subarrays With Sum
 ----------------------------------------------------------------------------------------------------------------------------
+### 1358. Number of Substrings Containing All Three Characters
+##### Bruite foarce approach || tc-> O(n^2) sc-> O(1)
+* run a loop from 0 to n-1
+* run another loop from i to n-1
+* append a substr from j to n-1 and check in each iteration if it contains all three character
+* if all three character present then count it
+##### Sliding window+ map approach || tc->O(n) sc->O(n) extra space=contant space O(3)
+* iterate the string from 0 to n-1
+* use map to store the frequency so that we could avoid the second loop
+* increate the frequency of the current character
+* check if map contains all three character
+* count+=1+(end-right);
+* 1 for current substr+include all the substr which is right side
+* as we already calculated the current left pointer so decrease the frequency and increase the left pointer till map frequency does not meet the all three unique character condition
+* increase right pointer in each step
+-----------------------------------------------------------------------------------------------------------------
 
 
 
