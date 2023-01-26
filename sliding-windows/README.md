@@ -1,4 +1,4 @@
-# Sliding Winodws || Two Pointer
+### Sliding Winodws || Two Pointer
   ### Definations: 
   ````
 The Sliding window is a problem-solving technique of data structure and algorithm for problems that apply arrays or lists.
@@ -43,9 +43,9 @@ The second way is known as the Sliding window technique and the portion which is
 * Shortest value
 * K-sized value
 
------------------------------------------------------------------------------------------------------------------------
-## Sliding Winodws || Two Pointer
-----------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+### Sliding Winodws || Two Pointer
+-------------------------------------------------------------------------------------------------------------------------
 ### 3. Longest Substring Without Repeating Characters
 ##### tc-> O(n+n)=O(2n) sc-> O(n) || not passing all the test case
 * We will use two pointer left and right
@@ -61,13 +61,13 @@ The second way is known as the Sliding window technique and the portion which is
 * if value exists then increase the left pointer and assign the left value to max of left and mp[ch]
 * left=max(mp[ch]+1,left);
 * there can be a situation where left moved ahead and mp[ch] has a lower value so instead of mp[ch] we will choose left e.g. "abba"
------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 ### 1004. Max Consecutive Ones III
 ##### tc-> O(N) sc-> O(1) 
 * we use two pointer left and right 
 * we will keep moving right pointer till we got 1 and k zeros.
 * once we lost k zeros , shift left pointer to first zero and again start counting the window size
--------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 ### 904. Fruit Into Baskets
 ##### Two pointer approach || tc-> O(n) sc-> O(constant)
 * we will take one map to count the frequency
@@ -76,7 +76,7 @@ The second way is known as the Sliding window technique and the portion which is
 * if map contains more than two type of fruits then simply start removing the fruits from the map
 * remove or descrease the frequency till map contains less then equals 2 type of fruits
 * calculate the max windows size till now
--------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
 ### 424. Longest Repeating Character Replacement
 ##### Sliding window: tc-> O(n) sc->O(n) || tc-> O(n) sc->O(256) = constant O(1)
 * take a map and iterate the string 0 to n-1
@@ -86,7 +86,7 @@ The second way is known as the Sliding window technique and the portion which is
 * remaining character=windowsize-maxFrequecy
 * if remaining character is greater than k means current window is not valid so start increasing the left pointer and make sure window is valid
 * we are using constant space as 256 so space complexity is O(1)
----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 ### 930. Binary Subarrays With Sum
 ##### hashmap approach tc-> O(n) sc-> O(n)
 * count the prefix sum
@@ -94,4 +94,14 @@ The second way is known as the Sliding window technique and the portion which is
 * if not available then include **prefix-goal** frequency to map 
 ##### sliding window approach tc-> O(n) sc-> O(1)
 * It is quite self explanatory we calculate all the subarrays with atmost sum goal. Then substract no. of subarrays with atmost sum goal-1. Substract and giving us subarrays of only sum goal.
-----------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+### 1248. Count Number of Nice Subarrays
+##### This problem is similar to previous problem just need to change the input
+* if value if even change it to 0 else 1
+* similar to : 930. Binary Subarrays With Sum
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
