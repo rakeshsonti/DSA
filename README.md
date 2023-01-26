@@ -226,5 +226,9 @@
 
 ##### 4) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/424._Longest_Repeating_Character_Replacement.cpp) 424. Longest Repeating Character Replacement : [Problem Link](https://leetcode.com/problems/longest-repeating-character-replacement/description/)
 
+##### 5) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/930._Binary_Subarrays_With_Sum.cpp) 930. Binary Subarrays With Sum : [Problem Link](https://leetcode.com/problems/binary-subarrays-with-sum/description/)
+
+##### 6) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/1248._Count_Number_of_Nice_Subarrays.cpp) 1248. Count Number of Nice Subarrays : [Problem Link](https://leetcode.com/problems/count-number-of-nice-subarrays/description/)
+
 
 
