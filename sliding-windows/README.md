@@ -116,8 +116,12 @@ The second way is known as the Sliding window technique and the portion which is
 * as we already calculated the current left pointer so decrease the frequency and increase the left pointer till map frequency does not meet the all three unique character condition
 * increase right pointer in each step
 -----------------------------------------------------------------------------------------------------------------
-
-
-
-
-
+### 1423. Maximum Points You Can Obtain from Cards
+##### Sliding windows approach || tc-> O(k)+O(k)=O(k) sc-> O(1)
+* According to the problem they don't mention that we have to include the element from the start and end in contigious passion
+* include k element from the start of the array
+* now store the some in final ans
+* iterat array i=0 to i<k
+* now remove one element from the k-i-1 position and add element at n-i-1 position
+* check if adding and removing benefit the final ans if yes then include this operation else ignore this two index and focus on next index
+ --------------------------------------------------------------------------------------------------------------
