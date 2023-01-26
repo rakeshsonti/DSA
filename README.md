@@ -234,5 +234,7 @@
 
 ##### 8) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/1423._Maximum_Points_You_Can_Obtain_from_Cards.cpp) 1423. Maximum Points You Can Obtain from Cards : [Problem Link](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/description/)
 
+##### 9) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/Longest_K_unique_characters_substring.cpp) Longest K unique characters substring : [Problem Link](https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1)
+
 
 
