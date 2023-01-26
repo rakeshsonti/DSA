@@ -87,5 +87,11 @@ The second way is known as the Sliding window technique and the portion which is
 * if remaining character is greater than k means current window is not valid so start increasing the left pointer and make sure window is valid
 * we are using constant space as 256 so space complexity is O(1)
 ---------------------------------------------------------------------------------------------------------------
-
-
+### 930. Binary Subarrays With Sum
+##### hashmap approach tc-> O(n) sc-> O(n)
+* count the prefix sum
+* check if **prefix-goal** already available then include count to ans
+* if not available then include **prefix-goal** frequency to map 
+##### sliding window approach tc-> O(n) sc-> O(1)
+* It is quite self explanatory we calculate all the subarrays with atmost sum goal. Then substract no. of subarrays with atmost sum goal-1. Substract and giving us subarrays of only sum goal.
+----------------------------------------------------------------------------------------------------------
