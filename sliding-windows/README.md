@@ -125,3 +125,25 @@ The second way is known as the Sliding window technique and the portion which is
 * now remove one element from the k-i-1 position and add element at n-i-1 position
 * check if adding and removing benefit the final ans if yes then include this operation else ignore this two index and focus on next index
  --------------------------------------------------------------------------------------------------------------
+### Longest K unique characters substring
+##### Solution using Map
+* this problem is similar to **930. Binary Subarrays With Sum** problem 
+* use map to store frequency
+* if map size is greater than k than simply remove the element from the position left
+* if map size equals to k then count the result
+##### O(1) approach
+* use constant vector of size 26 to store only frequenct
+* use distCount to count the distinct element
+* if distCount is less than k so increase the frequenct of the element into to the frequency array 
+* if distCount is equals to k then calculate the result and increase the frequency
+* if the distCount is over the limit then increase the left pointer and decrese the frequency
+* we are incresing and decresing the distCount when first time it enter to the frequency array and last element left into the array
+* **How vector working at place of map** : index of vector is working place of map key and value is as is it as value of the map
+* we are using fixed size of vector so sc-> O(1)
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
