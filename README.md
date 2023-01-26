@@ -224,5 +224,7 @@
 
 ##### 3) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/904._Fruit_Into_Baskets.cpp) 904. Fruit Into Baskets : [Problem Link](https://leetcode.com/problems/fruit-into-baskets/description/)
 
+##### 4) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/424._Longest_Repeating_Character_Replacement.cpp) 424. Longest Repeating Character Replacement : [Problem Link](https://leetcode.com/problems/longest-repeating-character-replacement/description/)
+
 
 
