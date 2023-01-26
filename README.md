@@ -230,5 +230,7 @@
 
 ##### 6) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/1248._Count_Number_of_Nice_Subarrays.cpp) 1248. Count Number of Nice Subarrays : [Problem Link](https://leetcode.com/problems/count-number-of-nice-subarrays/description/)
 
+##### 7) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/sliding-windows/1358._Number_of_Substrings_Containing_All_Three_Characters.cpp) 1358. Number of Substrings Containing All Three Characters : [Problem Link](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/)
+
 
 
