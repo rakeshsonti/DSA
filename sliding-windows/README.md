@@ -141,9 +141,26 @@ The second way is known as the Sliding window technique and the portion which is
 * **How vector working at place of map** : index of vector is working place of map key and value is as is it as value of the map
 * we are using fixed size of vector so sc-> O(1)
 --------------------------------------------------------------------------------------------------------------
-
-
-
+### 992. Subarrays with K Different Integers
+ ``
+ This problem is similar to **Longest K unique characters substring** problem
+ ``
+##### map solution || tc-> O(n)+O(n)=O(n) sc-> O(n)
+  * take a map to store frequency of element
+  * iterate all he element from 0 to n-1
+  * increase the frequency of the element in map
+  * if unique element cross the boundary then remove it from the map till frequency is not maintained
+  * they asked for exacly k but over solution contains till k so k-(k-1)=exactly k
+  * return solve(nums,k)-solve(nums,k-1);
+##### frequency array solution || tc-> O(n) sc->O(20003) constant
+  * if they asked for k<=0 then simply return 0
+  * iterate the element from 0 to n-1
+  * take a variable dist to maintain the count of unique element
+  * if count of element in map is 0 then first time its occuring so add it to dist
+  * calcualate the result if dist is less than k
+  * if dist is greater than k then maintain the unique element till the unique element become less than equals to k
+  * add all the result as question want exact k th solution so ans=result till k - result till k-1
+------------------------------------------------------------------------------------------------------------
 
 
 
