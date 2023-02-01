@@ -103,6 +103,10 @@
   ##### 2) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/Greedy%20Algorithm/N_meetings_in_one_room.cpp)  Minimum Plateform : [cdn Problem Link](https://www.codingninjas.com/codestudio/problems/799400) || [gfg](https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#)
   
   ##### 3) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Greedy%20Algorithm/122.BestTimetoBuyandSellStockII.cpp)  122. Best Time to Buy and Sell Stock II : [ Problem Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
+
+##### 4) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/Greedy%20Algorithm/455._Assign_Cookies.cpp)  455. Assign Cookies : [ Problem Link](https://leetcode.com/problems/assign-cookies/)
+
+
  -----------------------------------------------------------------------------------------
 ### Kadane
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/kadane/MaximumProductSubarray.cpp)  152. Maximum Product Subarray: [lc Problem Link](https://leetcode.com/problems/maximum-product-subarray/)
