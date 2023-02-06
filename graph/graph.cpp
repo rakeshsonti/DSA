@@ -43,7 +43,7 @@ return 0;
 }
 void representGraph(){
 	//tc-> O(n) sc-> O(n*n)
-   cout << "Matrix way to store graph"<<endl;
+   cout << "Adjacency Array/Matrix way to store graph"<<endl;
     int n, m;
 	cin>>n>>m;
 	int adj[n+1][m+1];
@@ -55,6 +55,7 @@ void representGraph(){
 	}
 	
 	//---------------------------------------------------------
+	//Adjacancy List way
 	//sc-> O(2*E) E is edges (better)
 	 int n,m;
 	 //n-node, m-edges
