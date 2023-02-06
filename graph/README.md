@@ -11,7 +11,10 @@
 
 ![image](https://user-images.githubusercontent.com/52101117/217024532-f69a7387-639b-4903-af56-d3da55e0a8af.png)
 
+--------------------------------------------------------------------------------------------------------------------------------
+**All can be one graph**
 
+![image](https://user-images.githubusercontent.com/52101117/217027105-44a57833-0a8d-4b4e-8082-0a280cc49bad.png)
 
 
 
