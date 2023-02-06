@@ -42,6 +42,20 @@ int main(){
 return 0;
 }
 void representGraph(){
+	//tc-> O(n) sc-> O(n*n)
+   cout << "Matrix way to store graph"<<endl;
+    int n, m;
+	cin>>n>>m;
+	int adj[n+1][m+1];
+	for(int i=0;i<n;i++){
+			int u,v;
+			cin>>u>>v;
+			adj[u][v]=1;
+			adj[v][u]=1;
+	}
+	
+	//---------------------------------------------------------
+	//sc-> O(2*E) E is edges (better)
 	 int n,m;
 	 //n-node, m-edges
 	 cin>>n>>m;
