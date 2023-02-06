@@ -55,28 +55,58 @@ void representGraph(){
 	}
 	
 	//---------------------------------------------------------
-	//Adjacancy List way
+	//Adjacancy List way to store matrix
 	//sc-> O(2*E) E is edges (better)
 	 int n,m;
 	 //n-node, m-edges
 	 cin>>n>>m;
 	 vector<int> adj[n+1];
-	 for(int i=0;i<m;i++){
-		 int u,v;
-		 cin>>u>>v;
-		 adj[u].push_back(v);
-		 adj[v].push_back(u);
-		 /*
-		if directed graph
-		adj[u].push_back(v);
-		//adj[v].push_back(u);
-		 */
-		/*
-		 vector<pair<int,int>> adj[n+1];
-		adj[u].push_back({v,wt});
-		adj[v].push_back({u,wt});
+ for(int i=0;i<m;i++){
+	 int u,v;
+	 cin>>u>>v;
+	 adj[u].push_back(v);
+	 adj[v].push_back(u);
+	 /*
+	if directed graph
+	//sc-> O(E) e-edges
+	adj[u].push_back(v);
+	//adj[v].push_back(u);
+	 */
+	/*
+	 vector<pair<int,int>> adj[n+1];
+	adj[u].push_back({v,wt});
+	adj[v].push_back({u,wt});
 
 		*/
+ //----------------------------------------------------------------
+ //waighted graph
+	//tc-> O(n) sc-> O(n*n)
+   cout << "Adjacency Array/Matrix way to store graph"<<endl;
+    int n, m;
+cin>>n>>m;
+int adj[n+1][m+1];
+for(int i=0;i<n;i++){
+	int u,v,wt;
+cin>>wt;
+	cin>>u>>v;
+	adj[u][v]=wt;
+	adj[v][u]=wt;
+}
+ //----------------------------------------
+//Adjacancy List way to store matrix waighted graph
+	//sc-> O(2*E) E is edges (better)
+	 int n,m;
+	 //n-node, m-edges
+	 cin>>n>>m;
+	 vector<pair<int,int>> adj[n+1];
+ for(int i=0;i<m;i++){
+	 int u,v;
+	 cin>>u>>v;//{edge,waight}
+	 adj[u].push_back({1,2});
+	 adj[v].push_back({3,4});		 
+		 
+		 
+		 
 	 }
 
 }
