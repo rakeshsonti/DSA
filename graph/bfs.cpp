@@ -54,22 +54,33 @@ int main()
     cout << endl;
     return 0;
 }
+//level order traversing technique
 vector<int> bfs(int v, vector<int> adj[])
 {
+    //Answer data structure
     vector<int> bfs;
+    //visited array
     vector<int> vis(v + 1, 0);
+    //Visited all the element one by one and if element already visited then check next element
+    //this element is considered as start element
     for (int i = 1; i <= v; i++)
     {
         if (!vis[i])
         {
+            //FIFO(First In First Out)
             queue<int> q;
+            //push start element into the queue and marks as visited
             q.push(i);
             vis[i] = 1;
+            //run the loop till queue is not empty
+            //remove the element from the queue and add to ans
             while (!q.empty())
             {
                 int node = q.front();
                 q.pop();
                 bfs.push_back(node);
+                //marks all the sub element which can be visited by considering the queue element as a start element 
+               //and add all the sub-element to the queue 
                 for (auto it : adj[node])
                 {
                     if (!vis[it])
