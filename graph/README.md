@@ -23,8 +23,13 @@
 * instead of storing the result of all sub element, iterate over its depth and then store the result into the result.
 
 --------------------------------------------------------------------------------------------------------------------------------------
+##### 547. Number of Provinces   
+> tc-> O(n) for checking all the element+(O(V+2E)) = O(n)
+> sc->O(n) visiting array +O(n) stack space (in case of skeved 
 
-
+* first the convert the given matrix to adjcancy vector
+* call dfs for all the elements and if the element is not already visited then count the result.
+--------------------------------------------------------------------------------------------------
 
 
 
