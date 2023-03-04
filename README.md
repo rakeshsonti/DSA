@@ -245,4 +245,6 @@
 ### Graph
 ##### 1) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/bfs.cpp) BFS of graph : [Problem Link](https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1)
 
+##### 2) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/bfs.cpp) DFS of Graph : [Problem Link](https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1)
+
 
