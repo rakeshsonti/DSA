@@ -247,4 +247,6 @@
 
 ##### 2) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/bfs.cpp) DFS of Graph : [Problem Link](https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1)
 
+##### 3) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/547._Number_of_Provinces.cpp) DFS of Graph : [Problem Link](https://practice.geeksforgeeks.org/problems/number-of-provinces/1)
+
 
