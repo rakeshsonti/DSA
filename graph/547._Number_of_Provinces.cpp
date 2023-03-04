@@ -1,6 +1,6 @@
 class Solution {
-  //tc-> O(n) for checking all the element*(O(V+2E)) 
-  //sc->O(n) visiting array +O(n) stack space
+  //tc-> O(n) for checking all the element+(O(V+2E)) = O(n)
+  //sc->O(n) visiting array +O(n) stack space (in case of skeved tree)
 public:
     int findCircleNum(vector<vector<int>>& isConnected) {
       int v=isConnected[0].size();
