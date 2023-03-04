@@ -18,7 +18,11 @@
 ![image](https://user-images.githubusercontent.com/52101117/217027105-44a57833-0a8d-4b4e-8082-0a280cc49bad.png)
 
 --------------------------------------------------------------------------------------------------
+##### DFS (Depth first search) SC-> O(n) storing+O(n) visited +O(n) stack sapce ~ O(n) tc-> undirected GF=sum of degree of node=2*Edges+O(n) iteration of element || directed graph O(n) + O(E)
+* as its name shows first iterate to the depth of the graph . We have multiple type of depth first search algorithm
+* instead of storing the result of all sub element, iterate over its depth and then store the result into the result.
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 
 
