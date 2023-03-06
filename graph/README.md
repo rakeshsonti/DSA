@@ -29,8 +29,18 @@
 
 * first the convert the given matrix to adjcancy vector
 * call dfs for all the elements and if the element is not already visited then count the result.
---------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
 
+##### 994. Rotting Oranges
+ > tc->  O(N*M)visit first time +O((N*M)*4)queue=o(N*M)
+ > sc-> O(N*M) QUEUE +o(N*M) VIS=o(N*M)
+* create an vising array of size nm and queue which can queue<{row,col},time}> store the data which can be rotten
+* first push all the rotten value to queue with time 0
+* create drow and crow array to find the neightbour of current element
+* run a loop till queue is not empty
+* pop an element and find all the neighbour of that element and check if current element can be rotten and already not visited then push current element with time and marks as visited
+* also maintian total and cnt to check weather all the elements are rotten or not if not then return -1 else the max time
+--------------------------------------------------------------------------------------------------------------------------------------
 
 
 
