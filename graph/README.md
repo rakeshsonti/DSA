@@ -41,6 +41,26 @@
 * pop an element and find all the neighbour of that element and check if current element can be rotten and already not visited then push current element with time and marks as visited
 * also maintian total and cnt to check weather all the elements are rotten or not if not then return -1 else the max time
 --------------------------------------------------------------------------------------------------------------------------------------
+##### 733. Flood Fill
+> //tc-> O(n*m*4) sc-> O(n*m) matrix to store the ans +O(n*m)stack space || queue space
+###### BFS
+* they provided initial row col index to start the bfs
+* store given initial value to queue and apply bfs as run loop till queue is not empty
+* assign image to vis vector
+* fetch one element from the queue and check all neighbour, index value should be under 0>= and <=m,<=n
+* image contains all the color
+* change value if current element color is same as first element color and already not changed to new color . Change it to given color(new color) if same
+* ```` if(nrow>=0 && ncol>=0 && nrow<n &&ncol<m
+              &&image[nrow][ncol]==initColor && vis[nrow][ncol]!=newColor){
+                q.push({nrow,ncol});
+                vis[nrow][ncol]=newColor;
+               }
+  ````
+ ##### DFS
+  * condition will be same as bfs only instead of storing value to qeue we will call recursively . Need to main some value in parameter
+  * call recursion with sr and sc and later on change if any value row col value found
+  --------------------------------------------------------------------------------------------------------------------------------------
+                                          
 
 
 
