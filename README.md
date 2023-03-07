@@ -249,4 +249,8 @@
 
 ##### 3) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/547._Number_of_Provinces.cpp) DFS of Graph : [Problem Link](https://practice.geeksforgeeks.org/problems/number-of-provinces/1)
 
+##### 4) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/547._Number_of_Provinces.cpp) 994. Rotting Oranges : [Problem Link](https://leetcode.com/problems/rotting-oranges/description/)
+
+##### 5) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/733._Flood_Fill.cpp) 733. Flood Fill : [Problem Link](https://leetcode.com/problems/flood-fill/description/)
+
 
