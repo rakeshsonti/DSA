@@ -60,9 +60,19 @@
   * condition will be same as bfs only instead of storing value to qeue we will call recursively . Need to main some value in parameter
   * call recursion with sr and sc and later on change if any value row col value found
   --------------------------------------------------------------------------------------------------------------------------------------
-                                          
+ ##### Detect cycle in an undirected graph                                        
+  ###### DFS Solution ||    
+  > TC-> O(n every node+2E(summation of all adjacent node))+O(N)outer for loop=O(N+2E)+O(N)
+  > SC-> O(N) stack space+O(N) visited array= O(n)
+ * call DFS function and mark the node as visited
+ * recursively call dfs for all the adjcent element of the current element if adjacent not visited
+ * if dsf of adjacent element return true then only return true else wait for the next element to return true
+ * if adjacent element is already visited then check the parent of adjacent element if parent is not equals to the current that means cycle exists(logic: if we are reaching on an element from multiple parent that means cycle exists)
+ * check all the components if cycle not found the only return false
 
-
-
-
+###### BFS Solution
+* logic will be similar (logic: if we are reaching on an element from multiple parent that means cycle exists)
+* we will maintain a visted array and iterate like BFS traversal
+* if node already visited then check the parent and current adjacent element if equals then return true;
+--------------------------------------------------------------------------------------------------------------------------------------
 
