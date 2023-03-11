@@ -253,4 +253,6 @@
 
 ##### 5) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/733._Flood_Fill.cpp) 733. Flood Fill : [Problem Link](https://leetcode.com/problems/flood-fill/description/)
 
+##### 6) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/Detect_cycle_in_an_undirected_graph.cpp) Detect cycle in an undirected graph : [Problem Link](https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1)
+
 
