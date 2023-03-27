@@ -255,4 +255,6 @@
 
 ##### 6) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/Detect_cycle_in_an_undirected_graph.cpp) Detect cycle in an undirected graph : [Problem Link](https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1)
 
+##### 7) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0547-number-of-provinces) 547. Number of Provinces
+
 
