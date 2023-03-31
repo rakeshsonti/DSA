@@ -1,4 +1,5 @@
 class Solution {
+  //tc-> O(m)+O(n)+O(m*n) +O(m*n)~O(m*n) sc-> O(m*n) queue
 public:
   void solve(vector<vector<char>>& board) {
      int n=board.size(),m=board[0].size();
