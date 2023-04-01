@@ -20,7 +20,6 @@ public:
             carry=num/10;
             num=num%10;
           }else carry=0;
-          // cout<<"num0:"<<num<<"carry:"<<carry<<endl;
           ptr->next=new ListNode(num);
           ptr=ptr->next;
           l1=l1->next;
@@ -28,12 +27,10 @@ public:
         }
       while(l1!=NULL){
         num=l1->val+carry;
-         // cout<<"numxx:"<<num;
         if(num>9){
             carry=num/10;
             num=num%10;
           }else carry=0;
-        // cout<<"num1:"<<num<<"carry:"<<carry<<endl;
           ptr->next=new ListNode(num);
           ptr=ptr->next;
           l1=l1->next;
