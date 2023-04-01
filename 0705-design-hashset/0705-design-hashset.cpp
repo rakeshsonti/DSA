@@ -2,7 +2,7 @@ class MyHashSet
 {
 
     private:
-        int prime;
+        int prime=10007;
     vector<list < int>> table;
     int hash(int key)
     {
@@ -15,7 +15,11 @@ class MyHashSet
     }
 
     public:
-        MyHashSet(): prime(10007), table(prime) {}
+    // MyHashSet(): prime(10007), table(prime) {}
+  MyHashSet()
+  {
+    table.resize(prime);
+  }
     void add(int key)
     {
         int h = hash(key);
