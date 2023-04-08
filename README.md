@@ -266,3 +266,11 @@
 ##### 8) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0542-01-matrix) 542. 01 Matrix
 
 ##### 9) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0130-surrounded-regions) 130. Surrounded Regions
+
+##### 10) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/1020-number-of-enclaves) 1020. Number of Enclaves
+
+
+
+
+
+
