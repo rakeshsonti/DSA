@@ -1,4 +1,6 @@
 class Solution {
+  //tc-> O(m)+O(n) + O(n*m*4)
+  //sc-> O(m+n)rec+O(4)+O(m*n) vis
 public:
   void solve(vector<vector<char>>& board){
     int n=board.size(),m=board[0].size();
