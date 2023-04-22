@@ -133,7 +133,7 @@ Note that the time complexity of some operations, such as `insert()` and `erase(
 #### Default constructor
  
 deque() noexcept;
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -143,7 +143,7 @@ std::deque<int> d1;
  
 explicit deque(size_type count);
 explicit deque(size_type count, const T& value);
-Complexity: Linear time in the size of the deque.
+##### Complexity: Linear time in the size of the deque.
 
 #### Example:
  
@@ -154,7 +154,7 @@ std::deque<int> d3(10, 42);   // deque with 10 ints initialized to 42
  
 template<class InputIt>
 deque(InputIt first, InputIt last);
-Complexity: Linear time in the size of the range.
+##### Complexity: Linear time in the size of the range.
 
 ####  Example:
  
@@ -164,7 +164,7 @@ std::deque<int> d4(v.begin(), v.end()); // deque initialized with the elements o
 #### Copy constructor
  
 deque(const deque& other);
-Complexity: Linear time in the size of other.
+##### Complexity: Linear time in the size of other.
 
 ####  Example:
  
@@ -173,7 +173,7 @@ std::deque<int> d5(d4); // copy of d4
 #### Move constructor
  
 deque(deque&& other) noexcept;
-Complexity: Constant time.
+##### Complexity: Constant time.
 ####  Example:
  
 std::deque<int> d6(std::move(d5)); // move d5 to d6
@@ -193,7 +193,7 @@ At
  
 reference at(size_type pos);
 const_reference at(size_type pos) const;
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -206,7 +206,7 @@ int x = d8.at(2);
 reference operator[](size_type pos);
 const_reference operator[](size_type pos) const;
 
-Complexity: Constant time.
+##### Complexity: Constant time.
 #### Example:
  
 std::deque<int> d9 = {1, 2, 3};
@@ -217,7 +217,7 @@ int x = d9[2];
  
 reference front();
 const_reference front() const;
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -229,7 +229,7 @@ int x = d10.front();
  
 reference back();
 const_reference back() const;
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -251,7 +251,7 @@ const_iterator cbegin() const noexcept;
 iterator end() noexcept;
 const_iterator end() const noexcept;
 const_iterator cend() const noexcept;
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -269,7 +269,7 @@ const_reverse_iterator crbegin() const noexcept;
 reverse_iterator rend() noexcept;
 const_reverse_iterator rend() const noexcept;
 const_reverse_iterator crend() const noexcept;
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -283,7 +283,7 @@ for (auto it = d13.rbegin(); it != d13.rend(); ++it) {
 #### Empty
  
 bool empty() const noexcept;
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -295,7 +295,7 @@ if (d14.empty()) {
 #### Size
  
 size_type size() const noexcept;
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -305,7 +305,7 @@ std::cout << "size: " << d15.size() << '\n';
 #### Max Size
  
 size_type max_size() const noexcept;
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -320,7 +320,7 @@ void assign(size_type count, const T& value);
 template<class InputIt>
 void assign(InputIt first, InputIt last);
 void assign(std::initializer_list<T> ilist);
-Complexity: Linear time in the size of the assigned range.
+##### Complexity: Linear time in the size of the assigned range.
 
 #### Example:
  
@@ -334,7 +334,7 @@ d17.assign({4, 5, 6}); // assign the elements of an initializer list
  
 void push_front(const T& value);
 void push_front(T&& value);
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -344,7 +344,7 @@ d18.push_front(1);
 #### Pop Front
  
 void pop_front();
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -355,7 +355,7 @@ d19.pop_front();
  
 void push_back(const T& value);
 void push_back(T&& value);
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -365,7 +365,7 @@ d20.push_back(3);
 #### Pop Back
  
 void pop_back();
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -379,7 +379,7 @@ iterator insert(const_iterator pos, size_type count, const T& value);
 template<class InputIt>
 iterator insert(const_iterator pos, InputIt first, InputIt last);
 iterator insert(const_iterator pos, std::initializer_list<T> ilist);
-Complexity: Linear time in the number of elements inserted plus the distance to the end of the deque.
+##### Complexity: Linear time in the number of elements inserted plus the distance to the end of the deque.
 
 #### Example:
  
@@ -392,7 +392,7 @@ d22.insert(d22.end(), {6, 7, 8}); // inserts 6, 7, 8 at the end of the deque
  
 iterator erase(const_iterator pos);
 iterator erase(const_iterator first, const_iterator last);
-Complexity: Linear time in the number of elements erased plus the distance to the end of the deque.
+##### Complexity: Linear time in the number of elements erased plus the distance to the end of the deque.
 
 #### Example:
  
@@ -405,7 +405,7 @@ d23.erase(it2, d23.end()); // erases 4 and 5
 #### Swap
  
 void swap(deque& other) noexcept(std::allocator_traits<Allocator>::is_always_equal::value);
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
@@ -416,7 +416,7 @@ d24.swap(d25);
 #### Clear
  
 void clear() noexcept;
-Complexity: Linear time in the number of elements.
+##### Complexity: Linear time in the number of elements.
 
 #### Example:
  
@@ -428,7 +428,7 @@ d26.clear();
 #### Get Allocator
  
 allocator_type get_allocator() const noexcept;
-Complexity: Constant time.
+##### Complexity: Constant time.
 
 #### Example:
  
