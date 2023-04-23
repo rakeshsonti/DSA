@@ -1418,7 +1418,140 @@ if (s10 < s11) { // returns true if s10 is lexicographically less than s11
 #### Note: The time complexities given above are for the average case. In the worst case, the time complexity for some operations may degrade to linear in the size of the container. 
 
 ------------------------------------------------------------------------------------------------------------------------
+### std::multiset
+
+### Iterators
+
+````
+iterator begin();
+const_iterator begin() const;
+const_iterator cbegin() const;
+iterator end();
+const_iterator end() const;
+const_iterator cend() const;
+reverse_iterator rbegin();
+const_reverse_iterator rbegin() const;
+const_reverse_iterator crbegin() const;
+reverse_iterator rend();
+const_reverse_iterator rend() const;
+const_reverse_iterator crend() const;
+Complexity: Constant time.
+````
+
+### Example:
  
+````
+std::multiset<int> ms1{1, 2, 3};
+for (auto it1 = ms1.begin(); it1 != ms1.end(); ++it1) {
+    // do something with *it1
+}
+for (auto x : ms1) {
+    // do something with x
+}
+````
+
+### Size and capacity
+
+```` 
+bool empty() const;
+size_type size() const;
+size_type max_size() const;
+Complexity: Constant time.
+````
+
+
+### Example:
+
+```` 
+std::multiset<int> ms2{1, 2, 3};
+if (!ms2.empty()) { // returns true if the multiset is not empty
+    // do something
+}
+std::cout << ms2.size() << '\n'; // prints the number of elements in the multiset
+````
+
+### Modifiers
+
+```` 
+iterator insert(const value_type& value);
+iterator insert(iterator hint, const value_type& value);
+void insert(std::initializer_list<value_type> ilist);
+template<class InputIt>
+void insert(InputIt first, InputIt last);
+template<class... Args>
+iterator emplace(Args&&... args);
+template<class... Args>
+iterator emplace_hint(iterator hint, Args&&... args);
+iterator erase(iterator position);
+size_type erase(const key_type& key);
+iterator erase(iterator first, iterator last);
+void clear() noexcept;
+Complexity: Average case is logarithmic in the size of the container, worst case is linear in the size of the container.
+````
+
+### Example:
+
+```` 
+std::multiset<int> ms3;
+ms3.insert(1); // inserts the value 1 into the multiset
+ms3.insert(2);
+ms3.insert(2);
+ms3.insert(3);
+auto it2 = ms3.emplace_hint(ms3.begin(), 0); // inserts the value 0 into the multiset using a hint iterator
+ms3.erase(it2); // removes the element pointed to by it2 from the multiset
+ms3.erase(2); // removes all elements with the value 2 from the multiset
+ms3.clear(); // removes all elements from the multiset
+````
+
+### Lookup
+
+```` 
+iterator find(const key_type& key);
+const_iterator find(const key_type& key) const;
+size_type count(const key_type& key) const;
+iterator lower_bound(const key_type& key);
+const_iterator lower_bound(const key_type& key) const;
+iterator upper_bound(const key_type& key);
+const_iterator upper_bound(const key_type& key) const;
+std::pair<iterator, iterator> equal_range(const key_type& key);
+std::pair<const_iterator, const_iterator> equal_range(const key_type& key) const;
+Complexity: Average case is logarithmic in the size of the container, worst case is linear in the size of the container.
+````
+
+### Example:
+
+```` 
+std::multiset<int> ms4{1, 2, 2, 3};
+auto it3 = ms4.find(2); // returns an iterator to the first element with the value 2
+auto cnt = ms4.count(2); // returns the number of elements with the value 2 in the multiset
+auto lb = ms4.lower_bound(2
+
+std::multiset<int> ms4{1, 2, 2, 3};
+auto it3 = ms4.find(2); // returns an iterator to the first element with the value 2
+auto cnt = ms4.count(2); // returns the number of elements with the value 2 in the multiset
+auto lb = ms4.lower_bound(2); // returns an iterator to the first element that is not less than 2
+auto ub = ms4.upper_bound(2); // returns an iterator to the first element that is greater than 2
+auto eq = ms4.equal_range(2); // returns a pair of iterators to the first and last elements with the value 2
+````
+
+### Miscellaneous
+
+```` 
+key_compare key_comp() const;
+value_compare value_comp() const;
+Complexity: Constant time.
+````
+
+### Example:
+
+```` 
+std::multiset<int> ms5{1, 2, 3};
+auto kc = ms5.key_comp(); // returns the comparison function used to order the keys in the multiset
+auto vc = ms5.value_comp(); // returns the comparison function used to order the values in the multiset
+````
+
+### Note: The complexity of some methods may depend on the comparison function used to order the elements in the multiset. The examples shown above use the default comparison function, which is std::less. 
+------------------------------------------------------------------------------------------------------------------------
  
  
  
