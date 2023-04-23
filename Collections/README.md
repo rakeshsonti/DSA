@@ -236,5 +236,58 @@ set.clear();
 ````
 #### Note that the time complexity of some operations may vary depending on the size of the set and the implementation details of the HashSet class.
 -----------------------------------------------------------------------------------------------------------------------------------
+### TreeSet
 
+> provide time complexity and all method with examples of LinkedList in java
+TreeSet is an implementation of the SortedSet interface in Java that stores elements in a sorted tree structure. Here are some of the most commonly used methods of TreeSet, along with their time complexity and examples:
+
+> **add(E element)**: Adds an element to the set. The operation takes O(log n) time in the average case.
+````
+TreeSet<Integer> set = new TreeSet<>();
+set.add(3);
+set.add(1);
+set.add(2);
+````
+> **remove(Object o)**: Removes the specified element from the set. The operation takes O(log n) time in the average case.
+````
+TreeSet<Integer> set = new TreeSet<>();
+set.add(3);
+set.add(1);
+set.add(2);
+set.remove(2);
+````
+> **contains(Object o)**: Returns true if the set contains the specified element. The operation takes O(log n) time in the average case.
+````
+TreeSet<Integer> set = new TreeSet<>();
+set.add(3);
+set.add(1);
+set.add(2);
+boolean containsTwo = set.contains(2);
+````
+> **isEmpty()**: Returns true if the set is empty. The operation takes O(1) time.
+````
+TreeSet<Integer> set = new TreeSet<>();
+set.add(3);
+set.add(1);
+set.add(2);
+boolean empty = set.isEmpty();
+````
+> **size()**: Returns the number of elements in the set. The operation takes O(1) time.
+````
+TreeSet<Integer> set = new TreeSet<>();
+set.add(3);
+set.add(1);
+set.add(2);
+int size = set.size();
+````
+> **clear()**: Removes all elements from the set. The operation takes O(1) time.
+````
+TreeSet<Integer> set = new TreeSet<>();
+set.add(3);
+set.add(1);
+set.add(2);
+set.clear();
+````
+#### Note that the time complexity of some operations may vary depending on the size of the set and the implementation details of the TreeSet class. Also note that TreeSet is a sorted set, which means that it provides additional methods for navigating and accessing elements in sorted order.
+------------------------------------------------------------------------------------------------------------
 
