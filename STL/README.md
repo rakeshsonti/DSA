@@ -140,59 +140,87 @@ Note that the time complexity of some operations, such as `insert()` and `erase(
 #### Constructors and Destructors
 #### Default constructor
  
+````
 deque() noexcept;
+````
+ 
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d1;
+````
 
 #### Fill constructor
  
+````
 explicit deque(size_type count);
 explicit deque(size_type count, const T& value);
+````
+
 ##### Complexity: Linear time in the size of the deque.
 
 #### Example:
- 
+
+````
 std::deque<int> d2(10);       // deque with 10 default-initialized ints
 std::deque<int> d3(10, 42);   // deque with 10 ints initialized to 42
+````
 
 #### Range constructor
- 
+
+````
 template<class InputIt>
 deque(InputIt first, InputIt last);
+````
+
 ##### Complexity: Linear time in the size of the range.
 
 ####  Example:
- 
+
+````
 std::vector<int> v = {1, 2, 3, 4, 5};
 std::deque<int> d4(v.begin(), v.end()); // deque initialized with the elements of the vector
+````
 
 #### Copy constructor
- 
+
+```` 
 deque(const deque& other);
+````
+
 ##### Complexity: Linear time in the size of other.
 
 ####  Example:
- 
+
+````
 std::deque<int> d5(d4); // copy of d4
+````
 
 #### Move constructor
- 
+
+````
 deque(deque&& other) noexcept;
+````
+
 ##### Complexity: Constant time.
 ####  Example:
- 
+
+````
 std::deque<int> d6(std::move(d5)); // move d5 to d6
+````
 
 #### Destructor
  
+````
 ~deque();
 Complexity: Linear time in the size of the deque.
+````
 
 #### Example:
  
+````
 {
     std::deque<int> d7(10, 42);
 } // d7 is destroyed here
@@ -201,75 +229,101 @@ At
  
 reference at(size_type pos);
 const_reference at(size_type pos) const;
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d8 = {1, 2, 3};
 d8.at(0) = 42;
 int x = d8.at(2);
+````
 
 #### Operator []
  
+````
 reference operator[](size_type pos);
 const_reference operator[](size_type pos) const;
+````
 
 ##### Complexity: Constant time.
 #### Example:
  
+````
 std::deque<int> d9 = {1, 2, 3};
 d9[0] = 42;
 int x = d9[2];
+````
 
 #### Front
  
+````
 reference front();
 const_reference front() const;
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d10 = {1, 2, 3};
 d10.front() = 42;
 int x = d10.front();
+````
 
 #### Back
  
+````
 reference back();
 const_reference back() const;
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d11 = {1, 2, 3};
 d11.back() = 42;
 int x = d11.back();
+````
 
 ### Iterators
 
 #### Begin and End
  
+````
 iterator begin() noexcept;
 const_iterator begin() const noexcept;
 const_iterator cbegin() const noexcept;
+````
 
 #### iterator end()
 
  
+````
 iterator end() noexcept;
 const_iterator end() const noexcept;
 const_iterator cend() const noexcept;
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d12 = {1, 2, 3};
 for (auto it = d12.begin(); it != d12.end(); ++it) {
     std::cout << *it << ' ';
 }
+````
 
 #### Rbegin and Rend
  
+````
 reverse_iterator rbegin() noexcept;
 const_reverse_iterator rbegin() const noexcept;
 const_reverse_iterator crbegin() const noexcept;
@@ -277,106 +331,149 @@ const_reverse_iterator crbegin() const noexcept;
 reverse_iterator rend() noexcept;
 const_reverse_iterator rend() const noexcept;
 const_reverse_iterator crend() const noexcept;
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d13 = {1, 2, 3};
 for (auto it = d13.rbegin(); it != d13.rend(); ++it) {
     std::cout << *it << ' ';
 }
+````
 
 #### Capacity
 
 #### Empty
  
+````
 bool empty() const noexcept;
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d14;
 if (d14.empty()) {
     std::cout << "deque is empty\n";
 }
+````
 
 #### Size
  
+````
 size_type size() const noexcept;
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d15 = {1, 2, 3};
 std::cout << "size: " << d15.size() << '\n';
+````
 
 #### Max Size
  
+````
 size_type max_size() const noexcept;
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d16;
 std::cout << "max size: " << d16.max_size() << '\n';
+````
 
 ### Modifiers
 
 #### Assign
  
+````
 void assign(size_type count, const T& value);
 template<class InputIt>
 void assign(InputIt first, InputIt last);
 void assign(std::initializer_list<T> ilist);
+````
+
 ##### Complexity: Linear time in the size of the assigned range.
 
 #### Example:
  
+````
 std::deque<int> d17;
 d17.assign(3, 42); // assign 3 ints with value 42
 std::vector<int> v2 = {1, 2, 3};
 d17.assign(v2.begin(), v2.end()); // assign the elements of the vector
 d17.assign({4, 5, 6}); // assign the elements of an initializer list
+````
 
 #### Push Front
  
+````
 void push_front(const T& value);
 void push_front(T&& value);
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d18 = {2, 3};
 d18.push_front(1);
+````
 
 #### Pop Front
  
+````
 void pop_front();
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d19 = {1, 2, 3};
 d19.pop_front();
+````
 
 #### Push Back
  
+````
 void push_back(const T& value);
 void push_back(T&& value);
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d20 = {1, 2};
 d20.push_back(3);
+````
 
 #### Pop Back
  
+````
 void pop_back();
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d21 = {1, 2, 3};
 d21.pop_back();
 
@@ -387,61 +484,85 @@ iterator insert(const_iterator pos, size_type count, const T& value);
 template<class InputIt>
 iterator insert(const_iterator pos, InputIt first, InputIt last);
 iterator insert(const_iterator pos, std::initializer_list<T> ilist);
+````
+
 ##### Complexity: Linear time in the number of elements inserted plus the distance to the end of the deque.
 
 #### Example:
  
+````
 std::deque<int> d22 = {1, 2, 5};
 auto it = d22.begin() + 2; // points to 5
 d22.insert(it, 3, 4); // inserts 4, 4, 4 before 5
 d22.insert(d22.end(), {6, 7, 8}); // inserts 6, 7, 8 at the end of the deque
+````
 
 #### Erase
  
+````
 iterator erase(const_iterator pos);
 iterator erase(const_iterator first, const_iterator last);
+````
+
 ##### Complexity: Linear time in the number of elements erased plus the distance to the end of the deque.
 
 #### Example:
  
+````
 std::deque<int> d23 = {1, 2, 3, 4, 5};
 auto it1 = d23.begin() + 1; // points to 2
 auto it2 = d23.end() - 2; // points to 4
 d23.erase(it1); // erases 2
 d23.erase(it2, d23.end()); // erases 4 and 5
+````
 
 #### Swap
  
+````
 void swap(deque& other) noexcept(std::allocator_traits<Allocator>::is_always_equal::value);
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d24 = {1, 2, 3};
 std::deque<int> d25 = {4, 5, 6};
 d24.swap(d25);
+````
 
 #### Clear
  
+````
 void clear() noexcept;
+````
+
 ##### Complexity: Linear time in the number of elements.
 
 #### Example:
  
+````
 std::deque<int> d26 = {1, 2, 3};
 d26.clear();
+````
 
 ### Allocator
 
 #### Get Allocator
  
+````
 allocator_type get_allocator() const noexcept;
+````
+
 ##### Complexity: Constant time.
 
 #### Example:
  
+````
 std::deque<int> d27 = {1, 2, 3};
 auto a = d27.get_allocator();
+````
 
 -----------------------------------------------------------------------------------------------------------------------------------
 ### std::list
