@@ -21,3 +21,5 @@
 * **PriorityQueue**: An implementation of the Queue interface that stores elements in a priority queue.
 
 * **Stack**: A class that implements the Stack data structure using an array.
+
+![java-collection-hierarchy](https://user-images.githubusercontent.com/52101117/233855962-d0f659f2-8a88-4132-aac9-114a61b114e8.png)
