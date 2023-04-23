@@ -1244,7 +1244,180 @@ fl16.sort(); // sorts the list in ascending order
  
  ------------------------------------------------------------------------------------------------------------------------
  
+### std::set
+
+### Constructors
+
+````
+set();
+explicit set(const Compare& comp);
+template<class InputIterator>
+set(InputIterator first, InputIterator last);
+template<class InputIterator>
+set(InputIterator first, InputIterator last, const Compare& comp);
+set(const set& other);
+set(set&& other) noexcept;
+set(initializer_list<value_type> ilist);
+set(initializer_list<value_type> ilist, const Compare& comp);
+Complexity: Linear in the number of elements being constructed.
+````
+
+### Example:
  
+````
+std::set<int> s1; // constructs an empty set
+std::set<int, std::greater<int>> s2(std::greater<int>()); // constructs an empty set with a custom comparator
+std::set<int> s3{1, 2, 3}; // constructs a set with three elements
+std::set<int> s4(s3); // constructs a copy of s3
+````
+
+### Insert
+
+```` 
+std::pair<iterator, bool> insert(const value_type& value);
+std::pair<iterator, bool> insert(value_type&& value);
+iterator insert(const_iterator hint, const value_type& value);
+iterator insert(const_iterator hint, value_type&& value);
+template<class InputIterator>
+void insert(InputIterator first, InputIterator last);
+void insert(initializer_list<value_type> ilist);
+template<class... Args>
+std::pair<iterator, bool> emplace(Args&&... args);
+template<class... Args>
+iterator emplace_hint(const_iterator hint, Args&&... args);
+Complexity: Logarithmic in the size of the container, except for the range-based insert method, which is linear in the size of the range being inserted.
+````
+
+### Example:
+
+````
+std::set<int> s5;
+s5.insert(1); // inserts the value 1 into the set
+s5.insert({2, 3}); // inserts the values 2 and 3 into the set
+auto it1 = s5.insert(4); // inserts the value 4 into the set and returns an iterator to it
+s5.emplace(5); // constructs a new element with the value 5 and inserts it into the set
+````
+
+### Erase
+
+```` 
+void erase(iterator pos);
+void erase(const_iterator pos);
+size_type erase(const key_type& key);
+void erase(iterator first, iterator last);
+void erase(const_iterator first, const_iterator last);
+Complexity: Logarithmic in the size of the container for single-element erases, linear in the number of elements being erased for range erases.
+````
+
+### Example:
+ 
+````
+std::set<int> s6{1, 2, 3};
+s6.erase(s6.begin()); // erases the first element of the set
+s6.erase(2); // erases the element with value 2 from the set
+auto it2 = s6.begin();
+std::advance(it2, 1);
+s6.erase(s6.begin(), it2); // erases the first two elements of the set
+````
+
+### Lookup
+ 
+````
+iterator find(const key_type& key);
+const_iterator find(const key_type& key) const;
+size_type count(const key_type& key) const;
+bool contains(const key_type& key) const;
+Complexity: Logarithmic in the size of the container.
+````
+
+### Example:
+ 
+````
+std::set<int> s7{1, 2, 3};
+auto it3 = s7.find(2); // returns an iterator to the element with value 2
+if (s7.contains(3)) { // returns true if the set contains an element with value 3
+    // do something
+}
+````
+
+
+### Iterators
+ 
+````
+iterator begin();
+const_iterator begin() const;
+const_iterator cbegin() const;
+iterator end();
+const_iterator end() const;
+const_iterator cend() const;
+reverse_iterator rbegin();
+const_reverse_iterator rbegin() const;
+const_reverse_iterator crbegin() const;
+reverse_iterator rend();
+const_reverse_iterator rend() const;
+const_reverse_iterator crend() const;
+Complexity: Constant time.
+````
+
+### Example:
+ 
+````
+std::set<int> s8{1, 2, 3};
+for (auto it4 = s8.begin(); it4 != s8.end(); ++it4) {
+    // do something with *it4
+}
+for (auto x : s8) {
+    // do something with x
+}
+````
+
+### Size and capacity
+ 
+````
+bool empty() const;
+size_type size() const;
+size_type max_size() const;
+Complexity: Constant time.
+````
+
+### Example:
+ 
+````
+std::set<int> s9{1, 2, 3};
+if (!s9.empty()) { // returns true if the set is not empty
+    // do something
+}
+std::cout << s9.size() << '\n'; // prints the number of elements in the set
+````
+
+### Comparison
+
+```` 
+bool operator==(const set& other) const;
+bool operator!=(const set& other) const;
+bool operator<(const set& other) const;
+bool operator<=(const set& other) const;
+bool operator>(const set& other) const;
+bool operator>=(const set& other) const;
+Complexity: Linear in the size of the smaller container being compared.
+````
+
+### Example:
+ 
+````
+std::set<int> s10{1, 2, 3};
+std::set<int> s11{1, 2, 3};
+if (s10 == s11) { // returns true if the two sets are equal
+    // do something
+}
+if (s10 < s11) { // returns true if s10 is lexicographically less than s11
+    // do something
+}
+````
+
+#### Note: The time complexities given above are for the average case. In the worst case, the time complexity for some operations may degrade to linear in the size of the container. 
+
+------------------------------------------------------------------------------------------------------------------------
  
  
  
