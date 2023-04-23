@@ -2076,7 +2076,76 @@ std::queue<int, std::list<int>> q5(std::move(d), std::allocator<int>{});
 std::queue<int, std::list<int>> q6(q1, std::allocator<int>{});
 ````
 -----------------------------------------------------------------------------------------------------------------------------
+###  std::priority_queue
 
+> list of all methods with time complexity and example
+Here are the common methods of std::priority_queue container in C++ with their time complexity:
 
+````
+std::priority_queue::empty() - Returns whether the priority queue is empty or not.
+
+Time complexity: O(1)
+````
+
+#### Example:
+
+````
+std::priority_queue<int> pq;
+if (pq.empty()) {
+    std::cout << "Priority queue is empty\n";
+}
+std::priority_queue::size() - Returns the number of elements in the priority queue.
+
+Time complexity: O(1)
+````
+
+#### Example:
+
+````
+std::priority_queue<int> pq;
+pq.push(3);
+pq.push(1);
+std::cout << "Size of priority queue: " << pq.size() << std::endl;
+std::priority_queue::top() - Returns a reference to the highest priority element in the priority queue.
+
+Time complexity: O(1)
+````
+
+#### Example:
+
+````
+std::priority_queue<int> pq;
+pq.push(3);
+pq.push(1);
+std::cout << "Top element of priority queue: " << pq.top() << std::endl;
+std::priority_queue::push(const T& val) - Inserts a new element with value val in the priority queue.
+
+Time complexity: O(log n)
+````
+
+#### Example:
+
+````
+std::priority_queue<int> pq;
+pq.push(3);
+pq.push(1);
+pq.push(4);
+std::cout << "Top element of priority queue: " << pq.top() << std::endl;
+std::priority_queue::pop() - Removes the highest priority element from the priority queue.
+
+Time complexity: O(log n)
+````
+
+#### Example:
+
+````
+std::priority_queue<int> pq;
+pq.push(3);
+pq.push(1);
+pq.push(4);
+pq.pop();
+std::cout << "Top element of priority queue: " << pq.top() << std::endl;
+````
+-------------------------------------------------------------------------------------------------------
 
  
