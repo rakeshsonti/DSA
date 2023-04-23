@@ -1709,7 +1709,198 @@ auto alloc = m6.get_allocator(); // returns the allocator associated with the ma
 That concludes the list of all methods in std::map and their time complexities.
 
 ---------------------------------------------------------------------------------------------------------------------------
+### std::multimap
 
+list of all methods with time complexity and example
+
+> std::multimap is an associative container that stores a collection of key-value pairs with multiple keys allowed. The keys are ordered based on a strict weak ordering criterion and allow duplicate keys. Here is the list of all methods in std::multimap, their time complexities, and examples.
+
+#### Constructors
+
+````
+multimap() noexcept;
+explicit multimap(const key_compare& comp, const allocator_type& alloc = allocator_type());
+template <class InputIt>
+multimap(InputIt first, InputIt last, const key_compare& comp = key_compare(), const allocator_type& alloc = allocator_type());
+multimap(const multimap& other);
+multimap(const multimap& other, const allocator_type& alloc);
+multimap(multimap&& other) noexcept;
+multimap(multimap&& other, const allocator_type& alloc);
+multimap(std::initializer_list<value_type> init, const key_compare& comp = key_compare(), const allocator_type& alloc = allocator_type());
+Complexity: Linear in the size of the range [first, last] for the range constructor, and constant time for the rest.
+````
+
+#### Example: 
+````
+std::multimap<int, std::string> m1; // constructs an empty multimap
+std::multimap<int, std::string> m2{{1, "one"}, {2, "two"}, {3, "three"}}; // constructs a multimap with three elements
+std::multimap<int, std::string> m3(m2); // constructs a multimap with the same elements as m2
+std::multimap<int, std::string> m4(std::move(m2)); // constructs a multimap by moving the elements from m2 to m4
+std::multimap<int, std::string> m5{{1, "one"}, {2, "two"}, {2, "dos"}, {3, "three"}}; // constructs a multimap with duplicate keys
+Assignment
+
+multimap& operator=(const multimap& other);
+multimap& operator=(multimap&& other) noexcept;
+multimap& operator=(std::initializer_list<value_type> init);
+void swap(multimap& other);
+Complexity: Linear in the size of the container being copied/moved/assigned for the copy/move/assignment operator, and linear in the size of the range [first, last] for the assignment with initializer list. Constant time for swap().
+````
+#### Example: 
+````
+std::multimap<int, std::string> m1{{1, "one"}, {2, "two"}};
+std::multimap<int, std::string> m2{{3, "three"}, {4, "four"}};
+m1 = m2; // assigns m2 to m1
+m1 = std::multimap<int, std::string>{{5, "five"}, {6, "six"}}; // assigns a new multimap to m1
+m2 = std::move(m1); // moves the elements from m1 to m2
+m1 = {{1, "one"}, {2, "two"}}; // assigns a multimap with two elements to m1
+m1.swap(m2); // swaps the elements of m1 and m2
+Iterators
+
+iterator begin() noexcept;
+const_iterator begin() const noexcept;
+iterator end() noexcept;
+const_iterator end() const noexcept;
+reverse_iterator rbegin() noexcept;
+const_reverse_iterator rbegin() const noexcept;
+reverse_iterator rend() noexcept;
+const_reverse_iterator rend() const noexcept;
+const_iterator cbegin() const noexcept;
+const_iterator cend() const noexcept;
+const_reverse_iterator crbegin()
+
+
+const_reverse_iterator crend() const noexcept;
+Complexity: Constant time.
+````
+#### Example:
+````
+std::multimap<int, std::string> m{{1, "one"}, {2, "two"}};
+for (auto it = m.begin(); it != m.end(); ++it) {
+    std::cout << it->first << " -> " << it->second << std::endl;
+}
+`````
+#### Capacity
+````
+bool empty() const noexcept;
+size_type size() const noexcept;
+size_type max_size() const noexcept;
+Complexity: Constant time.
+````
+#### Example:
+````
+std::multimap<int, std::string> m{{1, "one"}, {2, "two"}};
+if (!m.empty()) {
+    std::cout << "The size of the multimap is " << m.size() << std::endl;
+}
+std::cout << "The maximum size of the multimap is " << m.max_size() << std::endl;
+````
+#### Modifiers
+````
+void clear() noexcept;
+iterator insert(const value_type& value);
+iterator insert(iterator hint, const value_type& value);
+template <class InputIt>
+void insert(InputIt first, InputIt last);
+void insert(std::initializer_list<value_type> init);
+template <class... Args>
+iterator emplace(Args&&... args);
+template <class... Args>
+iterator emplace_hint(iterator hint, Args&&... args);
+iterator erase(iterator pos);
+iterator erase(iterator first, iterator last);
+size_type erase(const key_type& key);
+void swap(multimap& other);
+void merge(multimap& other);
+void merge(multimap&& other);
+void merge(std::initializer_list<value_type> init);
+Complexity: Logarithmic in the size of the container plus linear in the number of elements inserted for the insert() methods. Constant time for clear(). Linear in the number of elements erased plus logarithmic in the size of the container for the erase() methods. Linear in the size of the range [first, last] for the insert() method that takes a range. Logarithmic in the number of elements being emplaced plus logarithmic in the size of the container for the emplace() methods. Logarithmic in the size of the container for erase(key). Linear in the size of the container being merged plus the size of the argument for the merge() methods. Constant time for swap().
+````
+#### Example: 
+````
+std::multimap<int, std::string> m{{1, "one"}, {2, "two"}};
+m.insert({3, "three"});
+m.emplace(4, "four");
+m.erase(m.find(2));
+m.merge(std::multimap<int, std::string>{{5, "five"}, {6, "six"}});
+````
+#### Observers
+````
+key_compare key_comp() const;
+value_compare value_comp() const;
+Complexity: Constant time.
+````
+#### Example:
+````
+std::multimap<int, std::string> m{{2, "two"}, {1, "one"}};
+auto key_comp = m.key_comp();
+auto value_comp = m.value_comp();
+std::cout << "The keys are sorted in ascending order: " << key_comp(1, 2) << std::endl;
+std::cout << "The values are compared using the keys: " << value_comp(*m.begin(), *std::next(m.begin())) << std::endl;
+````
+#### Operations with other containers
+````
+template <class InputIt>
+void assign(InputIt first, InputIt last);
+void assign(std::initializer_list<value_type> init);
+void assign(size_type count, const value_type& value);
+allocator_type get_allocator() const noexcept;
+Complexity: Linear in the size of the range [first, last] for the assign() method that takes a range. Linear in the number of elements being assigned for the assign() method that takes a count and value. Constant time for get_allocator().
+````
+#### Example:
+````
+std::multimap<int, std::string> m1{{1, "one"}, {2, "two"}};
+std::multimap<int, std::string> m2;
+m2.assign(m1.begin(), m1.end());
+````
+
+#### Lookup
+````
+iterator find(const key_type& key);
+const_iterator find(const key_type& key) const;
+template <class K>
+iterator find(const K& x);
+template <class K>
+const_iterator find(const K& x) const;
+size_type count(const key_type& key) const;
+template <class K>
+size_type count(const K& x) const;
+iterator lower_bound(const key_type& key);
+const_iterator lower_bound(const key_type& key) const;
+template <class K>
+iterator lower_bound(const K& x);
+template <class K>
+const_iterator lower_bound(const K& x) const;
+iterator upper_bound(const key_type& key);
+const_iterator upper_bound(const key_type& key) const;
+template <class K>
+iterator upper_bound(const K& x);
+template <class K>
+const_iterator upper_bound(const K& x) const;
+std::pair<iterator, iterator> equal_range(const key_type& key);
+std::pair<const_iterator, const_iterator> equal_range(const key_type& key) const;
+template <class K>
+std::pair<iterator, iterator> equal_range(const K& x);
+template <class K>
+std::pair<const_iterator, const_iterator> equal_range(const K& x) const;
+Complexity:
+
+Logarithmic time in the size of the container for find(), count(), lower_bound(), upper_bound(), and equal_range().
+````
+#### Example:
+
+````
+std::multimap<int, std::string> m{{1, "one"}, {2, "two"}, {3, "three"}, {3, "trois"}};
+auto it = m.find(2);
+if (it != m.end()) {
+    std::cout << "Found element with key 2: " << it->second << std::endl;
+}
+std::cout << "Number of elements with key 3: " << m.count(3) << std::endl;
+auto range = m.equal_range(3);
+for (auto it = range.first; it != range.second; ++it) {
+    std::cout << "Element with key 3: " << it->second << std::endl;
+}
+````
+------------------------------------------------------------------------------------------------------------
 
 
 
