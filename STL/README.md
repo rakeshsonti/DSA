@@ -1559,5 +1559,160 @@ auto vc = ms5.value_comp(); // returns the comparison function used to order the
 #### Note: The complexity of some methods may depend on the comparison function used to order the elements in the multiset. The examples shown above use the default comparison function, which is std::less. 
 ------------------------------------------------------------------------------------------------------------------------
  
- 
+### std::map
+
+list of all methods with time complexity and example
+
+#### Element access
+
+````
+T& operator[](const Key& key);
+T& operator[](Key&& key);
+T& at(const Key& key);
+const T& at(const Key& key) const;
+Complexity: Logarithmic time in the size of the map.
+````
+
+#### Example: 
+
+```` 
+std::map<int, std::string> m1{{1, "one"}, {2, "two"}};
+m1[3] = "three"; // inserts a new element with key 3 and value "three"
+std::cout << m1[2] << '\n'; // prints "two"
+std::cout << m1.at(1) << '\n'; // prints "one"
+````
+
+#### Modifiers
+
+```` 
+template <typename... Args>
+std::pair<iterator, bool> emplace(Args&&... args);
+template <typename... Args>
+iterator emplace_hint(const_iterator position, Args&&... args);
+std::pair<iterator, bool> insert(const value_type& value);
+std::pair<iterator, bool> insert(value_type&& value);
+iterator insert(const_iterator hint, const value_type& value);
+iterator insert(const_iterator hint, value_type&& value);
+template <typename InputIt>
+void insert(InputIt first, InputIt last);
+void insert(std::initializer_list<value_type> ilist);
+iterator erase(const_iterator position);
+size_type erase(const key_type& key);
+iterator erase(const_iterator first, const_iterator last);
+void swap(map& other);
+void clear() noexcept;
+Complexity: Logarithmic time in the size of the map, except for insert and emplace, which have average constant time complexity when the insertion position is given by a hint iterator.
+````
+
+#### Example: 
+
+```` 
+std::map<int, std::string> m2;
+m2.emplace(1, "one"); // inserts a new element with key 1 and value "one"
+m2.emplace_hint(m2.end(), 2, "two"); // inserts a new element with key 2 and value "two" at the end of the map
+m2.insert(std::make_pair(3, "three")); // inserts a new element with key 3 and value "three"
+m2.insert({4, "four"}); // inserts a new element with key 4 and value "four"
+m2.erase(2); // erases the element with key 2
+m2.swap(m1); // swaps the contents of m1 and m2
+m2.clear(); // erases all elements from the map
+````
+
+#### Lookup
+
+```` 
+iterator find(const Key& key);
+const_iterator find(const Key& key) const;
+size_type count(const Key& key) const;
+iterator lower_bound(const Key& key);
+const_iterator lower_bound(const Key& key) const;
+iterator upper_bound(const Key& key);
+const_iterator upper_bound(const Key& key) const;
+std::pair<iterator, iterator> equal_range(const Key& key);
+std::pair<const_iterator, const_iterator> equal_range(const Key& key) const;
+Complexity: Logarithmic time in the size of the map.
+````
+
+#### Example: 
+
+```` 
+std::map<int, std::string> m3{{1, "one"}, {2, "two"}, {2, "three"}};
+auto it1 = m3.find(2); // returns an iterator to the first element with the key 2
+auto cnt = m3.count(2); // returns the number of elements with the key 2 in the map
+auto lb = m3.lower_bound(2); // returns an iterator to the first element that is not less than 2
+auto ub = m
+````
+
+```` 
+m3.upper_bound(2); // returns an iterator to the first element that is greater than 2
+auto eq = m3.equal_range(2); // returns a pair of iterators delimiting the range of elements with the key 2
+````
+
+#### Observers
+
+```` 
+key_compare key_comp() const;
+value_compare value_comp() const;
+Complexity: Constant time.
+````
+
+#### Example: 
+
+```` 
+std::map<int, std::string> m4{{1, "one"}, {2, "two"}, {3, "three"}};
+auto kc = m4.key_comp(); // returns the key comparison function of the map
+auto vc = m4.value_comp(); // returns the value comparison function of the map
+````
+
+#### Operations
+
+```` 
+iterator begin() noexcept;
+const_iterator begin() const noexcept;
+iterator end() noexcept;
+const_iterator end() const noexcept;
+reverse_iterator rbegin() noexcept;
+const_reverse_iterator rbegin() const noexcept;
+reverse_iterator rend() noexcept;
+const_reverse_iterator rend() const noexcept;
+bool empty() const noexcept;
+size_type size() const noexcept;
+size_type max_size() const noexcept;
+void swap(map& other);
+Complexity: Constant time.
+````
+
+#### Example: 
+
+```` 
+std::map<int, std::string> m5{{1, "one"}, {2, "two"}};
+auto it2 = m5.begin(); // returns an iterator to the first element of the map
+auto rit = m5.rbegin(); // returns a reverse iterator to the last element of the map
+auto e = m5.empty(); // returns false if the map is not empty, true otherwise
+auto sz = m5.size(); // returns the number of elements in the map
+auto msz = m5.max_size(); // returns the maximum number of elements the map can hold
+````
+
+#### Allocator
+
+```` 
+allocator_type get_allocator() const noexcept;
+Complexity: Constant time.
+````
+
+#### Example: 
+
+```` 
+std::map<int, std::string> m6{{1, "one"}, {2, "two"}};
+auto alloc = m6.get_allocator(); // returns the allocator associated with the map
+````
+
+That concludes the list of all methods in std::map and their time complexities.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
  
