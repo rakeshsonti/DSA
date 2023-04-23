@@ -1901,7 +1901,68 @@ for (auto it = range.first; it != range.second; ++it) {
 }
 ````
 ------------------------------------------------------------------------------------------------------------
+### std::stack
+list of all methods with time complexity and example
 
+#### Element access
+````
+reference top();
+const_reference top() const;
+Complexity:
+
+Constant time for both operations.
+````
+#### Example:
+
+````
+std::stack<int> s;
+s.push(1);
+s.push(2);
+std::cout << "Top element of the stack: " << s.top() << std::endl;
+````
+#### Capacity
+````
+bool empty() const noexcept;
+size_type size() const noexcept;
+Complexity:
+
+Constant time for both operations.
+````
+#### Example:
+
+````
+std::stack<int> s;
+if (s.empty()) {
+    std::cout << "Stack is empty" << std::endl;
+}
+s.push(1);
+s.push(2);
+std::cout << "Size of the stack: " << s.size() << std::endl;
+````
+#### Modifiers
+````
+void push(const value_type& value);
+void push(value_type&& value);
+void pop();
+void swap(stack& other) noexcept(std::is_nothrow_swappable_v<Container>);
+Complexity:
+
+Constant time for push(), pop(), and swap().
+````
+#### Example:
+
+````
+std::stack<int> s1;
+s1.push(1);
+s1.push(2);
+std::stack<int> s2;
+s2.push(3);
+s2.push(4);
+s1.swap(s2);
+std::cout << "Top element of the first stack after swap: " << s1.top() << std::endl;
+std::cout << "Top element of the second stack after swap: " << s2.top() << std::endl;
+````
+--------------------------------------------------------------------------------------------------------
 
 
 
