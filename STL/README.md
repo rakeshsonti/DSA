@@ -597,7 +597,7 @@ auto a = d27.get_allocator();
 ````
 
 -----------------------------------------------------------------------------------------------------------------------------------
-### std::list
+### std::list (doubly linked list)
 
  #### Here is a list of all methods available for std::list along with their time complexity and examples:
 
@@ -982,7 +982,7 @@ l21.reverse(); // reverses the order of the elements in the list
 #### Note that some of the methods in std::list are not available in other standard containers, such as std::vector and std::deque. For example, splice, remove, unique, merge, sort, and reverse are only available in std::list.
 
 ------------------------------------------------------------------------------------------------------
-### std::forward_list
+### std::forward_list(singly linked list)
 
 ``
 list of all methods with time complexity and example
