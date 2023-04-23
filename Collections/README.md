@@ -183,6 +183,58 @@ list.clear();
 #### Note that the time complexity of some operations may vary depending on the size of the list and the implementation details of the LinkedList class.
 
 --------------------------------------------------------------------------------------------------------
+### HashSet
 
+> provide time complexity and all method with examples of LinkedList in java
+HashSet is an implementation of the Set interface in Java that stores elements in a hash table. Here are some of the most commonly used methods of HashSet, along with their time complexity and examples:
+
+> **add(E element)**: Adds an element to the set. The operation takes O(1) time in the average case, but O(n) time in the worst case if the hash table needs to be resized.
+````
+HashSet<String> set = new HashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+````
+> **remove(Object o)**: Removes the specified element from the set. The operation takes O(1) time in the average case, but O(n) time in the worst case if the hash table needs to be searched.
+````
+HashSet<String> set = new HashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+set.remove("banana");
+````
+> **contains(Object o)**: Returns true if the set contains the specified element. The operation takes O(1) time in the average case, but O(n) time in the worst case if the hash table needs to be searched.
+````
+HashSet<String> set = new HashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+boolean containsBanana = set.contains("banana");
+````
+**isEmpty()**: Returns true if the set is empty. The operation takes O(1) time.
+````
+HashSet<String> set = new HashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+boolean empty = set.isEmpty();
+````
+> **size()**: Returns the number of elements in the set. The operation takes O(1) time.
+````
+HashSet<String> set = new HashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+int size = set.size();
+````
+> **clear()**: Removes all elements from the set. The operation takes O(1) time.
+````
+HashSet<String> set = new HashSet<>();
+set.add("apple");
+set.add("banana");
+set.clear();
+````
+#### Note that the time complexity of some operations may vary depending on the size of the set and the implementation details of the HashSet class.
+-----------------------------------------------------------------------------------------------------------------------------------
 
 
