@@ -737,3 +737,270 @@ l21.reverse(); // reverses the order of the elements in the list
 #### Note that some of the methods in std::list are not available in other standard containers, such as std::vector and std::deque. For example, splice, remove, unique, merge, sort, and reverse are only available in std::list.
 
 ------------------------------------------------------------------------------------------------------
+### std::forward_list
+
+``
+list of all methods with time complexity and example
+std::forward_list is a container class that provides a singly linked list data structure. Here is a list of all methods with their time *complexity* and an example for each:
+``
+
+#### Constructors
+ 
+````
+forward_list();
+
+explicit forward_list(const Allocator& alloc);
+
+explicit forward_list(size_type count);
+
+explicit forward_list(size_type count, const T& value);
+
+template<class InputIt>
+
+forward_list(InputIt first, InputIt last);
+
+forward_list(const forward_list& other);
+
+forward_list(const forward_list& other, const Allocator& alloc);
+
+forward_list(forward_list&& other);
+
+forward_list(forward_list&& other, const Allocator& alloc);
+
+forward_list(initializer_list<T> init);
+
+*Complexity*: Depends on the constructor being used. Default constructor and constructor with an allocator are constant time. Constructor with a count argument is linear time in the count. Constructor with a range of iterators is linear time in the size of the range.
+````
+#### Example:
+
+````
+std::forward_list<int> fl1; // default constructor
+
+std::forward_list<int> fl2(5); // creates a list with 5 default-initialized elements
+
+std::forward_list<int> fl3(3, 42); // creates a list with 3 elements, all initialized to 42
+
+std::forward_list<int> fl4 = {1, 2, 3}; // creates a list from an initializer list
+
+std::forward_list<int> fl5(fl4); // copy constructor
+
+std::forward_list<int> fl6(std::move(fl4)); // move constructor
+````
+
+#### Assign
+````
+void assign(size_type count, const T& value);
+
+template<class InputIt>
+
+void assign(InputIt first, InputIt last);
+
+void assign(initializer_list<T> init);
+ ````
+ 
+ *Complexity*: Depends on the arguments passed. Constant time for count and initializer list arguments. Linear time in the size of the range for iterator arguments.
+
+#### Example:
+ 
+```` 
+std::forward_list<int> fl7;
+
+fl7.assign(5, 42); // replaces the contents of fl7 with 5 elements, all initialized to 42
+
+fl7.assign({1, 2, 3}); // replaces the contents of fl7 with the elements of the initializer list
+````
+ 
+#### Push and Pop
+ 
+```` 
+void push_front(const T& value);
+
+void push_front(T&& value);
+
+void pop_front();
+
+*Complexity*: Constant time.
+````
+ 
+#### Example:
+ 
+````
+std::forward_list<int> fl8;
+
+fl8.push_front(1); // adds 1 to the front of the list
+
+fl8.push_front(2); // adds 2 to the front of the list
+
+fl8.pop_front(); // removes the first element of the list (2)
+````
+ 
+#### Insert
+ 
+```` 
+iterator insert_after(const_iterator pos, const T& value);
+
+iterator insert_after(const_iterator pos, T&& value);
+
+iterator insert_after(const_iterator pos, size_type count, const T& value);
+
+template<class InputIt>
+
+iterator insert_after(const_iterator pos, InputIt first, InputIt last);
+
+iterator insert_after(const_iterator pos, initializer_list<T> init);
+
+*Complexity*: Depends on the arguments passed. Constant time for a single value argument. Linear time in the count for a count 
+argument. Linear time in the size of the range for iterator and initializer list arguments.
+````
+ 
+#### Example:
+ 
+```` 
+std::forward_list<int> fl9 = {1, 3, 4};
+
+auto it = fl9.insert_after(fl9.begin(), 2); // inserts 2 after the first element
+
+fl9.insert_after(it, {5, 6}); // inserts 5 and 6 after the second element
+````
+ 
+#### Erase
+
+```` 
+iterator erase_after(const_iterator pos);
+
+iterator erase_after(const_iterator first, const_iterator last);
+
+*Complexity*: Constant time for a single element. Linear time in the number of elements removed for a range of elements.
+````
+
+#### Example:
+ 
+```` 
+std::forward_list<int> fl10 = {1, 2, 3, 4};
+
+fl10.erase_after(fl10.before_begin()); // removes the first element
+
+auto it2 = fl10.begin();
+
+std::advance(it2, 2);
+
+fl10.erase_after(fl10.before_begin(), it2); // removes the first two elements
+````
+ 
+#### Resize
+ 
+```` 
+void resize(size_type count);
+
+void resize(size_type count, const value_type& value);
+
+*Complexity*: Linear time in the difference between the current size and the new size.
+````
+ 
+#### Example:
+ 
+```` 
+std::forward_list<int> fl11 = {1, 2, 3};
+
+fl11.resize(5); // adds 2 default-initialized elements to the end of the list
+
+fl11.resize(2); // removes the last 3 elements of the list
+````
+ 
+#### Splice
+ 
+```` 
+void splice_after(const_iterator pos, forward_list& other);
+
+void splice_after(const_iterator pos, forward_list&& other);
+
+void splice_after(const_iterator pos, forward_list& other, const_iterator it);
+
+void splice_after(const_iterator pos, forward_list&& other, const_iterator it);
+
+void splice_after(const_iterator pos, forward_list& other, const_iterator first, const_iterator last);
+
+void splice_after(const_iterator pos, forward_list&& other, const_iterator first, const_iterator last);
+
+*Complexity*: Constant time for all methods except for the last one, which is linear time in the number of elements being moved.
+````
+ 
+#### Example:
+ 
+ ````
+std::forward_list<int> fl12 = {1, 2, 3};
+
+std::forward_list<int> fl13 = {4, 5};
+
+auto it3 = fl12.begin();
+
+std::advance(it3, 2);
+
+fl12.splice_after(it3, fl13); // moves the contents of fl13 after the third element of fl12
+````
+ 
+#### Remove
+ 
+```` 
+void remove(const T& value);
+
+template<class UnaryPredicate>
+
+void remove_if(UnaryPredicate p);
+
+*Complexity*: Linear time in the number of elements in the list.
+````
+ 
+#### Example:
+ 
+```` 
+std::forward_list<int> fl14 = {1, 2, 3, 2};
+
+fl14.remove(2); // removes all elements with value 2
+````
+ 
+#### Reverse
+ 
+```` 
+void reverse() noexcept;
+
+*Complexity*: Linear time in the number of elements in the list.
+````
+ 
+#### Example:
+ 
+```` 
+std::forward_list<int> fl15 = {1, 2, 3};
+
+fl15.reverse(); // reverses the order of elements in the list
+````
+
+#### Sort
+ 
+```` 
+void sort();
+
+template<class Compare>
+
+void sort(Compare comp);
+
+*Complexity*: O(n log n) comparisons and swaps, where n is the number of elements in the list.
+````
+ 
+#### Example:
+ 
+```` 
+std::forward_list<int> fl16 = {3, 1, 2};
+
+fl16.sort(); // sorts the list in ascending order
+````
+ 
+#### Note that std::forward_list does not provide random access to its elements, so methods such as at, operator[], and front are not available.
+ 
+ ------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
