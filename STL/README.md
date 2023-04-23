@@ -2299,3 +2299,89 @@ if (it != m.end()) {
 }
 ````
 ---------------------------------------------------------------------------------------------------------- 
+### std::bitset
+ 
+> list of all methods with time complexity and example of c++ stl
+
+> std::bitset is a container in C++ STL that represents a fixed-size sequence of bits. Here are the list of all methods with time complexity and examples:
+
+````
+std::bitset<N>::bitset(): Default constructor which initializes all the bits to 0.
+Time complexity: O(1)
+````
+#### Example:
+````
+std::bitset<8> b1;
+std::cout << b1 << '\n'; // prints "00000000"
+std::bitset<N>::bitset(unsigned long long val): Constructor which initializes the bitset with the given unsigned long long value.
+Time complexity: O(N)
+````
+#### Example:
+````
+std::bitset<8> b2(5);
+std::cout << b2 << '\n'; // prints "00000101"
+std::bitset<N>::count(): Returns the number of set bits in the bitset.
+Time complexity: O(N)
+````
+#### Example:
+````
+std::bitset<8> b3(15);
+std::cout << b3.count() << '\n'; // prints 4
+std::bitset<N>::size(): Returns the size of the bitset.
+Time complexity: O(1)
+````
+#### Example:
+````
+std::bitset<8> b4;
+std::cout << b4.size() << '\n'; // prints 8
+std::bitset<N>::set(): Sets all the bits to 1.
+Time complexity: O(1)
+````
+#### Example:
+````
+std::bitset<8> b5;
+b5.set();
+std::cout << b5 << '\n'; // prints "11111111"
+std::bitset<N>::set(pos, value): Sets the bit at the given position to the given value.
+Time complexity: O(1)
+````
+#### Example:
+````
+std::bitset<8> b6;
+b6.set(2, true);
+std::cout << b6 << '\n'; // prints "00000100"
+std::bitset<N>::reset(): Resets all the bits to 0.
+Time complexity: O(1)
+````
+#### Example:
+````
+std::bitset<8> b7(255);
+b7.reset();
+std::cout << b7 << '\n'; // prints "00000000"
+std::bitset<N>::reset(pos): Resets the bit at the given position to 0.
+Time complexity: O(1)
+````
+#### Example:
+````
+std::bitset<8> b8(255);
+b8.reset(2);
+std::cout << b8 << '\n'; // prints "11111011"
+std::bitset<N>::flip(): Flips all the bits.
+Time complexity: O(1)
+````
+#### Example:
+````
+std::bitset<8> b9(5);
+b9.flip();
+std::cout << b9 << '\n'; // prints "11111010"
+std::bitset<N>::flip(pos): Flips the bit at the given position.
+Time complexity: O(1)
+````
+#### Example:
+````
+std::bitset<8> b10(5);
+b10.flip(2);
+std::cout << b10 << '\n'; // prints "00000101"
+std::bitset<N>::test(pos): Returns the value of the bit
+````
+----------------------------------------------------------------------------------------------------
