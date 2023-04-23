@@ -2147,5 +2147,75 @@ pq.pop();
 std::cout << "Top element of priority queue: " << pq.top() << std::endl;
 ````
 -------------------------------------------------------------------------------------------------------
+### std::unordered_set
 
+> list of all methods with time complexity and example
+Here are the common methods of std::unordered_set container in C++ with their time complexity:
+
+> std::unordered_set::empty() - Returns whether the unordered set is empty or not.
+
+##### Time complexity: O(1)
+
+#### Example:
+
+````
+std::unordered_set<int> s;
+if (s.empty()) {
+    std::cout << "Unordered set is empty\n";
+}
+std::unordered_set::size() - Returns the number of elements in the unordered set.
+````
+##### Time complexity: O(1)
+
+#### Example:
+
+````
+std::unordered_set<int> s;
+s.insert(3);
+s.insert(1);
+std::cout << "Size of unordered set: " << s.size() << std::endl;
+std::unordered_set::insert(const T& val) - Inserts a new element with value val in the unordered set.
+````
+##### Time complexity: O(1) average case, O(n) worst case
+
+#### Example:
+
+````
+std::unordered_set<int> s;
+s.insert(3);
+s.insert(1);
+s.insert(4);
+std::cout << "Size of unordered set: " << s.size() << std::endl;
+std::unordered_set::erase(const T& val) - Removes the element with the given value from the unordered set.
+````
+##### Time complexity: O(1) average case, O(n) worst case
+
+#### Example:
+
+````
+std::unordered_set<int> s;
+s.insert(3);
+s.insert(1);
+s.insert(4);
+s.erase(1);
+std::cout << "Size of unordered set: " << s.size() << std::endl;
+std::unordered_set::find(const T& val) - Returns an iterator to the element with the given value if it exists in the unordered set, else returns end().
+````
+##### Time complexity: O(1) average case, O(n) worst case
+
+#### Example:
+
+````
+std::unordered_set<int> s;
+s.insert(3);
+s.insert(1);
+s.insert(4);
+auto it = s.find(1);
+if (it != s.end()) {
+    std::cout << "Element found in unordered set\n";
+} else {
+    std::cout << "Element not found in unordered set\n";
+}
+````
+------------------------------------------------------------------------------------------
  
