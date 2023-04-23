@@ -1420,6 +1420,12 @@ if (s10 < s11) { // returns true if s10 is lexicographically less than s11
 ------------------------------------------------------------------------------------------------------------------------
 ### std::multiset
 
+> Multisets : Multisets are associative containers that store multiple elements having equivalent values following a specific order. Following are the properties of multisets:
+
+* Stores elements in sorted order. 
+* It allows the storage of multiple elements. 
+* We can erase more than 1 element by giving the start iterator and end iterator. 
+
 ### Iterators
 
 ````
@@ -1550,7 +1556,7 @@ auto kc = ms5.key_comp(); // returns the comparison function used to order the k
 auto vc = ms5.value_comp(); // returns the comparison function used to order the values in the multiset
 ````
 
-### Note: The complexity of some methods may depend on the comparison function used to order the elements in the multiset. The examples shown above use the default comparison function, which is std::less. 
+#### Note: The complexity of some methods may depend on the comparison function used to order the elements in the multiset. The examples shown above use the default comparison function, which is std::less. 
 ------------------------------------------------------------------------------------------------------------------------
  
  
