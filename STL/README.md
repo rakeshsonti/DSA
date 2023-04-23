@@ -121,7 +121,15 @@ std::vector<int> vec1 = {1, 2, 3};
 std::vector<int> vec2 = {4, 5, 6};
 vec1.swap(vec2); // vec1 = {4, 5, 6}, vec2 = {1, 2, 3}
 
+17)
 
+````
+  unique(arr.begin(),arr.end(),[](int x,int y){return x%2==y%2;});
+  reverse(arr.begin(),arr.end());
+  sort(arr.begin(),arr.end(),[](int x,int y){return x<y;});
+  sort(arr.begin(),arr.end(),greater<int>());
+```` 
+                                                          
 Note that the time complexity of some operations, such as `insert()` and `erase()`, can be affected by the size of the vector and the position of the element being inserted or erased. In general, adding or removing elements from the end of the vector is faster than doing so at the beginning or in the middle.
 
 ----------------------------------------------------------------------------------------------------------------------
