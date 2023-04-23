@@ -2218,4 +2218,84 @@ if (it != s.end()) {
 }
 ````
 ------------------------------------------------------------------------------------------
- 
+### std::unordered_map
+
+> list of all methods with time complexity and example
+Here are the common methods of std::unordered_map container in C++ with their time complexity:
+
+> std::unordered_map::empty() - Returns whether the unordered map is empty or not.
+
+#### Time complexity: O(1)
+
+#### Example:
+
+````
+std::unordered_map<std::string, int> m;
+if (m.empty()) {
+    std::cout << "Unordered map is empty\n";
+}
+std::unordered_map::size() - Returns the number of key-value pairs in the unordered map.
+
+Time complexity: O(1)
+````
+#### Example:
+
+````
+std::unordered_map<std::string, int> m;
+m["apple"] = 3;
+m["banana"] = 2;
+std::cout << "Size of unordered map: " << m.size() << std::endl;
+std::unordered_map::operator[](const Key& key) - Returns a reference to the value associated with the given key, or inserts a new key-value pair with the given key and a default-initialized value if the key does not exist.
+
+Time complexity: O(1) average case, O(n) worst case
+````
+#### Example:
+
+````
+std::unordered_map<std::string, int> m;
+m["apple"] = 3;
+m["banana"] = 2;
+std::cout << "Value of apple: " << m["apple"] << std::endl;
+std::cout << "Value of orange: " << m["orange"] << std::endl;
+std::cout << "Size of unordered map: " << m.size() << std::endl;
+std::unordered_map::insert(const std::pair<Key, T>& p) - Inserts a new key-value pair in the unordered map.
+
+Time complexity: O(1) average case, O(n) worst case
+````
+#### Example:
+
+````
+std::unordered_map<std::string, int> m;
+m.insert({"apple", 3});
+m.insert({"banana", 2});
+std::cout << "Size of unordered map: " << m.size() << std::endl;
+std::unordered_map::erase(const Key& key) - Removes the key-value pair with the given key from the unordered map.
+
+Time complexity: O(1) average case, O(n) worst case
+````
+#### Example:
+
+````
+std::unordered_map<std::string, int> m;
+m.insert({"apple", 3});
+m.insert({"banana", 2});
+m.erase("apple");
+std::cout << "Size of unordered map: " << m.size() << std::endl;
+std::unordered_map::find(const Key& key) - Returns an iterator to the key-value pair with the given key if it exists in the unordered map, else returns end().
+
+Time complexity: O(1) average case, O(n) worst case
+````
+#### Example:
+
+````
+std::unordered_map<std::string, int> m;
+m.insert({"apple", 3});
+m.insert({"banana", 2});
+auto it = m.find("apple");
+if (it != m.end()) {
+    std::cout << "Value of apple: " << it->second << std::endl;
+} else {
+    std::cout << "apple not found in unordered map\n";
+}
+````
+---------------------------------------------------------------------------------------------------------- 
