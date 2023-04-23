@@ -104,7 +104,85 @@ list.clear();
 > Note that the time complexity of some operations may vary depending on the size of the list and the implementation details of the ArrayList class.
 
 ---------------------------------------------------------------------------------------------------------------------------
+### LinkedList
 
+> LinkedList is an implementation of the List interface in Java that uses a linked list to store the elements. Here are some of the most commonly used methods of LinkedList, along with their time complexity and examples:
+
+> **add(E element)**: Adds an element to the end of the list. The operation takes O(1) time.
+````
+LinkedList<String> list = new LinkedList<>();
+list.add("apple");
+list.add("banana");
+list.add("cherry");
+````
+
+> **add(int index, E element)**: Adds an element at the specified index in the list. The operation takes O(n) time in the worst case because it may need to traverse the list to find the specified index.
+````
+LinkedList<String> list = new LinkedList<>();
+list.add("apple");
+list.add("banana");
+list.add("cherry");
+list.add(1, "orange");
+````
+> **remove(int index)**: Removes the element at the specified index from the list. The operation takes O(n) time in the worst case because it may need to traverse the list to find the specified index.
+````
+LinkedList<String> list = new LinkedList<>();
+list.add("apple");
+list.add("banana");
+list.add("cherry");
+list.remove(1);
+````
+> **get(int index)**: Returns the element at the specified index in the list. The operation takes O(n) time in the worst case because it may need to traverse the list to find the specified index.
+````
+LinkedList<String> list = new LinkedList<>();
+list.add("apple");
+list.add("banana");
+list.add("cherry");
+String fruit = list.get(1);
+````
+> **set(int index, E element)**: Replaces the element at the specified index in the list with the specified element. The operation takes O(n) time in the worst case because it may need to traverse the list to find the specified index.
+````
+LinkedList<String> list = new LinkedList<>();
+list.add("apple");
+list.add("banana");
+list.add("cherry");
+list.set(1, "orange");
+````
+> **size()**: Returns the number of elements in the list. The operation takes O(1) time.
+````
+LinkedList<String> list = new LinkedList<>();
+list.add("apple");
+list.add("banana");
+list.add("cherry");
+int size = list.size();
+````
+> **contains(Object o)**: Returns true if the list contains the specified element. The operation takes O(n) time in the worst case because it may need to traverse the list to find the specified element.
+````
+LinkedList<String> list = new LinkedList<>();
+list.add("apple");
+list.add("banana");
+list.add("cherry");
+boolean containsBanana = list.contains("banana");
+````
+
+> **indexOf(Object o)**: Returns the index of the first occurrence of the specified element in the list, or -1 if the element is not found. The operation takes O(n) time in the worst case because it may need to traverse the list to find the specified element.
+````
+LinkedList<String> list = new LinkedList<>();
+list.add("apple");
+list.add("banana");
+list.add("cherry");
+int index = list.indexOf("banana");
+````
+> **clear()**: Removes all elements from the list. The operation takes O(1) time.
+````
+LinkedList<String> list = new LinkedList<>();
+list.add("apple");
+list.add("banana");
+list.clear();
+````
+#### Note that the time complexity of some operations may vary depending on the size of the list and the implementation details of the LinkedList class.
+
+--------------------------------------------------------------------------------------------------------
 
 
 
