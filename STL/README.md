@@ -1963,7 +1963,119 @@ std::cout << "Top element of the first stack after swap: " << s1.top() << std::e
 std::cout << "Top element of the second stack after swap: " << s2.top() << std::endl;
 ````
 --------------------------------------------------------------------------------------------------------
+### std::queue
+list of all methods with time complexity and example
 
+#### Element access
+````
+reference front();
+const_reference front() const;
+reference back();
+const_reference back() const;
+Complexity:
+
+Constant time for both front() operations.
+
+Constant time if the container is std::deque, linear time otherwise for both back() operations.
+````
+#### Example:
+
+````
+std::queue<int> q;
+q.push(1);
+q.push(2);
+std::cout << "Front element of the queue: " << q.front() << std::endl;
+std::cout << "Back element of the queue: " << q.back() << std::endl;
+````
+#### Capacity
+````
+bool empty() const noexcept;
+size_type size() const noexcept;
+Complexity:
+
+Constant time for both operations.
+````
+#### Example:
+
+````
+std::queue<int> q;
+if (q.empty()) {
+    std::cout << "Queue is empty" << std::endl;
+}
+q.push(1);
+q.push(2);
+std::cout << "Size of the queue: " << q.size() << std::endl;
+````
+#### Modifiers
+````
+void push(const value_type& value);
+void push(value_type&& value);
+void pop();
+void swap(queue& other) noexcept(std::is_nothrow_swappable_v<Container>);
+Complexity:
+
+Constant time for push(), pop(), and swap().
+````
+#### Example:
+
+````
+std::queue<int> q1;
+q1.push(1);
+q1.push(2);
+std::queue<int> q2;
+q2.push(3);
+q2.push(4);
+q1.swap(q2);
+std::cout << "Front element of the first queue after swap: " << q1.front() << std::endl;
+std::cout << "Front element of the second queue after swap: " << q2.front() << std::endl;
+````
+#### Constructors
+````
+// Constructs empty queue.
+queue() noexcept(is_nothrow_default_constructible_v<Container>);
+ 
+// Constructs queue with a copy of the container.
+explicit queue(const Container& container);
+ 
+// Constructs queue with a move of the container.
+explicit queue(Container&& container) noexcept(
+  is_nothrow_move_constructible_v<Container>);
+ 
+// Constructs queue with a copy of the container.
+template<class Alloc>
+explicit queue(const Alloc& alloc);
+ 
+// Constructs queue with a copy of the allocator.
+template<class Alloc>
+queue(const Container& container, const Alloc& alloc);
+ 
+// Constructs queue with a copy of the allocator.
+template<class Alloc>
+queue(Container&& container, const Alloc& alloc);
+ 
+// Constructs queue with a copy of the allocator.
+template<class Alloc>
+queue(const queue& other, const Alloc& alloc);
+ 
+// Constructs queue with a copy of the allocator.
+template<class Alloc>
+queue(queue&& other, const Alloc& alloc);
+Complexity:
+
+Linear time for copy/move constructor and all constructors with an allocator.
+````
+#### Example:
+
+````
+std::deque<int> d{1, 2, 3};
+std::queue<int> q1(d);
+std::queue<int> q2(std::move(d));
+std::queue<int, std::list<int>> q3(std::allocator<int>{});
+std::queue<int, std::list<int>> q4(d, std::allocator<int>{});
+std::queue<int, std::list<int>> q5(std::move(d), std::allocator<int>{});
+std::queue<int, std::list<int>> q6(q1, std::allocator<int>{});
+````
+-----------------------------------------------------------------------------------------------------------------------------
 
 
 
