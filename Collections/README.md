@@ -1309,3 +1309,224 @@ Internally, HashMap uses an array of Node objects to store the key-value pairs. 
 
 #### Overall, HashMap provides an efficient way to store and retrieve key-value pairs, but the performance can degrade if the hash function is poorly distributed or if there are many hash collisions.
 ---------------------------------------------------------------------------------------------------------
+### Thread
+
+In Java, a thread is an independent path of execution within a program. Threads allow multiple tasks to be executed concurrently within the same program. Java provides several methods to create and manage threads.
+
+#### Creating a Thread:
+There are two ways to create a thread in Java:
+Extend the Thread class and override the run() method.
+Implement the Runnable interface and pass an instance of the Runnable to a new Thread object.
+Example of extending the Thread class:
+
+````
+class MyThread extends Thread {
+   public void run() {
+      System.out.println("MyThread is running.");
+   }
+}
+
+public class Main {
+   public static void main(String[] args) {
+      MyThread t = new MyThread();
+      t.start();
+   }
+}
+````
+
+#### Example of implementing the Runnable interface:
+
+````
+class MyRunnable implements Runnable {
+   public void run() {
+      System.out.println("MyRunnable is running.");
+   }
+}
+
+public class Main {
+   public static void main(String[] args) {
+      MyRunnable r = new MyRunnable();
+      Thread t = new Thread(r);
+      t.start();
+   }
+}
+````
+
+#### Starting a Thread:
+To start a thread, we call the start() method on the Thread object. This method will create a new thread of execution and call the run() method on the Thread object.
+
+#### Joining Threads:
+We can use the join() method to wait for a thread to complete before continuing with the execution of the main thread.
+
+#### Example:
+
+````
+class MyThread extends Thread {
+   public void run() {
+      System.out.println("MyThread is running.");
+   }
+}
+
+public class Main {
+   public static void main(String[] args) {
+      MyThread t = new MyThread();
+      t.start();
+      try {
+         t.join();
+      } catch (InterruptedException e) {
+         e.printStackTrace();
+      }
+      System.out.println("MyThread has completed.");
+   }
+}
+````
+
+#### Sleeping Threads:
+We can use the sleep() method to pause the execution of a thread for a specified amount of time.
+Example:
+
+````
+class MyThread extends Thread {
+   public void run() {
+      System.out.println("MyThread is running.");
+      try {
+         Thread.sleep(1000); // pause for 1 second
+      } catch (InterruptedException e) {
+         e.printStackTrace();
+      }
+      System.out.println("MyThread has completed.");
+   }
+}
+
+public class Main {
+   public static void main(String[] args) {
+      MyThread t = new MyThread();
+      t.start();
+   }
+}
+````
+
+#### Interrupting Threads:
+We can use the interrupt() method to interrupt the execution of a thread.
+
+#### Example:
+
+````
+class MyThread extends Thread {
+   public void run() {
+      System.out.println("MyThread is running.");
+      while (!isInterrupted()) {
+         // do some work
+      }
+      System.out.println("MyThread has been interrupted.");
+   }
+}
+
+public class Main {
+   public static void main(String[] args) {
+      MyThread t = new MyThread();
+      t.start();
+      try {
+         Thread.sleep(1000); // pause for 1 second
+      } catch (InterruptedException e) {
+         e.printStackTrace();
+      }
+      t.interrupt();
+   }
+}
+````
+
+#### Thread Synchronization:
+
+When multiple threads are accessing the same shared resource, there may be a possibility of data inconsistency or race conditions. Thread synchronization is the mechanism that prevents such data inconsistencies by allowing only one thread at a time to access the shared resource. In Java, synchronization can be achieved by using the synchronized keyword or by using the Lock interface.
+
+#### Example:
+
+````
+class Counter {
+   private int count = 0;
+
+   public synchronized void increment() {
+      count++;
+   }
+
+   public int getCount() {
+      return count;
+   }
+}
+
+class WorkerThread extends Thread {
+   Counter counter;
+
+   public WorkerThread(Counter counter) {
+      this.counter = counter;
+   }
+
+   public void run() {
+      for(int i=0; i<10000; i++) {
+         counter.increment();
+      }
+   }
+}
+
+public class Test {
+   public static void main(String[] args) {
+      Counter counter = new Counter();
+      Thread thread1 = new WorkerThread(counter);
+      Thread thread2 = new WorkerThread(counter);
+      thread1.start();
+      thread2.start();
+      try {
+         thread1.join();
+         thread2.join();
+      } catch(InterruptedException e) {
+         e.printStackTrace();
+      }
+      System.out.println(counter.getCount());
+   }
+}
+````
+
+In this example, the Counter class has a synchronized increment() method which ensures that only one thread can access the count variable at a time. The WorkerThread class is a thread that increments the counter 10000 times. The Test class creates two worker threads and starts them. The main thread waits for both worker threads to complete using the join() method and then prints the final count value.
+
+#### Thread Pools:
+Creating a new thread for every task can be expensive in terms of system resources. Thread pools are a way to manage and reuse a fixed number of threads for executing a large number of tasks. Java provides the Executor framework to create and manage thread pools. The Executor framework provides a way to submit tasks to a pool of threads and also provides various ways to configure and manage the thread pool.
+
+#### Example:
+
+````
+class WorkerThread implements Runnable {
+   private String taskName;
+
+   public WorkerThread(String taskName) {
+      this.taskName = taskName;
+   }
+
+   public void run() {
+      System.out.println(Thread.currentThread().getName() + " executing " + taskName);
+      try {
+         Thread.sleep(1000);
+      } catch(InterruptedException e) {
+         e.printStackTrace();
+      }
+   }
+}
+
+public class Test {
+   public static void main(String[] args) {
+      ExecutorService executor = Executors.newFixedThreadPool(2);
+      for(int i=1; i<=5; i++) {
+         WorkerThread worker = new WorkerThread("task " + i);
+         executor.execute(worker);
+      }
+      executor.shutdown();
+      while(!executor.isTerminated()) {
+      }
+      System.out.println("All tasks completed");
+   }
+}
+````
+
+In this example, the WorkerThread class implements the Runnable interface and executes a task. The Test class creates a thread pool of size 2 using the newFixedThreadPool() method of the Executors class. It then submits 5 tasks to the thread pool using the execute() method of the ExecutorService interface. After submitting all tasks, the main thread waits for all tasks to complete by calling the shutdown() and isTerminated() methods of the ExecutorService interface.
+
+---------------------------------------------------------------------------------------------------------
