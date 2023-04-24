@@ -1640,6 +1640,46 @@ The time complexity of exception handling in Java is O(1) for the try block and 
 ![java-exception-hierarchy-1](https://user-images.githubusercontent.com/52101117/233890156-da5c0872-109c-49b0-a7fa-b4577ea2fc4b.png)
 ![hierarchy-of-exception-handling](https://user-images.githubusercontent.com/52101117/233890159-7883ad79-2eb4-44cd-bef3-090e018c4263.png)
 
+
+Exception handling is a mechanism in Java that allows you to handle runtime errors that can occur during program execution. Exceptions can be caused by a variety of factors such as user input errors, network issues, or bugs in the code. Proper exception handling can make your code more robust, reliable, and maintainable.
+
+Here are some key elements of exception handling in Java:
+
+> **try-catch block**: This is used to handle exceptions in your code. The try block contains the code that may throw an exception, while the catch block contains the code that handles the exception. Here's an example:
+````
+try {
+    // code that may throw an exception
+} catch (ExceptionType e) {
+    // code that handles the exception
+}
+````
+
+> **throw keyword**: This is used to manually throw an exception from your code. You can create a new instance of an exception class and throw it using the throw keyword. Here's an example:
+````
+if (value < 0) {
+    throw new IllegalArgumentException("Value must be positive");
+}
+````
+> **throws keyword**: This is used in method signatures to indicate that the method can potentially throw a certain type of exception. It allows the calling code to handle the exception or propagate it further up the call stack. Here's an example:
+````
+public void readFile(String filename) throws FileNotFoundException {
+    // code that reads the file
+}
+````
+> **finally block**: This is used to define a block of code that will always execute, regardless of whether an exception is thrown or not. It is typically used to release resources that were acquired in the try block. Here's an example:
+````
+try {
+    // code that may throw an exception
+} catch (ExceptionType e) {
+    // code that handles the exception
+} finally {
+    // code that always executes
+}
+````
+
+In summary, exception handling is an important part of Java programming. By using try-catch blocks, throw and throws keywords, and finally blocks, you can write more robust and error-tolerant code that can handle runtime errors gracefully.
+
+
 ----------------------------------------------------------------------------------------------------------
 
 ### Object-Oriented Programming (OOP):
