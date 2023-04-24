@@ -972,3 +972,80 @@ System.out.println(deque); // output: [2, 1]
 
 #### Time complexity: O(1).
 ---------------------------------------------------------------------------------------------------
+### PriorityQueue
+
+provide time complexity and all method with examples in java
+Sure! Here are the time complexities and examples for the PriorityQueue class in Java:
+
+#### Time Complexities:
+````
+add(E element)/offer(E element): O(log n)
+remove(): O(log n)
+poll(): O(log n)
+element(): O(1)
+peek(): O(1)
+size(): O(1)
+````
+#### Methods:
+
+> **add(E element)**: Adds the specified element to the priority queue. Returns true if the element was added successfully, false otherwise. This method is equivalent to offer(E element).
+````
+PriorityQueue<String> pq = new PriorityQueue<>();
+pq.add("Apple");
+pq.add("Banana");
+pq.add("Cherry");
+System.out.println(pq); // [Apple, Banana, Cherry]
+````
+> **offer(E element)**: Adds the specified element to the priority queue. Returns true if the element was added successfully, false otherwise. This method is equivalent to add(E element).
+````
+PriorityQueue<String> pq = new PriorityQueue<>();
+pq.offer("Apple");
+pq.offer("Banana");
+pq.offer("Cherry");
+System.out.println(pq); // [Apple, Banana, Cherry]
+````
+> **remove()**: Removes the head element of the priority queue. Throws NoSuchElementException if the priority queue is empty.
+````
+PriorityQueue<String> pq = new PriorityQueue<>();
+pq.offer("Apple");
+pq.offer("Banana");
+pq.offer("Cherry");
+System.out.println(pq.remove()); // Apple
+System.out.println(pq); // [Banana, Cherry]
+````
+> **poll()**: Retrieves and removes the head element of the priority queue, or returns null if the priority queue is empty.
+````
+PriorityQueue<String> pq = new PriorityQueue<>();
+pq.offer("Apple");
+pq.offer("Banana");
+pq.offer("Cherry");
+System.out.println(pq.poll()); // Apple
+System.out.println(pq); // [Banana, Cherry]
+````
+> **element()**: Retrieves the head element of the priority queue without removing it. Throws NoSuchElementException if the priority queue is empty.
+````
+PriorityQueue<String> pq = new PriorityQueue<>();
+pq.offer("Apple");
+pq.offer("Banana");
+pq.offer("Cherry");
+System.out.println(pq.element()); // Apple
+System.out.println(pq); // [Apple, Banana, Cherry]
+````
+> **peek()**: Retrieves the head element of the priority queue without removing it, or returns null if the priority queue is empty.
+````
+PriorityQueue<String> pq = new PriorityQueue<>();
+pq.offer("Apple");
+pq.offer("Banana");
+pq.offer("Cherry");
+System.out.println(pq.peek()); // Apple
+System.out.println(pq); // [Apple, Banana, Cherry]
+````
+> **size()**: Returns the number of elements in the priority queue.
+````
+PriorityQueue<String> pq = new PriorityQueue<>();
+pq.offer("Apple");
+pq.offer("Banana");
+pq.offer("Cherry");
+System.out.println(pq.size()); // 3
+````
+-------------------------------------------------------------------------------------------------------
