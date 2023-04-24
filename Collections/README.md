@@ -1742,3 +1742,38 @@ public class CreditCard extends PaymentCard {
 > In summary, OOP concepts provide a way to organize and structure code in a more modular and reusable way. By encapsulating data and methods, you can ensure that the internal workings of an object are hidden from the outside world. By using inheritance, you can create new classes that reuse properties and methods of existing classes. Polymorphism allows you to write code that can work with objects of different types, while abstraction allows you to create interfaces and abstract classes that define common behavior for related objects.
 
 ---------------------------------------------------------------------------------------------------------------
+### Garbage Collector (GC)
+
+In Java, the Garbage Collector (GC) is a component of the Java Virtual Machine (JVM) that automatically manages memory allocation and deallocation for objects. Its primary goal is to free up memory that is no longer being used by the program.
+
+When you create an object in Java, it is allocated in the heap memory. The GC periodically checks the heap to identify objects that are no longer being referenced by the program, and then frees up the memory used by those objects.
+
+Here's an example of how garbage collection works:
+
+````
+public class MyClass {
+    public static void main(String[] args) {
+        String s = "Hello, world!"; // allocate memory for a String object
+        System.out.println(s); // print the string
+        s = null; // set the reference to null
+        // at this point, the String object is no longer referenced by the program
+        // the GC will eventually free up the memory used by the object
+    }
+}
+````
+In this example, a String object is created and assigned to the variable s. The System.out.println() method is called to print the string. Then, the reference to the string is set to null, indicating that it is no longer being used by the program. The GC will eventually free up the memory used by the string object.
+
+Internally, the GC uses several algorithms to manage memory allocation and deallocation. One of the most commonly used algorithms is the Mark and Sweep algorithm, which works as follows:
+
+The GC starts by marking all objects that are still in use by the program.
+It then traverses the object graph, starting from the roots (such as local variables, static fields, and references on the call stack), and marks all objects that are reachable from the roots.
+Any objects that are not marked are considered to be garbage and are eligible for collection.
+The GC then frees up the memory used by the garbage objects.
+There are other algorithms as well, such as the Copying algorithm, which divides the heap into two equal parts and moves live objects from one part to the other, and the Generational algorithm, which divides objects into different generations based on their age and frequency of use.
+
+In general, the GC is designed to run automatically in the background, without requiring any intervention from the programmer. However, in some cases, you may want to optimize the GC behavior or troubleshoot memory-related issues. Java provides several GC tuning options that allow you to adjust the GC parameters, such as the frequency of garbage collection, the size of the heap, and the type of GC algorithm used.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+
