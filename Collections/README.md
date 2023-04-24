@@ -870,3 +870,105 @@ map.put("orange", 3);
 Set<Map.Entry<String, Integer>> entrySet = map.entrySet(); // returns [{apple=1}, {banana=2}, {orange=3}]
 ````
 ------------------------------------------------------------------------------------------------------------
+### ArrayDeque
+
+provide time complexity and all method with examples of LinkedList in java
+Sure! Here are the methods of ArrayDeque along with their time complexity and examples:
+
+> **addFirst(E e)**: Inserts the specified element at the front of this deque.
+
+Time complexity: O(1).
+
+#### Example:
+
+````
+ArrayDeque<Integer> deque = new ArrayDeque<>();
+deque.addFirst(1);
+deque.addFirst(2);
+deque.addFirst(3);
+System.out.println(deque); // output: [3, 2, 1]
+addLast(E e): Inserts the specified element at the end of this deque.
+````
+Time complexity: O(1).
+
+#### Example:
+
+````
+ArrayDeque<Integer> deque = new ArrayDeque<>();
+deque.addLast(1);
+deque.addLast(2);
+deque.addLast(3);
+System.out.println(deque); // output: [1, 2, 3]
+````
+> **offerFirst(E e)**: Inserts the specified element at the front of this deque, returning true upon success and false if capacity is full.
+
+Time complexity: O(1).
+
+#### Example:
+
+````
+ArrayDeque<Integer> deque = new ArrayDeque<>(2);
+deque.offerFirst(1);
+deque.offerFirst(2);
+boolean success = deque.offerFirst(3); // returns false
+System.out.println(deque); // output: [2, 1]
+````
+> **offerLast(E e)**: Inserts the specified element at the end of this deque, returning true upon success and false if capacity is full.
+
+Time complexity: O(1).
+
+#### Example:
+
+````
+ArrayDeque<Integer> deque = new ArrayDeque<>(2);
+deque.offerLast(1);
+deque.offerLast(2);
+boolean success = deque.offerLast(3); // returns false
+System.out.println(deque); // output: [1, 2]
+````
+> **removeFirst()**: Retrieves and removes the first element of this deque.
+
+Time complexity: O(1).
+
+#### Example:
+
+````
+ArrayDeque<Integer> deque = new ArrayDeque<>();
+deque.addFirst(1);
+deque.addFirst(2);
+deque.addFirst(3);
+int first = deque.removeFirst(); // returns 3
+System.out.println(deque); // output: [2, 1]
+````
+> **removeLast()**: Retrieves and removes the last element of this deque.
+
+Time complexity: O(1).
+
+#### Example:
+
+````
+ArrayDeque<Integer> deque = new ArrayDeque<>();
+deque.addLast(1);
+deque.addLast(2);
+deque.addLast(3);
+int last = deque.removeLast(); // returns 3
+System.out.println(deque); // output: [1, 2]
+````
+> **pollFirst()**: Retrieves and removes the first element of this deque, returning null if deque is empty.
+
+Time complexity: O(1).
+
+#### Example:
+
+````
+ArrayDeque<Integer> deque = new ArrayDeque<>();
+deque.addFirst(1);
+deque.addFirst(2);
+deque.addFirst(3);
+Integer first = deque.pollFirst(); // returns 3
+System.out.println(deque); // output: [2, 1]
+````
+> **pollLast()**: Retrieves and removes the last element of this deque, returning null if deque is empty.
+
+Time complexity: O(1).
+---------------------------------------------------------------------------------------------------
