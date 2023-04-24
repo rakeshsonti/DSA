@@ -714,3 +714,159 @@ map.put("apple", 1);
 ````
 
 -------------------------------------------------------------------------------------------------------------
+### LinkedHashMap
+
+> LinkedHashMap is a type of Map collection in Java that maintains the insertion order of elements. It is implemented as a hash table with a linked list running through it, so it provides the predictable iteration order (insertion order). Here are the methods and their time complexity in LinkedHashMap:
+
+> **put(key, value)**: Inserts the key-value pair into the map. If the key is already present, then the value is updated.
+
+> **Time complexity**: O(1) average case, O(n) worst case when the hash function has many collisions and the linked list grows.
+
+#### Example:
+
+````
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+System.out.println(map); // Output: {apple=1, banana=2, orange=3}
+````
+> **get(key)**: Returns the value associated with the given key.
+
+Time complexity: O(1) average case, O(n) worst case when the hash function has many collisions and the linked list grows.
+
+####  Example:
+
+````
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+int value = map.get("banana");
+System.out.println(value); // Output: 2
+````
+> **remove(key)**: Removes the key-value pair associated with the given key.
+
+Time complexity: O(1) average case, O(n) worst case when the hash function has many collisions and the linked list grows.
+
+####  Example:
+
+````
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+map.remove("banana");
+System.out.println(map); // Output: {apple=1, orange=3}
+````
+> **clear()**: Removes all the key-value pairs from the map.
+
+Time complexity: O(n)
+
+#### Example:
+
+````
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+map.clear();
+System.out.println(map); // Output: {}
+````
+> **keySet()**: Returns a Set of all the keys in the map.
+
+Time complexity: O(n)
+
+####  Example:
+
+````
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+Set<String> keys = map.keySet();
+System.out.println(keys); // Output: [apple, banana, orange]
+````
+> **values()**: Returns a Collection of all the values in the map.
+
+Time complexity: O(n)
+
+####  Example:
+
+````
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+Collection<Integer> values = map.values();
+System.out.println(values); // Output: [1, 2, 3]
+````
+> **entrySet()**: Returns a Set of all the key-value pairs in the map as Map.Entry objects.
+
+Time complexity: O(n)
+
+#### Example:
+
+````
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+Set<Map.Entry<String, Integer>> entries = map.entrySet();
+System.out.println(entries
+````
+
+
+> **containsValue**(Object value): Returns true if this map contains the specified value, otherwise returns false.
+
+Time complexity: O(n), where n is the number of entries in the map.
+
+#### Example:
+
+````
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+boolean containsValue = map.containsValue(2); // returns true
+````
+> **keySet()**: Returns a set view of the keys contained in this map.
+
+Time complexity: O(1).
+
+#### Example:
+
+````
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+Set<String> keySet = map.keySet(); // returns ["apple", "banana", "orange"]
+````
+> **values()**: Returns a collection view of the values contained in this map.
+
+Time complexity: O(n), where n is the number of entries in the map.
+
+#### Example:
+
+````
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+Collection<Integer> values = map.values(); // returns [1, 2, 3]
+````
+> **entrySet()**: Returns a set view of the mappings contained in this map.
+
+Time complexity: O(1).
+
+#### Example:
+
+````
+LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+Set<Map.Entry<String, Integer>> entrySet = map.entrySet(); // returns [{apple=1}, {banana=2}, {orange=3}]
+````
+------------------------------------------------------------------------------------------------------------
