@@ -1530,3 +1530,67 @@ public class Test {
 In this example, the WorkerThread class implements the Runnable interface and executes a task. The Test class creates a thread pool of size 2 using the newFixedThreadPool() method of the Executors class. It then submits 5 tasks to the thread pool using the execute() method of the ExecutorService interface. After submitting all tasks, the main thread waits for all tasks to complete by calling the shutdown() and isTerminated() methods of the ExecutorService interface.
 
 ---------------------------------------------------------------------------------------------------------
+### Exception
+
+In Java, an exception is an event that interrupts the normal flow of a program's execution. It is an object that represents an unusual condition that occurs during the execution of a program, such as a runtime error or an unexpected situation that requires special handling.
+
+There are three types of exceptions in Java: checked exceptions, unchecked exceptions, and errors.
+
+Checked Exceptions: These are the exceptions that are checked by the compiler at the time of compilation. They occur at the compile time and must be handled by the programmer using try-catch block or by declaring them in the method signature using the throws keyword.
+#### Example:
+
+````
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    try {
+      File file = new File("example.txt");
+      Scanner sc = new Scanner(file);
+    } catch (FileNotFoundException e) {
+      System.out.println("File not found: " + e.getMessage());
+    }
+  }
+}
+````
+
+In the above example, we are trying to read the contents of a file using the Scanner class. If the file is not found, a FileNotFoundException is thrown, which is a checked exception. We have handled this exception using the try-catch block.
+
+Unchecked Exceptions: These are the exceptions that are not checked by the compiler at the time of compilation. They occur at the runtime and can be handled using the try-catch block.
+#### Example:
+
+````
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 0;
+    try {
+      int result = a / b;
+    } catch (ArithmeticException e) {
+      System.out.println("Divide by zero: " + e.getMessage());
+    }
+  }
+}
+````
+
+In the above example, we are trying to divide a number by zero, which is not allowed in Java. This will result in an ArithmeticException, which is an unchecked exception. We have handled this exception using the try-catch block.
+
+> **Errors**: These are the exceptions that occur due to the lack of system resources or some serious problems that cannot be handled by the program. They are also unchecked exceptions and are not required to be handled.
+#### Example:
+
+````
+public class Main {
+  public static void main(String[] args) {
+    int[] array = new int[1000000000];
+  }
+}
+````
+
+In the above example, we are trying to create an array of size 1000000000, which is not possible due to the lack of memory resources. This will result in an OutOfMemoryError, which is an error and cannot be handled.
+
+In Java, we can create our own exceptions by extending the Exception class or the RuntimeException class. We can also create custom exception messages and handle them using the try-catch block.
+
+The time complexity of exception handling in Java is O(1) for the try block and O(n) for the catch block, where n is the number of catch blocks. However, the time complexity of the code inside the try and catch blocks depends on the code itself and cannot be determined in general.
+
+----------------------------------------------------------------------------------------------------------
