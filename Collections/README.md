@@ -410,14 +410,14 @@ set.toArray(array);
 
 Here are the main methods provided by the HashMap class in Java:
 
-> put(K key, V value): Associates the specified value with the specified key in this map. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
+> **put(K key, V value)**: Associates the specified value with the specified key in this map. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
 map.put("banana", 2);
 map.put("cherry", 3);
 ````
-> get(Object key): Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
+> **get(Object key)**: Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -425,7 +425,7 @@ map.put("banana", 2);
 map.put("cherry", 3);
 Integer value = map.get("banana");
 ````
-> remove(Object key): Removes the mapping for the specified key from this map if present. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
+> **remove(Object key)**: Removes the mapping for the specified key from this map if present. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -433,7 +433,7 @@ map.put("banana", 2);
 map.put("cherry", 3);
 Integer removedValue = map.remove("banana");
 ````
-> containsKey(Object key): Returns true if this map contains a mapping for the specified key. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
+> **containsKey(Object key)**: Returns true if this map contains a mapping for the specified key. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -441,7 +441,7 @@ map.put("banana", 2);
 map.put("cherry", 3);
 boolean containsKey = map.containsKey("banana");
 ````
-> containsValue(Object value): Returns true if this map maps one or more keys to the specified value. The operation takes O(n) time, where n is the number of mappings in the map.
+> **containsValue(Object value)**: Returns true if this map maps one or more keys to the specified value. The operation takes O(n) time, where n is the number of mappings in the map.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -449,7 +449,7 @@ map.put("banana", 2);
 map.put("cherry", 3);
 boolean containsValue = map.containsValue(2);
 ````
-> size(): Returns the number of key-value mappings in this map. The operation takes O(1) time.
+> **size()**: Returns the number of key-value mappings in this map. The operation takes O(1) time.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -457,7 +457,7 @@ map.put("banana", 2);
 map.put("cherry", 3);
 int size = map.size();
 ````
-> keySet(): Returns a Set view of the keys contained in this map. The operation takes O(1) time.
+> **keySet()**: Returns a Set view of the keys contained in this map. The operation takes O(1) time.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -465,7 +465,7 @@ map.put("banana", 2);
 map.put("cherry", 3);
 Set<String> keySet = map.keySet();
 ````
-> values(): Returns a Collection view of the values contained in this map. The operation takes O(n) time, where n is the number of mappings in the map.
+> **values()**: Returns a Collection view of the values contained in this map. The operation takes O(n) time, where n is the number of mappings in the map.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -474,7 +474,7 @@ map.put("cherry", 3);
 Collection<Integer> values = map.values();
 ````
 
-> putAll(Map<? extends K,? extends V> m): Copies all of the mappings from the specified map to this map. The operation takes O(n) time, where n is the number of mappings in the specified map.
+> **putAll(Map<? extends K,? extends V> m)**: Copies all of the mappings from the specified map to this map. The operation takes O(n) time, where n is the number of mappings in the specified map.
 ````
 HashMap<String, Integer> map1 = new HashMap<>();
 map1.put("apple", 1);
@@ -484,7 +484,7 @@ map1.put("cherry", 3);
 HashMap<String, Integer> map2 = new HashMap<>();
 map2.putAll(map1);
 ````
-> clear(): Removes all of the mappings from this map. The operation takes O(1) time.
+> **clear()**: Removes all of the mappings from this map. The operation takes O(1) time.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -492,7 +492,7 @@ map.put("banana", 2);
 map.put("cherry", 3);
 map.clear();
 ````
-> isEmpty(): Returns true if this map contains no key-value mappings. The operation takes O(1) time.
+> **isEmpty()**: Returns true if this map contains no key-value mappings. The operation takes O(1) time.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 boolean isEmpty = map.isEmpty();
@@ -504,7 +504,7 @@ map.put("banana", 2);
 map.put("cherry", 3);
 Set<Map.Entry<String, Integer>> entrySet = map.entrySet();
 ````
-> putIfAbsent(K key, V value): If the specified key is not already associated with a value (or is mapped to null), associates it with the given value and returns null; otherwise, returns the current value associated with the key. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
+> **putIfAbsent(K key, V value)**: If the specified key is not already associated with a value (or is mapped to null), associates it with the given value and returns null; otherwise, returns the current value associated with the key. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -513,7 +513,7 @@ map.put("cherry", 3);
 Integer previousValue = map.putIfAbsent("banana", 4); // returns 2
 Integer newValue = map.putIfAbsent("date", 5); // returns null
 ````
-> getOrDefault(Object key, V defaultValue): Returns the value to which the specified key is mapped, or defaultValue if this map contains no mapping for the key. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
+> **getOrDefault(Object key, V defaultValue)**: Returns the value to which the specified key is mapped, or defaultValue if this map contains no mapping for the key. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -521,7 +521,7 @@ map.put("banana", 2);
 map.put("cherry", 3);
 Integer value = map.getOrDefault("date", 0); // returns 0
 ````
-> replace(K key, V value): Replaces the entry for the specified key only if it is currently mapped to some value, and returns the previous value associated with the key, or null if there was no mapping for the key. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
+> **replace(K key, V value)**: Replaces the entry for the specified key only if it is currently mapped to some value, and returns the previous value associated with the key, or null if there was no mapping for the key. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -530,9 +530,9 @@ map.put("cherry", 3);
 Integer previousValue = map.replace("banana", 4); // returns 2
 Integer nonExistingValue = map.replace("date", 5); // returns null
 ````
-> replaceAll(BiFunction<? super K,? super V,? extends V
+> **replaceAll(BiFunction<? super K,? super V,? extends V**
 
-> compute(K key, BiFunction<? super K,? super V,? extends V> remappingFunction): If the specified key is not already associated with a value (or is mapped to null), attempts to compute its value using the given mapping function and enters it into this map unless null. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
+> **compute(K key, BiFunction<? super K,? super V,? extends V> remappingFunction)**: If the specified key is not already associated with a value (or is mapped to null), attempts to compute its value using the given mapping function and enters it into this map unless null. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -543,7 +543,7 @@ map.compute("apple", (k, v) -> v + 1); // adds 1 to the value of "apple"
 map.compute("date", (k, v) -> (v == null) ? 1 : v + 1); // adds 1 to the value of "date" or sets it to 1 if it doesn't exist
 ````
 
-> computeIfAbsent(K key, Function<? super K,? extends V> mappingFunction): If the specified key is not already associated with a value (or is mapped to null), attempts to compute its value using the given mapping function and enters it into this map unless null. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
+> **computeIfAbsent(K key, Function<? super K,? extends V> mappingFunction)**: If the specified key is not already associated with a value (or is mapped to null), attempts to compute its value using the given mapping function and enters it into this map unless null. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -553,7 +553,7 @@ map.put("cherry", 3);
 map.computeIfAbsent("apple", k -> k.length()); // returns 1
 map.computeIfAbsent("date", k -> k.length()); // adds "date" with value 4 to the map and returns 4
 ````
-> computeIfPresent(K key, BiFunction<? super K,? super V,? extends V> remappingFunction): If the specified key is already associated with a value (or is mapped to null), attempts to compute a new mapping given the key and its current mapped value. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
+> **computeIfPresent(K key, BiFunction<? super K,? super V,? extends V> remappingFunction)**: If the specified key is already associated with a value (or is mapped to null), attempts to compute a new mapping given the key and its current mapped value. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
@@ -563,7 +563,7 @@ map.put("cherry", 3);
 map.computeIfPresent("apple", (k, v) -> v + 1); // adds 1 to the value of "apple"
 map.computeIfPresent("date", (k, v) -> v + 1); // returns null
 ````
-> merge(K key, V value, BiFunction<? super V,? super V,? extends V> remappingFunction): If the specified key is not already associated with a value (or is mapped to null), associates it with the given value. Otherwise, computes a new value by invoking the given function on the current mapped value and the given value, and enters the new value into this map. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
+> **merge(K key, V value, BiFunction<? super V,? super V,? extends V> remappingFunction)**: If the specified key is not already associated with a value (or is mapped to null), associates it with the given value. Otherwise, computes a new value by invoking the given function on the current mapped value and the given value, and enters the new value into this map. The operation takes O(1) time in the average case, assuming that the hash function distributes the elements properly among the buckets.
 ````
 HashMap<String, Integer> map = new HashMap<>();
 map.put("apple", 1);
