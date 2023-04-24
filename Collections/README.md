@@ -1814,6 +1814,24 @@ There are other algorithms as well, such as the Copying algorithm, which divides
 In general, the GC is designed to run automatically in the background, without requiring any intervention from the programmer. However, in some cases, you may want to optimize the GC behavior or troubleshoot memory-related issues. Java provides several GC tuning options that allow you to adjust the GC parameters, such as the frequency of garbage collection, the size of the heap, and the type of GC algorithm used.
 
 -------------------------------------------------------------------------------------------------------------------------------
+### Java Memory Model:
 
+The Java Memory Model (JMM) is a specification that defines how the Java virtual machine (JVM) manages memory for Java programs. In Java, there are two types of memory: Heap and Stack.
+
+##### Heap:
+> Heap is a part of memory where objects are created and stored. All objects in Java are created in the heap. Heap memory is shared among all threads in a Java program.
+
+##### Stack:
+> Stack is a part of memory where local variables and method parameters are stored. Each thread in a Java program has its own stack. When a method is called, a new frame is created on the stack to hold the method's local variables and parameters. When the method returns, the frame is removed from the stack.
+
+##### Garbage Collection:
+> Garbage Collection is a process of reclaiming memory that is no longer being used by a program. In Java, the JVM automatically performs garbage collection. The JVM has a built-in garbage collector that runs in the background and frees memory that is no longer being used by a program.
+
+##### Memory Leaks:
+> Memory Leaks occur when a program allocates memory but does not release it when it is no longer needed. This can cause the program to run out of memory over time. In Java, memory leaks can occur when objects are not properly dereferenced or when there are circular references between objects.
+
+To avoid memory leaks in Java, it is important to ensure that objects are properly dereferenced when they are no longer needed. This can be done by setting object references to null when they are no longer needed. It is also important to avoid circular references between objects by using weak references or by using a garbage collector that can handle circular references.
+
+--------------------------------------------------------------------------------------------------------------
 
 
