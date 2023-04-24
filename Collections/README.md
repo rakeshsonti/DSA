@@ -1108,3 +1108,98 @@ System.out.println(stack.search("Banana")); // 1
 System.out.println(stack.search("Grape")); // -1
 ````
 ------------------------------------------------------------------------------------------------------
+### Math
+
+> Java's Math class provides a wide range of mathematical functions. Here are some of the most commonly used methods with examples and time complexity:
+
+> **abs()**: This method returns the absolute value of the given number.
+#### Example:
+
+````
+int x = -10;
+System.out.println(Math.abs(x)); // Output: 10
+````
+#### Time complexity: O(1)
+
+> **max()**: This method returns the maximum of the two given numbers.
+#### Example:
+
+````
+int x = 10, y = 20;
+System.out.println(Math.max(x, y)); // Output: 20
+````
+#### Time complexity: O(1)
+
+> **min()**: This method returns the minimum of the two given numbers.
+#### Example:
+
+````
+int x = 10, y = 20;
+System.out.println(Math.min(x, y)); // Output: 10
+````
+#### Time complexity: O(1)
+
+> **pow()**: This method returns the value of the first argument raised to the power of the second argument.
+#### Example:
+
+````
+double x = 2.0, y = 3.0;
+System.out.println(Math.pow(x, y)); // Output: 8.0
+````
+#### Time complexity: O(log n)
+
+> **sqrt()**: This method returns the square root of the given number.
+#### Example:
+
+````
+double x = 25.0;
+System.out.println(Math.sqrt(x)); // Output: 5.0
+````
+#### Time complexity: O(1)
+
+> **cbrt()**: This method returns the cube root of the given number.
+#### Example:
+
+````
+double x = 8.0;
+System.out.println(Math.cbrt(x)); // Output: 2.0
+````
+#### Time complexity: O(log n)
+
+> **ceil()**: This method returns the smallest integer greater than or equal to the given number.
+#### Example:
+
+````
+double x = 2.5;
+System.out.println(Math.ceil(x)); // Output: 3.0
+````
+#### Time complexity: O(1)
+
+> **floor()**: This method returns the largest integer less than or equal to the given number.
+#### Example:
+
+````
+double x = 2.5;
+System.out.println(Math.floor(x)); // Output: 2.0
+````
+#### Time complexity: O(1)
+
+> **round()**: This method returns the closest integer to the given number.
+#### Example:
+
+````
+double x = 2.4;
+System.out.println(Math.round(x)); // Output: 2
+````
+#### Time complexity: O(1)
+
+> **sin()**: This method returns the sine of the given angle in radians.
+#### Example:
+
+````
+double angle = 30.0;
+System.out.println(Math.sin(angle * Math.PI / 180.0)); // Output: 0.5
+````
+
+#### Time complexity: O(1)
+--------------------------------------------------------------------------------------------------
