@@ -1641,3 +1641,104 @@ The time complexity of exception handling in Java is O(1) for the try block and 
 ![hierarchy-of-exception-handling](https://user-images.githubusercontent.com/52101117/233890159-7883ad79-2eb4-44cd-bef3-090e018c4263.png)
 
 ----------------------------------------------------------------------------------------------------------
+
+### Object-Oriented Programming (OOP):
+
+Object-Oriented Programming (OOP) is a programming paradigm that revolves around the concept of objects, which contain both data and methods to manipulate that data. Java is an object-oriented programming language, and it supports the core OOP concepts: Encapsulation, Inheritance, Polymorphism, and Abstraction.
+
+Let's take an example of a real-world scenario and see how OOP concepts can be applied to solve it.
+
+#### Example: Banking System
+
+Suppose you are building a banking system. Here are the OOP concepts that you can apply:
+
+####  Encapsulation:
+> Encapsulation is the process of hiding the implementation details of an object from the outside world. In Java, you can achieve encapsulation by using access modifiers such as public, private, and protected. Let's say you have a BankAccount class that represents a customer's bank account. You can encapsulate the account balance by making it private, and provide public methods to access or modify the balance.
+````
+public class BankAccount {
+    private double balance;
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        if (balance >= amount) {
+            balance -= amount;
+        } else {
+            throw new IllegalArgumentException("Insufficient balance");
+        }
+    }
+}
+````
+#### Inheritance:
+> Inheritance is the process of creating a new class from an existing class. The new class inherits the properties and methods of the existing class. Let's say you want to create a SavingsAccount class that extends the BankAccount class. The SavingsAccount class inherits the balance property and deposit() and withdraw() methods from the BankAccount class, and also has an additional interest rate property.
+````
+public class SavingsAccount extends BankAccount {
+    private double interestRate;
+
+    public double getInterestRate() {
+        return interestRate;
+    }
+
+    public void setInterestRate(double interestRate) {
+        this.interestRate = interestRate;
+    }
+}
+````
+#### Polymorphism:
+> Polymorphism is the ability of an object to take on many forms. In Java, you can achieve polymorphism through method overriding and method overloading. Let's say you want to calculate the interest earned on a SavingsAccount. You can override the deposit() method in the SavingsAccount class to include the interest earned.
+````
+public class SavingsAccount extends BankAccount {
+    private double interestRate;
+
+    // constructor and getter/setter methods
+
+    @Override
+    public void deposit(double amount) {
+        super.deposit(amount);
+        balance += balance * interestRate;
+    }
+}
+````
+#### Abstraction:
+> Abstraction is the process of hiding unnecessary details while showing only the essential features of an object. In Java, you can achieve abstraction by using abstract classes and interfaces. Let's say you want to add a CreditCard class to the banking system. You can create an abstract PaymentCard class that contains common properties and methods for both CreditCard and DebitCard classes.
+````
+public abstract class PaymentCard {
+    private String cardNumber;
+    private String expirationDate;
+
+    public PaymentCard(String cardNumber, String expirationDate) {
+        this.cardNumber = cardNumber;
+        this.expirationDate = expirationDate;
+    }
+
+    public abstract void makePayment(double amount);
+}
+
+public class CreditCard extends PaymentCard {
+    private double creditLimit;
+    private double balance;
+
+    public CreditCard(String cardNumber, String expirationDate, double creditLimit) {
+        super(cardNumber, expirationDate);
+        this.creditLimit = creditLimit;
+    }
+
+    public void makePayment(double amount) {
+        if (balance + amount <= creditLimit) {
+            balance += amount;
+    } else {
+        throw new IllegalArgumentException("Exceeds credit limit");
+    }
+}
+}
+````
+
+> In summary, OOP concepts provide a way to organize and structure code in a more modular and reusable way. By encapsulating data and methods, you can ensure that the internal workings of an object are hidden from the outside world. By using inheritance, you can create new classes that reuse properties and methods of existing classes. Polymorphism allows you to write code that can work with objects of different types, while abstraction allows you to create interfaces and abstract classes that define common behavior for related objects.
+
+---------------------------------------------------------------------------------------------------------------
