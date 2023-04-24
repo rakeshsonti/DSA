@@ -2390,6 +2390,7 @@ std::bitset<N>::test(pos): Returns the value of the bit
 The C++ STL provides various math functions that can be used for performing mathematical operations. Here are some of the commonly used functions with examples:
 
 > **abs()**: This function returns the absolute value of the given number.
+Time complexity: O(1)
 #### Example:
 
 ````
@@ -2397,6 +2398,7 @@ int x = -10;
 cout << abs(x); // Output: 10
 ````
 > **pow()**: This function returns the power of a number.
+Time complexity: O(logn)
 #### Example:
 
 ````
@@ -2404,6 +2406,7 @@ double x = 2.0, y = 3.0;
 cout << pow(x, y); // Output: 8.0
 ````
 > **sqrt()**: This function returns the square root of the given number.
+Time complexity: O(logn)
 #### Example:
 
 ````
@@ -2411,6 +2414,7 @@ double x = 16.0;
 cout << sqrt(x); // Output: 4.0
 ````
 > **ceil()**: This function returns the smallest integer greater than or equal to the given number.
+Time complexity: O(1)
 #### Example:
 
 ````
@@ -2418,6 +2422,7 @@ double x = 4.3;
 cout << ceil(x); // Output: 5
 ````
 > **floor()**: This function returns the largest integer less than or equal to the given number.
+Time complexity: O(1)
 #### Example:
 
 ````
@@ -2425,6 +2430,7 @@ double x = 4.8;
 cout << floor(x); // Output: 4
 ````
 > **round()**: This function returns the nearest integer value of the given number.
+Time complexity: O(1)
 #### Example:
 
 ````
@@ -2432,6 +2438,7 @@ double x = 4.4;
 cout << round(x); // Output: 4
 ````
 > **fmod()**: This function returns the floating-point remainder of the division operation.
+Time complexity: O(1)
 #### Example:
 
 ````
@@ -2439,6 +2446,7 @@ double x = 10.5, y = 3.5;
 cout << fmod(x, y); // Output: 3.5
 ````
 > **log()**: This function returns the natural logarithm of the given number.
+Time complexity: O(logn)
 #### Example:
 
 ````
@@ -2446,6 +2454,7 @@ double x = 2.0;
 cout << log(x); // Output: 0.693147
 ````
 > **sin()**: This function returns the sine of the given angle in radians.
+Time complexity: O(1)
 #### Example:
 
 ````
@@ -2453,6 +2462,7 @@ double angle = 45.0;
 cout << sin(angle * 3.14159 / 180.0); // Output: 0.707107
 ````
 > **cos()**: This function returns the cosine of the given angle in radians.
+Time complexity: O(1)
 #### Example:
 
 ````
@@ -2461,6 +2471,7 @@ cout << cos(angle * 3.14159 / 180.0); // Output: 0.5
 ````
 
 > **tan()**: This function returns the tangent of the given angle in radians.
+Time complexity: O(1)
 #### Example:
 
 ````
@@ -2468,6 +2479,7 @@ double angle = 30.0;
 cout << tan(angle * 3.14159 / 180.0); // Output: 0.57735
 ````
 > **atan()**: This function returns the arctangent of the given number in radians.
+Time complexity: O(1)
 #### Example:
 
 ````
@@ -2475,6 +2487,7 @@ double x = 1.0;
 cout << atan(x); // Output: 0.785398
 ````
 > **exp()**: This function returns the exponential value of the given number.
+Time complexity: O(1)
 #### Example:
 
 ````
@@ -2482,6 +2495,7 @@ double x = 2.0;
 cout << exp(x); // Output: 7.38906
 ````
 > **max()**: This function returns the maximum of the two given numbers.
+Time complexity: O(n)
 #### Example:
 
 ````
@@ -2489,11 +2503,115 @@ int x = 10, y = 20;
 cout << max(x, y); // Output: 20
 ````
 > **min()**: This function returns the minimum of the two given numbers.
+Time complexity: O(n)
 #### Example:
 
 ````
 int x = 10, y = 20;
 cout << min(x, y); // Output: 10
 ````
+
+> **sort()**: Used to sort a range of elements in ascending or descending order.
+#### Time complexity: O(n log n)
+#### Example:
+````
+int arr[] = {4, 2, 1, 5, 3};
+sort(arr, arr + 5); // arr will be sorted in ascending order
+````
+> **max()/min()**: Returns the maximum/minimum element in a range of elements.
+#### Time complexity: O(n)
+#### Example:
+````
+int arr[] = {4, 2, 1, 5, 3};
+int max_num = *max_element(arr, arr + 5); // max_num will be 5
+int min_num = *min_element(arr, arr + 5); // min_num will be 1
+````
+> **binary_search()**: Checks if a given element is present in a sorted range of elements.
+#### Time complexity: O(log n)
+#### Example:
+````
+int arr[] = {1, 2, 3, 4, 5};
+bool found = binary_search(arr, arr + 5, 3); // found will be true
+````
+
+> **upper_bound()/lower_bound()**: Returns an iterator to the first element greater than or equal to the given element/first element greater than the given element in a sorted range of elements.
+#### Time complexity: O(log n)
+#### Example:
+````
+int arr[] = {1, 2, 3, 3, 5};
+int* upper = upper_bound(arr, arr + 5, 3); // upper points to the second 3
+int* lower = lower_bound(arr, arr + 5, 3); // lower points to the first 3
+````
+> **next_permutation()/prev_permutation()**: Rearranges the elements in a range into the next/previous lexicographically greater permutation of those elements.
+#### Time complexity: O(n)
+#### Example:
+````
+int arr[] = {1, 2, 3};
+next_permutation(arr, arr + 3); // arr is now {1, 3, 2}
+prev_permutation(arr, arr + 3); // arr is now {1, 2, 3} again
+````
+> **accumulate()**: Computes the sum of a range of elements.
+#### Time complexity: O(n)
+#### Example:
+````
+int arr[] = {1, 2, 3, 4, 5};
+int sum = accumulate(arr, arr + 5, 0); // sum will be 15
+````
+> **gcd()/lcm()**: Computes the greatest common divisor/least common multiple of two numbers.
+#### Time complexity: O(log min(a, b))
+#### Example:
+````
+int a = 12, b = 18;
+int gcd_num = gcd(a, b); // gcd_num will be 6
+int lcm_num = lcm(a, b); // lcm_num will be 36
+````
+> **pow()**: Computes the value of a number raised to a given power.
+#### Time complexity: O(log n)
+#### Example:
+````
+int num = 2, power = 5;
+int result = pow(num, power); // result will be 32
+````
+
+> **sqrt(x)** - computes the square root of a non-negative number x.
+
+#### Example:
+
+````
+#include <iostream>
+#include <cmath>
+
+int main() {
+    double x = 25.0;
+    double result = sqrt(x);
+    std::cout << "The square root of " << x << " is " << result << std::endl;
+    return 0;
+}
+ **Output**:
+The square root of 25 is 5
+Time complexity: O(log x)
+````
+
+> cbrt In C++, cbrt() is a math function defined in the cmath library. It returns the cube root of the given argument.
+````
+double cbrt(double x);
+Here's an example usage of cbrt():
+````
+````
+#include <iostream>
+#include <cmath>
+
+int main() {
+    double x = 27.0;
+    double y = cbrt(x);
+    std::cout << "The cube root of " << x << " is " << y << std::endl;
+    return 0;
+}
+````
+#### Output:
+
+
+> The cube root of 27 is 3
+> The time complexity of cbrt() is typically constant time, i.e., O(1), as it is implemented using hardware instructions on most systems.
 ----------------------------------------------------------------------------------------------------------
 
