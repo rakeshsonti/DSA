@@ -1167,7 +1167,51 @@ ConcurrentHashMap after replacement: {A=1, C=4}
 
 
 > The time complexity of these methods in ConcurrentHashMap is typically O(1) or constant time. However, it may be higher if there are frequent rehashing operations due to the dynamic resizing of the underlying hash table.
-------------------------------------------------------------------------------------------------------
+
+### Vector:
+
+The Vector class in Java is a legacy collection class that implements a dynamic array. It is similar to an ArrayList, but it is synchronized, which means that it is thread-safe. Here's an example of how to declare a Vector:
+
+````
+Vector<Integer> vc = new Vector<Integer>();
+````
+Now, let's take a look at some of the methods of the Vector class and their time complexity:
+
+> **add(E element)** - This method is used to add an element to the end of the vector. The time complexity of this operation is O(1) amortized, but it can be O(n) in the worst case if the vector needs to be resized.
+````
+vc.add(10); // Adds 10 to the end of the vector
+add(int index, E element) - This method is used to insert an element at a specific index in the vector. The time complexity of this operation is O(n), as it requires shifting all elements after the specified index to make room for the new element.
+
+vc.add(1, 20); // Inserts 20 at index 1
+````
+> **get(int index)** - This method is used to retrieve the element at a specific index in the vector. The time complexity of this operation is O(1).
+````
+int element = vc.get(0); // Retrieves the element at index 0
+````
+>  **set(int index, E element)** - This method is used to replace an element at a specific index in the vector. The time complexity of this operation is O(1).
+
+````
+vc.set(0, 30); // Replaces the element at index 0 with 30
+````
+
+> **remove(int index)** - This method is used to remove the element at a specific index in the vector. The time complexity of this operation is O(n), as it requires shifting all elements after the specified index to fill the gap left by the removed element.
+````
+vc.remove(0); // Removes the element at index 0
+size() - This method is used to get the number of elements in the vector. The time complexity of this operation is O(1).
+
+int size = vc.size(); // Gets the number of elements in the vector
+````
+> **capacity()** - This method is used to get the current capacity of the vector. The time complexity of this operation is O(1).
+````
+int capacity = vc.capacity(); // Gets the current capacity of the vector
+````
+
+> **trimToSize()** - This method is used to trim the capacity of the vector to its current size. The time complexity of this operation is O(n), as it requires creating a new array and copying the elements to it.
+````
+vc.trimToSize(); // Trims the capacity of the vector to its current size
+These are just a few examples of the methods available in the Vector class. There are many other methods available, such as isEmpty(), contains(Object o), and indexOf(Object o).
+````
+----------------------------------------------------------------------------------------------------------
 ### Math
 
 > Java's Math class provides a wide range of mathematical functions. Here are some of the most commonly used methods with examples and time complexity:
