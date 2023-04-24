@@ -1263,3 +1263,49 @@ System.out.println(Math.sin(angle * Math.PI / 180.0)); // Output: 0.5
 
 #### Time complexity: O(1)
 --------------------------------------------------------------------------------------------------
+
+### Internal working of HashMap
+
+Internal working of HashMap in java with example time complexity of each operation and function involed internally with details
+Sure, I can provide an overview of the internal working of HashMap in Java.
+
+HashMap is a hash table-based implementation of the Map interface. It stores the key-value pairs in an array and uses the key's hash code to determine the index of the array where the corresponding value is stored. In the array, each element is called a bucket, and each bucket contains a linked list of key-value pairs. The linked list is used to handle hash collisions, which occur when two or more keys have the same hash code.
+
+Here's an example of how a HashMap can store key-value pairs:
+
+````
+HashMap<String, Integer> map = new HashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+````
+In this example, "apple", "banana", and "cherry" are keys, and 1, 2, and 3 are values.
+
+* When put() is called, HashMap computes the hash code of the key using the hashCode() method, which is then transformed to an index in the array using a hash function. If the bucket at that index is empty, the key-value pair is added to that bucket. If the bucket is not empty, a linked list is created at that bucket, and the key-value pair is added to the end of the linked list.
+
+* When get() is called, HashMap computes the hash code of the key, uses the hash function to determine the index in the array, and then searches the linked list at that bucket to find the value corresponding to the key.
+
+Here are the time complexities of some common operations in HashMap:
+
+> **put(key, value)**: O(1) average case, O(n) worst case, where n is the number of elements in the map 
+
+> **get(key)**: O(1) average case, O(n) worst case, where n is the number of elements in the map
+
+> **remove(key)**: O(1) average case, O(n) worst case, where n is the number of elements in the map
+
+> **containsKey(key)**: O(1) average case, O(n) worst case, where n is the number of elements in the map
+
+> **keySet()**: O(n) time to create the set, where n is the number of elements in the map
+
+> **values()**: O(n) time to create the collection, where n is the number of elements in the map
+
+> **entrySet()**: O(n) time to create the set, where n is the number of elements in the map
+
+> **size()**: O(1)
+
+Note that the average case time complexity assumes a well-distributed hash function and no hash collisions. Worst case time complexity occurs when many keys have the same hash code, resulting in a long linked list for that hash bucket, which can cause performance degradation.
+
+Internally, HashMap uses an array of Node objects to store the key-value pairs. Each Node contains a key, a value, and a reference to the next Node in the linked list. HashMap also uses a load factor to determine when to increase the size of the array. When the number of key-value pairs exceeds the load factor multiplied by the size of the array, the array is resized and all the key-value pairs are rehashed and moved to their new buckets.
+
+#### Overall, HashMap provides an efficient way to store and retrieve key-value pairs, but the performance can degrade if the hash function is poorly distributed or if there are many hash collisions.
+---------------------------------------------------------------------------------------------------------
