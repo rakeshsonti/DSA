@@ -970,5 +970,5 @@ System.out.println(deque); // output: [2, 1]
 ````
 > **pollLast()**: Retrieves and removes the last element of this deque, returning null if deque is empty.
 
-Time complexity: O(1).
+#### Time complexity: O(1).
 ---------------------------------------------------------------------------------------------------
