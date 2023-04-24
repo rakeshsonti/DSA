@@ -291,3 +291,118 @@ set.clear();
 #### Note that the time complexity of some operations may vary depending on the size of the set and the implementation details of the TreeSet class. Also note that TreeSet is a sorted set, which means that it provides additional methods for navigating and accessing elements in sorted order.
 ------------------------------------------------------------------------------------------------------------
 
+### LinkedHashSet
+
+> LinkedHashSet is an implementation of the Set interface in Java that maintains a linked list of the elements in the set, which allows iteration in the order that the elements were added. Here are some of the most commonly used methods of LinkedHashSet, along with their time complexity and examples:
+
+> **add(E e)**: Adds the specified element to the set if it is not already present. The operation takes O(1) time in the average case.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+````
+> **contains(Object o)**: Returns true if the set contains the specified element. The operation takes O(1) time in the average case.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+boolean contains = set.contains("banana");
+````
+> **isEmpty()**: Returns true if the set is empty. The operation takes O(1) time.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+boolean empty = set.isEmpty();
+````
+> **size()**: Returns the number of elements in the set. The operation takes O(1) time.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+int size = set.size();
+````
+> **clear()**: Removes all elements from the set. The operation takes O(1) time.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+set.clear();
+````
+> **remove(Object o)**: Removes the specified element from the set if it is present. The operation takes O(1) time in the average case.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+boolean removed = set.remove("banana");
+````
+> **addAll(Collection<? extends E> c)**: Adds all of the elements in the specified collection to the set. The operation takes O(n) time, where n is the number of elements in the collection.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+List<String> list = new ArrayList<>();
+list.add("date");
+list.add("elderberry");
+set.addAll(list);
+````
+> **containsAll(Collection<?> c)**: Returns true if the set contains all of the elements in the specified collection. The operation takes O(n) time, where n is the number of elements in the collection.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+List<String> list = new ArrayList<>();
+list.add("apple");
+list.add("cherry");
+boolean containsAll = set.containsAll(list);
+````
+> **removeAll(Collection<?> c)**: Removes all of the elements in the specified collection from the set. The operation takes O(n) time, where n is the number of elements in the collection.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+List<String> list = new ArrayList<>();
+list.add("apple");
+list.add("cherry");
+boolean removedAll = set.removeAll(list);
+````
+> **retainAll(Collection<?> c)**: Retains only the elements in the set that are contained in the specified collection. The operation takes O(n) time, where n is the number of elements in the collection.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+List<String> list = new ArrayList<>();
+list.add("apple");
+list.add("cherry");
+boolean retainedAll = set.retainAll(list);
+````
+> **toArray()**: Returns an array containing all of the elements in the set, in the order that they were added.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+Object[] array = set.toArray();
+````
+> **toArray(T[] a)**: Returns an array containing all of the elements in the set, in the order that they were added, and stores the elements in the specified array if it is large enough.
+````
+LinkedHashSet<String> set = new LinkedHashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+String[] array = new String[3];
+set.toArray(array);
+````
+
+#### Note that the time complexity of some operations may vary depending on the size of the set and the implementation details of the LinkedHashSet class. Also note that LinkedHashSet maintains the order of the elements in the set, which means that it provides additional methods for iterating over the elements in the order that they were added.
+-----------------------------------------------------------------------------------------------------------
