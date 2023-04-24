@@ -1593,4 +1593,7 @@ In Java, we can create our own exceptions by extending the Exception class or th
 
 The time complexity of exception handling in Java is O(1) for the try block and O(n) for the catch block, where n is the number of catch blocks. However, the time complexity of the code inside the try and catch blocks depends on the code itself and cannot be determined in general.
 
+![java-exception-hierarchy-1](https://user-images.githubusercontent.com/52101117/233890156-da5c0872-109c-49b0-a7fa-b4577ea2fc4b.png)
+![hierarchy-of-exception-handling](https://user-images.githubusercontent.com/52101117/233890159-7883ad79-2eb4-44cd-bef3-090e018c4263.png)
+
 ----------------------------------------------------------------------------------------------------------
