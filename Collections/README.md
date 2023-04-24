@@ -1107,6 +1107,66 @@ stack.push("Cherry");
 System.out.println(stack.search("Banana")); // 1
 System.out.println(stack.search("Grape")); // -1
 ````
+### ConcurrentHashMap
+
+> In Java, ConcurrentHashMap is a thread-safe implementation of the Map interface. It is designed to be used in multi-threaded environments where multiple threads can access and modify the map concurrently without causing any data inconsistency or thread safety issues.
+
+Here's an example usage of ConcurrentHashMap:
+
+````
+import java.util.concurrent.ConcurrentHashMap;
+
+public class ConcurrentHashMapExample {
+    public static void main(String[] args) {
+        ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();
+
+        // Add elements to the map
+        map.put("A", 1);
+        map.put("B", 2);
+        map.put("C", 3);
+        System.out.println("ConcurrentHashMap: " + map);
+
+        // Remove an element from the map
+        map.remove("B");
+        System.out.println("ConcurrentHashMap after removal: " + map);
+
+        // Check if the map contains a key
+        boolean containsKey = map.containsKey("A");
+        System.out.println("ConcurrentHashMap contains key A? " + containsKey);
+
+        // Replace an element in the map
+        map.replace("C", 4);
+        System.out.println("ConcurrentHashMap after replacement: " + map);
+    }
+}
+````
+#### Output:
+````
+ConcurrentHashMap: {A=1, B=2, C=3}
+ConcurrentHashMap after removal: {A=1, C=3}
+ConcurrentHashMap contains key A? true
+ConcurrentHashMap after replacement: {A=1, C=4}
+````
+#### Here are some of the important methods of ConcurrentHashMap:
+
+> **put(key, value)**: O(1) average case, O(n) worst case, where n is the number of elements in the map
+
+> **get(key)**: O(1) average case, O(n) worst case, where n is the number of elements in the map
+
+> **remove(key)**: O(1) average case, O(n) worst case, where n is the number of elements in the map
+
+> **containsKey(key)**: O(1) average case, O(n) worst case, where n is the number of elements in the map
+
+> **keySet()**: O(n) time to create the set, where n is the number of elements in the map
+
+> **values()**: O(n) time to create the collection, where n is the number of elements in the map
+
+> **entrySet()**: O(n) time to create the set, where n is the number of elements in the map
+
+> **size()**: O(1) average case, O(n) worst case, where n is the number of elements in the map
+
+
+> The time complexity of these methods in ConcurrentHashMap is typically O(1) or constant time. However, it may be higher if there are frequent rehashing operations due to the dynamic resizing of the underlying hash table.
 ------------------------------------------------------------------------------------------------------
 ### Math
 
