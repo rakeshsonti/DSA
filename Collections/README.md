@@ -1049,3 +1049,62 @@ pq.offer("Cherry");
 System.out.println(pq.size()); // 3
 ````
 -------------------------------------------------------------------------------------------------------
+### Stack
+provide time complexity and all method with examples in java
+Sure, here are the time complexities and examples for the Stack class in Java:
+
+#### Time Complexities:
+
+````
+push(E element): O(1)
+pop(): O(1)
+peek(): O(1)
+empty(): O(1)
+search(Object o): O(n)
+````
+
+#### Methods:
+
+> **push(E element)**: Pushes an element onto the stack. This method is equivalent to addElement(E element).
+````
+Stack<String> stack = new Stack<>();
+stack.push("Apple");
+stack.push("Banana");
+stack.push("Cherry");
+System.out.println(stack); // [Apple, Banana, Cherry]
+`````
+> **pop()**: Removes the top element from the stack and returns it. Throws an EmptyStackException if the stack is empty.
+````
+Stack<String> stack = new Stack<>();
+stack.push("Apple");
+stack.push("Banana");
+stack.push("Cherry");
+System.out.println(stack.pop()); // Cherry
+System.out.println(stack); // [Apple, Banana]
+````
+> **peek()**: Returns the top element of the stack without removing it. Throws an EmptyStackException if the stack is empty.
+````
+Stack<String> stack = new Stack<>();
+stack.push("Apple");
+stack.push("Banana");
+stack.push("Cherry");
+System.out.println(stack.peek()); // Cherry
+System.out.println(stack); // [Apple, Banana, Cherry]
+````
+> **empty()**: Returns true if the stack is empty, false otherwise.
+````
+Stack<String> stack = new Stack<>();
+System.out.println(stack.empty()); // true
+stack.push("Apple");
+System.out.println(stack.empty()); // false
+````
+> **search(Object o)**: Searches the stack for the specified object and returns its position (0-based) on the stack, or -1 if the object is not found.
+````
+Stack<String> stack = new Stack<>();
+stack.push("Apple");
+stack.push("Banana");
+stack.push("Cherry");
+System.out.println(stack.search("Banana")); // 1
+System.out.println(stack.search("Grape")); // -1
+````
+------------------------------------------------------------------------------------------------------
