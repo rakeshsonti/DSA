@@ -2385,3 +2385,115 @@ std::cout << b10 << '\n'; // prints "00000101"
 std::bitset<N>::test(pos): Returns the value of the bit
 ````
 ----------------------------------------------------------------------------------------------------
+### math
+
+The C++ STL provides various math functions that can be used for performing mathematical operations. Here are some of the commonly used functions with examples:
+
+> **abs()**: This function returns the absolute value of the given number.
+#### Example:
+
+````
+int x = -10;
+cout << abs(x); // Output: 10
+````
+> **pow()**: This function returns the power of a number.
+#### Example:
+
+````
+double x = 2.0, y = 3.0;
+cout << pow(x, y); // Output: 8.0
+````
+> **sqrt()**: This function returns the square root of the given number.
+#### Example:
+
+````
+double x = 16.0;
+cout << sqrt(x); // Output: 4.0
+````
+> **ceil()**: This function returns the smallest integer greater than or equal to the given number.
+#### Example:
+
+````
+double x = 4.3;
+cout << ceil(x); // Output: 5
+````
+> **floor()**: This function returns the largest integer less than or equal to the given number.
+#### Example:
+
+````
+double x = 4.8;
+cout << floor(x); // Output: 4
+````
+> **round()**: This function returns the nearest integer value of the given number.
+#### Example:
+
+````
+double x = 4.4;
+cout << round(x); // Output: 4
+````
+> **fmod()**: This function returns the floating-point remainder of the division operation.
+#### Example:
+
+````
+double x = 10.5, y = 3.5;
+cout << fmod(x, y); // Output: 3.5
+````
+> **log()**: This function returns the natural logarithm of the given number.
+#### Example:
+
+````
+double x = 2.0;
+cout << log(x); // Output: 0.693147
+````
+> **sin()**: This function returns the sine of the given angle in radians.
+#### Example:
+
+````
+double angle = 45.0;
+cout << sin(angle * 3.14159 / 180.0); // Output: 0.707107
+````
+> **cos()**: This function returns the cosine of the given angle in radians.
+#### Example:
+
+````
+double angle = 60.0;
+cout << cos(angle * 3.14159 / 180.0); // Output: 0.5
+````
+
+> **tan()**: This function returns the tangent of the given angle in radians.
+#### Example:
+
+````
+double angle = 30.0;
+cout << tan(angle * 3.14159 / 180.0); // Output: 0.57735
+````
+> **atan()**: This function returns the arctangent of the given number in radians.
+#### Example:
+
+````
+double x = 1.0;
+cout << atan(x); // Output: 0.785398
+````
+> **exp()**: This function returns the exponential value of the given number.
+#### Example:
+
+````
+double x = 2.0;
+cout << exp(x); // Output: 7.38906
+````
+> **max()**: This function returns the maximum of the two given numbers.
+#### Example:
+
+````
+int x = 10, y = 20;
+cout << max(x, y); // Output: 20
+````
+> **min()**: This function returns the minimum of the two given numbers.
+#### Example:
+
+````
+int x = 10, y = 20;
+cout << min(x, y); // Output: 10
+````
+----------------------------------------------------------------------------------------------------------
+
