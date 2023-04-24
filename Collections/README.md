@@ -574,3 +574,143 @@ map.merge("apple", 2, (v1, v2) -> v1 + v2); // adds 2 to the value of "apple"
 map.merge("date", 1, (v1, v2) -> v1 + v2); // adds "date" with value 1 to the map
 ````
 ----------------------------------------------------------------------------------------------------------
+#### TreeMap is a sorted map implementation that stores key-value pairs in a tree-based data structure, specifically a red-black tree. The time complexity of the basic operations of TreeMap are as follows:
+````
+get(Object key): O(log N)
+put(K key, V value): O(log N)
+remove(Object key): O(log N)
+containsKey(Object key): O(log N)
+size(): O(1)
+isEmpty(): O(1)
+The TreeMap class also provides a number of additional methods:
+````
+> **clear()**: Removes all of the mappings from this map. The operation takes O(N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+map.clear(); // removes all mappings from the map
+````
+> **clone()**: Returns a shallow copy of this TreeMap instance. The operation takes O(N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+TreeMap<String, Integer> copy = (TreeMap<String, Integer>) map.clone(); // creates a shallow copy of the map
+````
+> **ceilingEntry(K key)**: Returns a key-value mapping associated with the least key greater than or equal to the given key, or null if there is no such key. The operation takes O(log N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+Map.Entry<String, Integer> entry = map.ceilingEntry("banana"); // returns the mapping for "banana" or "cherry"
+````
+> **ceilingKey(K key)**: Returns the least key greater than or equal to the given key, or null if there is no such key. The operation takes O(log N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+String key = map.ceilingKey("banana"); // returns "banana" or "cherry"
+````
+> **descendingKeySet()**: Returns a reverse order NavigableSet view of the keys contained in this map. The operation takes O(1) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+NavigableSet<String> keys = map.descendingKeySet(); // returns a set containing "cherry", "banana", "apple"
+````
+> **descendingMap()**: Returns a reverse order view of the mappings contained in this map. The operation takes O(1) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+NavigableMap<String, Integer> descendingMap = map.descendingMap(); // returns a map containing the mappings in reverse order
+````
+> **firstEntry()**: Returns a key-value mapping associated with the least key in this map, or null if the map is empty. The operation takes O(log N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2
+````
+> **firstKey()**: Returns the first (lowest) key currently in this map, or null if the map is empty. The operation takes O(log N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+String firstKey = map.firstKey(); // returns "apple"
+````
+> **floorEntry(K key)**: Returns a key-value mapping associated with the greatest key less than or equal to the given key, or null if there is no such key. The operation takes O(log N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+Map.Entry<String, Integer> entry = map.floorEntry("banana"); // returns the mapping for "banana" or "apple"
+````
+> **floorKey(K key)**: Returns the greatest key less than or equal to the given key, or null if there is no such key. The operation takes O(log N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+String key = map.floorKey("banana"); // returns "banana" or "apple"
+````
+> **higherEntry(K key)**: Returns a key-value mapping associated with the least key strictly greater than the given key, or null if there is no such key. The operation takes O(log N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+Map.Entry<String, Integer> entry = map.higherEntry("banana"); // returns the mapping for "cherry" or null
+````
+> **higherKey(K key)**: Returns the least key strictly greater than the given key, or null if there is no such key. The operation takes O(log N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+String key = map.higherKey("banana"); // returns "cherry" or null
+````
+> **lastEntry()**: Returns a key-value mapping associated with the greatest key in this map, or null if the map is empty. The operation takes O(log N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+Map.Entry<String, Integer> entry = map.lastEntry(); // returns the mapping for "cherry"
+````
+> **lastKey()**: Returns the last (highest) key currently in this map, or null if the map is empty. The operation takes O(log N) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("cherry", 3);
+
+String lastKey = map.lastKey(); // returns "cherry"
+````
+> **navigableKeySet()**: Returns a NavigableSet view of the keys contained in this map. The set's iterator returns the keys in ascending order. The operation takes O(1) time.
+````
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("apple", 1);
+````
+
+-------------------------------------------------------------------------------------------------------------
