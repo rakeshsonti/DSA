@@ -2262,3 +2262,64 @@ System.out.println(result); // Output: -1092583899
 Note that the time complexity of lambda expressions is determined by the time complexity of the code they execute. The time complexity of lambda expressions can range from O(1) to O(n) or higher, depending on the code they execute.
 
 ---------------------------------------------------------------------------------------------------------------------
+### Here is a list of all the functional interfaces available in Java:
+
+> **Function<T, R>** - a functional interface that takes an argument of type T and returns a result of type R.
+
+> **Consumer<T>** - a functional interface that takes an argument of type T and returns no result.
+
+> **Predicate<T>** - a functional interface that takes an argument of type T and returns a boolean value.
+
+> **Supplier<T>** - a functional interface that takes no arguments and returns a result of type T.
+
+> **UnaryOperator<T>** - a functional interface that takes an argument of type T and returns a result of type T.
+
+> **BinaryOperator<T>** - a functional interface that takes two arguments of type T and returns a result of type T.
+
+> **BiConsumer<T, U>** - a functional interface that takes two arguments of type T and U and returns no result.
+
+> **BiFunction<T, U, R>** - a functional interface that takes two arguments of type T and U and returns a result of type R.
+
+> **BiPredicate<T, U>** - a functional interface that takes two arguments of type T and U and returns a boolean value.
+
+> **ToDoubleFunction<T>** - a functional interface that takes an argument of type T and returns a double value.
+
+> **ToIntFunction<T>** - a functional interface that takes an argument of type T and returns an int value.
+
+> **ToLongFunction<T>** - a functional interface that takes an argument of type T and returns a long value.
+
+> **IntFunction<R>** - a functional interface that takes an int argument and returns a result of type R.
+
+> **IntConsumer** - a functional interface that takes an int argument and returns no result.
+
+> **IntPredicate** - a functional interface that takes an int argument and returns a boolean value.
+
+> **IntSupplier** - a functional interface that takes no arguments and returns an int value.
+
+> **IntUnaryOperator** - a functional interface that takes an int argument and returns an int value.
+
+> **IntBinaryOperator** - a functional interface that takes two int arguments and returns an int value.
+
+> **LongFunction<R>** - a functional interface that takes a long argument and returns a result of type R.
+
+> **LongConsumer** - a functional interface that takes a long argument and returns no result.
+
+> **LongPredicate** - a functional interface that takes a long argument and returns a boolean value.
+
+> **LongSupplier** - a functional interface that takes no arguments and returns a long value.
+
+> **LongUnaryOperator** - a functional interface that takes a long argument and returns a long value.
+
+> **LongBinaryOperator** - a functional interface that takes two long arguments and returns a long value.
+
+> **DoubleFunction<R>** - a functional interface that takes a double argument and returns a result of type R.
+
+> **DoubleConsumer** - a functional interface that takes a double argument and returns no result.
+
+> **DoublePredicate** - a functional interface that takes a double argument and returns a boolean value.
+
+> **DoubleSupplier** - a functional interface that takes no arguments and returns a double value.
+
+> **DoubleUnaryOperator** - a functional interface that takes a double argument and returns a double value
+
+--------------------------------------------------------------------------------------------------------------------------
