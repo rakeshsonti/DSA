@@ -2128,3 +2128,137 @@ System.out.println(startsWith); // Output: true
 ````
 
 ----------------------------------------------------------------------------------------------------------------------
+
+### Functional Interface
+
+> Explain functional interface and provide list of all functional interface with example and time complexity
+A functional interface is an interface that has only one abstract method. Functional interfaces are used to enable the use of lambda expressions in Java. Lambda expressions are a way to write concise and expressive code, and they are particularly useful for working with collections and streams.
+
+Here is a list of some common functional interfaces in Java along with examples and time complexity:
+
+> **Consumer<T>** - a functional interface that takes a single argument of type T and returns no result. It is typically used to perform some action on an object.
+#### Example:
+
+````
+Consumer<String> printer = str -> System.out.println(str);
+printer.accept("Hello, world!"); // Output: Hello, world!
+````
+#### Time complexity: O(1)
+
+> **Function<T, R>** - a functional interface that takes a single argument of type T and returns a result of type R. It is typically used to transform an object into another object.
+#### Example:
+
+````
+Function<Integer, String> converter = num -> Integer.toString(num);
+String str = converter.apply(42);
+System.out.println(str); // Output: 42
+````
+#### Time complexity: O(1)
+
+> **Predicate<T>** - a functional interface that takes a single argument of type T and returns a boolean value. It is typically used to test an object and determine if it satisfies a certain condition.
+#### Example:
+
+````
+Predicate<Integer> isEven = num -> num % 2 == 0;
+boolean result = isEven.test(42);
+System.out.println(result); // Output: true
+````
+#### Time complexity: O(1)
+
+> **Supplier<T>** - a functional interface that takes no arguments and returns a result of type T. It is typically used to generate a value on demand.
+#### Example:
+
+````
+Supplier<Integer> generator = () -> (int)(Math.random() * 100);
+int num = generator.get();
+System.out.println(num); // Output: a random number between 0 and 100
+````
+#### Time complexity: O(1)
+
+> **UnaryOperator<T>** - a functional interface that takes a single argument of type T and returns a result of type T. It is a subtype of Function<T, T>.
+#### Example:
+
+````
+UnaryOperator<Integer> increment = num -> num + 1;
+int result = increment.apply(42);
+System.out.println(result); // Output: 43
+````
+#### Time complexity: O(1)
+
+> **BinaryOperator<T>** - a functional interface that takes two arguments of type T and returns a result of type T. It is a subtype of BiFunction<T, T, T>.
+#### Example:
+
+````
+BinaryOperator<Integer> add = (a, b) -> a + b;
+int result = add.apply(2, 3);
+System.out.println(result); // Output: 5
+````
+#### Time complexity: O(1)
+
+
+
+> **BiConsumer<T, U>** - a functional interface that takes two arguments of type T and U and returns no result.
+#### Example:
+
+````
+BiConsumer<Integer, Integer> printer = (a, b) -> System.out.println(a + b);
+printer.accept(2, 3); // Output: 5
+````
+#### Time complexity: O(1)
+
+> **BiFunction<T, U, R>** - a functional interface that takes two arguments of type T and U and returns a result of type R.
+#### Example:
+
+````
+BiFunction<Integer, Integer, Integer> add = (a, b) -> a + b;
+int result = add.apply(2, 3);
+System.out.println(result); // Output: 5
+````
+#### Time complexity: O(1)
+
+> **BiPredicate<T, U>** - a functional interface that takes two arguments of type T and U and returns a boolean value.
+#### Example:
+
+````
+BiPredicate<Integer, Integer> isGreaterThan = (a, b) -> a > b;
+boolean result = isGreaterThan.test(5, 3);
+System.out.println(result); // Output: true
+````
+#### Time complexity: O(1)
+
+> **ToDoubleFunction<T>** - a functional interface that takes an argument of type T and returns a double value.
+#### Example:
+
+````
+ToDoubleFunction<Integer> converter = num -> num * 1.0;
+double result = converter.applyAsDouble(42);
+System.out.println(result); // Output: 42.0
+````
+#### Time complexity: O(1)
+
+> **ToIntFunction<T>** - a functional interface that takes an argument of type T and returns an int value.
+#### Example:
+
+````
+ToIntFunction<String> length = str -> str.length();
+int result = length.applyAsInt("Hello, world!");
+System.out.println(result); // Output: 13
+````
+#### Time complexity: O(1)
+
+> **ToLongFunction<T>** - a functional interface that takes an argument of type T and returns a long value.
+#### Example:
+
+````
+ToLongFunction<String> hash = str -> str.hashCode();
+long result = hash.applyAsLong("Hello, world!");
+System.out.println(result); // Output: -1092583899
+````
+#### Time complexity: O(1)
+
+> Note that the time complexity of lambda expressions is determined by the time complexity of the code they execute. The time complexity of lambda expressions can range from O(1) to O(n) or higher, depending on the code they execute.
+
+
+Note that the time complexity of lambda expressions is determined by the time complexity of the code they execute. The time complexity of lambda expressions can range from O(1) to O(n) or higher, depending on the code they execute.
+
+---------------------------------------------------------------------------------------------------------------------
