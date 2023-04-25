@@ -1945,4 +1945,186 @@ ifPresentOrElse value: Hello, World!
 This program demonstrates how to use each of the methods available in the Optional class in Java. It shows how to create empty and non-empty Optional objects, how to check if a value is present, how to get the value from an Optional, and how to provide default values. It also shows how to use methods like map, filter, and flatMap to work with Optional objects in a more functional way, and how to use
 
 ----------------------------------------------------------------------------------------------------------
+### String Collection Java
 
+Provide all methods along withnexample and time complexity
+Sure, here are some common methods available for manipulating strings in Java:
+
+> **charAt(int index)** - returns the character at the specified index in the string. Time complexity: O(1)
+#### Example:
+
+````
+String str = "Hello, world!";
+char c = str.charAt(7);
+System.out.println(c); // Output: w
+````
+
+> **length()** - returns the length of the string. Time complexity: O(1)
+#### Example:
+
+````
+String str = "Hello, world!";
+int len = str.length();
+System.out.println(len); // Output: 13
+````
+
+> **substring(int beginIndex)** - returns a substring of the original string, starting at beginIndex and extending to the end of the string. Time complexity: O(n), where n is the length of the resulting substring
+#### Example:
+
+````
+String str = "Hello, world!";
+String sub = str.substring(7);
+System.out.println(sub); // Output: world!
+````
+> **substring(int beginIndex, int endIndex)** - returns a substring of the original string, starting at beginIndex and extending up to but not including endIndex. Time complexity: O(n), where n is the length of the resulting substring
+#### Example:
+
+````
+String str = "Hello, world!";
+String sub = str.substring(7, 12);
+System.out.println(sub); // Output: world
+````
+> **equals(Object obj)** - compares the string to the specified object and returns true if they are equal, false otherwise. Time complexity: O(n), where n is the length of the string
+#### Example:
+
+````
+String str1 = "Hello, world!";
+String str2 = "hello, world!";
+boolean equals = str1.equals(str2);
+System.out.println(equals); // Output: false
+````
+> **equalsIgnoreCase(String anotherString)** - compares the string to another string, ignoring case differences, and returns true if they are equal, false otherwise. Time complexity: O(n), where n is the length of the string
+#### Example:
+
+````
+String str1 = "Hello, world!";
+String str2 = "hello, world!";
+boolean equalsIgnoreCase = str1.equalsIgnoreCase(str2);
+System.out.println(equalsIgnoreCase); // Output: true
+````
+> **indexOf(int ch)** - returns the index within the string of the first occurrence of the specified character, or -1 if the character is not found. Time complexity: O(n), where n is the length of the string
+#### Example:
+
+````
+String str = "Hello, world!";
+int index = str.indexOf('w');
+System.out.println(index); // Output: 7
+````
+> **lastIndexOf(int ch)** - returns the index within the string of the last occurrence of the specified character, or -1 if the character is not found. Time complexity: O(n), where n is the length of the string
+#### Example:
+
+````
+String str = "Hello, world!";
+int index = str.lastIndexOf('o');
+System.out.println(index); // Output: 8
+````
+> **contains(CharSequence s)** - returns true if the string contains the specified character sequence, false otherwise. Time complexity: O(n), where n is the length of the string
+#### Example:
+
+````
+String str = "Hello, world!";
+boolean contains = str.contains("world");
+System.out.println(contains); // Output: true
+````
+> **replace(char oldChar, char newChar)** - returns a new string resulting from replacing all occurrences of oldChar in the string with newChar. Time complexity: O(n), where n is the length of the string
+#### Example:
+
+````
+String str = "Hello, world!";
+String replaced = str
+````
+
+> **startsWith(String prefix)** - returns true if the string starts with the specified prefix, false otherwise. Time complexity: O(m), where m is the length of the prefix
+#### Example:
+
+````
+String str = "Hello, world!";
+boolean startsWith = str.startsWith("Hello");
+System.out.println(startsWith); // Output: true
+````
+> **endsWith(String suffix)** - returns true if the string ends with the specified suffix, false otherwise. Time complexity: O(m), where m is the length of the suffix
+#### Example:
+
+````
+String str = "Hello, world!";
+boolean endsWith = str.endsWith("world!");
+System.out.println(endsWith); // Output: true
+````
+> **isEmpty()** - returns true if the string is empty (has length 0), false otherwise. Time complexity: O(1)
+#### Example:
+
+````
+String str = "Hello, world!";
+boolean isEmpty = str.isEmpty();
+System.out.println(isEmpty); // Output: false
+````
+> **toCharArray()** - returns a char array containing the characters in the string. Time complexity: O(n), where n is the length of the string
+#### Example:
+
+````
+String str = "Hello, world!";
+char[] chars = str.toCharArray();
+System.out.println(chars[7]); // Output: w
+````
+> **toLowerCase()** - returns a new string with all characters in lowercase. Time complexity: O(n), where n is the length of the string
+#### Example:
+
+````
+String str = "Hello, world!";
+String lowercase = str.toLowerCase();
+System.out.println(lowercase); // Output: hello, world!
+````
+> **toUpperCase()** - returns a new string with all characters in uppercase. Time complexity: O(n), where n is the length of the string
+#### Example:
+
+````
+String str = "Hello, world!";
+String uppercase = str.toUpperCase();
+System.out.println(uppercase); // Output: HELLO, WORLD!
+````
+> **trim()** - returns a new string with leading and trailing whitespace removed. Time complexity: O(n), where n is the length of the string
+#### Example:
+
+````
+String str = "   Hello, world!   ";
+String trimmed = str.trim();
+System.out.println(trimmed); // Output: Hello, world!
+````
+
+#### Here is the completed example with all the methods:
+````
+String str = "Hello, world!";
+char c = str.charAt(7);
+int len = str.length();
+String sub1 = str.substring(7);
+String sub2 = str.substring(7, 12);
+boolean equals = str.equals("hello, world!");
+boolean equalsIgnoreCase = str.equalsIgnoreCase("hello, world!");
+int index1 = str.indexOf('w');
+int index2 = str.lastIndexOf('o');
+boolean contains = str.contains("world");
+String replaced = str.replace('o', 'x');
+boolean startsWith = str.startsWith("Hello");
+boolean endsWith = str.endsWith("world!");
+boolean isEmpty = str.isEmpty();
+char[] chars = str.toCharArray();
+String lowercase = str.toLowerCase();
+String uppercase = str.toUpperCase();
+String trimmed = str.trim();
+````
+
+````
+System.out.println(c); // Output: w
+System.out.println(len); // Output: 13
+System.out.println(sub1); // Output: world!
+System.out.println(sub2); // Output: world
+System.out.println(equals); // Output: false
+System.out.println(equalsIgnoreCase); // Output: true
+System.out.println(index1); // Output: 7
+System.out.println(index2); // Output: 8
+System.out.println(contains); // Output: true
+System.out.println(replaced); // Output: Hellx, wxrld!
+System.out.println(startsWith); // Output: true
+````
+
+----------------------------------------------------------------------------------------------------------------------
