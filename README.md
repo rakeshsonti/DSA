@@ -27,6 +27,8 @@
  
 ##### 10) [ Path Folder](https://github.com/rambhajansonti/DSA/blob/master/Array-Day1/FindtheDuplicateNumber.cpp) 287. Find the Duplicate Number: [ltc Problem Link](https://leetcode.com/problems/find-the-duplicate-number/)
  
+##### 11) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) 1296. Divide Array in Sets of K Consecutive Numbers
+ 
  ---------------------------------------------------------------------------------------------------------------------------
  ### String
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/string/substring.cpp) 73-Set Matrix Zeroes : [ltc Problem Link](https://leetcode.com/problems/set-matrix-zeroes/) 
