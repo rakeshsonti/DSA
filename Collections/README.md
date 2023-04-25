@@ -1834,4 +1834,115 @@ To avoid memory leaks in Java, it is important to ensure that objects are proper
 
 --------------------------------------------------------------------------------------------------------------
 
+### Optional
+
+#### Sure, here's a list of all the public methods of the Optional class in Java:
+
+* **empty()**: Returns an empty Optional instance.
+* **filter(Predicate<? super T> predicate)**: If a value is present and matches the given predicate, returns an Optional describing the value, otherwise returns an empty Optional.
+* **flatMap(Function<? super T, Optional<U>> mapper)**: If a value is present, applies the provided Optional-bearing mapping function to it, returns that result, otherwise returns an empty Optional.
+* **get()**: If a value is present in this Optional, returns the value, otherwise throws a NoSuchElementException.
+* **ifPresent(Consumer<? super T> consumer)**: If a value is present, performs the given action with the value, otherwise does nothing.
+* **ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)**: If a value is present, performs the given action with the value, otherwise performs the given empty-based action.
+* **isPresent()**: Returns true if there is a value present, otherwise false.
+* **map(Function<? super T, ? extends U> mapper)**: If a value is present, applies the provided mapping function to it, and if the result is non-null, returns an Optional describing the result, otherwise returns an empty Optional.
+* **of(T value)**: Returns an Optional with the specified non-null value.
+* **ofNullable(T value)**: Returns an Optional describing the specified value, if non-null, otherwise returns an empty Optional.
+* **orElse(T other)**: If a value is present, returns the value, otherwise returns the specified other value.
+* **orElseGet(Supplier<? extends T> other)**: If a value is present, returns the value, otherwise returns the result produced by the supplying function.
+* **orElseThrow(Supplier<? extends X> exceptionSupplier)**: If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function.
+
+````
+import java.util.NoSuchElementException;
+import java.util.Optional;
+import java.util.function.Supplier;
+
+public class OptionalExamples {
+
+    public static void main(String[] args) {
+        
+        // empty()
+        Optional<String> emptyOptional = Optional.empty();
+        System.out.println("emptyOptional is present: " + emptyOptional.isPresent());
+
+        // of()
+        Optional<String> nonEmptyOptional = Optional.of("Hello, World!");
+        System.out.println("nonEmptyOptional value: " + nonEmptyOptional.get());
+
+        // ofNullable()
+        String nullableString = null;
+        Optional<String> nullableOptional = Optional.ofNullable(nullableString);
+        System.out.println("nullableOptional is present: " + nullableOptional.isPresent());
+
+        // isPresent()
+        if (nonEmptyOptional.isPresent()) {
+            System.out.println("nonEmptyOptional value: " + nonEmptyOptional.get());
+        }
+
+        // get()
+        try {
+            String value = emptyOptional.get();
+        } catch (NoSuchElementException e) {
+            System.out.println("Caught exception: " + e.getMessage());
+        }
+
+        // orElse()
+        String orElseResult = emptyOptional.orElse("Default Value");
+        System.out.println("orElseResult: " + orElseResult);
+
+        // orElseGet()
+        Supplier<String> supplier = () -> "Supplier Value";
+        String orElseGetResult = emptyOptional.orElseGet(supplier);
+        System.out.println("orElseGetResult: " + orElseGetResult);
+
+        // orElseThrow()
+        try {
+            String throwResult = emptyOptional.orElseThrow(() -> new Exception("Exception"));
+        } catch (Exception e) {
+            System.out.println("Caught exception: " + e.getMessage());
+        }
+
+        // map()
+        Optional<String> mappedOptional = nonEmptyOptional.map(String::toUpperCase);
+        System.out.println("mappedOptional value: " + mappedOptional.get());
+
+        // filter()
+        Optional<String> filteredOptional = nonEmptyOptional.filter(value -> value.length() > 5);
+        System.out.println("filteredOptional is present: " + filteredOptional.isPresent());
+
+        // flatMap()
+        Optional<String> flatMappedOptional = nonEmptyOptional.flatMap(value -> Optional.of(value.toUpperCase()));
+        System.out.println("flatMappedOptional value: " + flatMappedOptional.get());
+
+        // ifPresent()
+        nonEmptyOptional.ifPresent(value -> System.out.println("ifPresent value: " + value));
+
+        // ifPresentOrElse()
+        nonEmptyOptional.ifPresentOrElse(
+            value -> System.out.println("ifPresentOrElse value: " + value), 
+            () -> System.out.println("ifPresentOrElse empty action"));
+    }
+}
+````
+
+When you run this program, you should see the following output:
+````
+emptyOptional is present: false
+nonEmptyOptional value: Hello, World!
+nullableOptional is present: false
+nonEmptyOptional value: Hello, World!
+Caught exception: No value present
+orElseResult: Default Value
+orElseGetResult: Supplier Value
+Caught exception: Exception
+mappedOptional value: HELLO, WORLD!
+filteredOptional is present: true
+flatMappedOptional value: HELLO, WORLD!
+ifPresent value: Hello, World!
+ifPresentOrElse value: Hello, World!
+````
+
+This program demonstrates how to use each of the methods available in the Optional class in Java. It shows how to create empty and non-empty Optional objects, how to check if a value is present, how to get the value from an Optional, and how to provide default values. It also shows how to use methods like map, filter, and flatMap to work with Optional objects in a more functional way, and how to use
+
+----------------------------------------------------------------------------------------------------------
 
