@@ -1,5 +1,6 @@
 class Solution {
 public:
+  //tc-> O(n)
     vector<int> countBits(int n) {
      
       vector<int> ans(n+1);
@@ -12,6 +13,7 @@ public:
 };
 /*
 class Solution {
+//tc nlong(n)
 public:
     vector<int> countBits(int n) {
      
