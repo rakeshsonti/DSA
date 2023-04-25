@@ -34,6 +34,9 @@
  ##### 2) [ Path Folder](https://github.com/rambhajansonti/Sonti-DSA-Practice/blob/master/string/DecodeString.cpp) 394. Decode String : [ltc Problem Link](https://leetcode.com/problems/decode-string/) 
  
  ##### 3) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0179-largest-number) 179. Largest Number
+ 
+ ##### 4) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/2165-smallest-value-of-the-rearranged-number) 2165. Smallest Value of the Rearranged Number
+ 
  ---------------------------------------------------------------------------------------------------------------------------
 ### Recursion
  ##### 1) [ Path Folder](https://github.com/rambhajansonti/SDE-Sheet/tree/master/Recursion/Recursively%20remove%20all%20adjacent%20duplicates)  Recursively remove all adjacent duplicates : [gfg Problem Link](https://practice.geeksforgeeks.org/problems/recursively-remove-all-adjacent-duplicates0744/1) 
