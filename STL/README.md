@@ -2614,4 +2614,198 @@ int main() {
 > The cube root of 27 is 3
 > The time complexity of cbrt() is typically constant time, i.e., O(1), as it is implemented using hardware instructions on most systems.
 ----------------------------------------------------------------------------------------------------------
+### string
+
+provode list of all methods along with time complexity and example
+The C++ Standard Template Library (STL) provides a rich set of methods to manipulate strings through the string class. Here is a list of commonly used methods along with their time complexity and an example of how to use them:
+
+> **length()** - returns the length of the string. Time complexity: O(1)
+#### Example:
+
+````
+string s = "Hello, world!";
+cout << s.length(); // Output: 13
+````
+> **size()** - same as length(), returns the length of the string. Time complexity: O(1)
+#### Example:
+
+````
+string s = "Hello, world!";
+cout << s.size(); // Output: 13
+````
+> **empty()** - returns true if the string is empty, false otherwise. Time complexity: O(1)
+#### Example:
+
+````
+string s1 = "";
+string s2 = "Hello, world!";
+cout << s1.empty() << " " << s2.empty(); // Output: 1 0
+````
+> **clear()** - clears the contents of the string. Time complexity: O(1)
+#### Example:
+
+````
+string s = "Hello, world!";
+s.clear();
+cout << s; // Output: (empty string)
+````
+> **append(str)** - appends str at the end of the string. Time complexity: O(k), where k is the length of str
+#### Example:
+
+````
+string s1 = "Hello, ";
+string s2 = "world!";
+s1.append(s2);
+cout << s1; // Output: Hello, world!
+````
+> **substr(pos, len)** - returns a substring starting at position pos with length len. Time complexity: O(len)
+#### Example:
+
+````
+string s = "Hello, world!";
+string sub = s.substr(7, 5);
+cout << sub; // Output: world
+````
+> **find(str, pos)** - finds the first occurrence of str in the string starting at position pos. Returns the position of str or string::npos if not found. Time complexity: O(n), where n is the length of the string
+#### Example:
+
+````
+string s = "Hello, world!";
+size_t pos = s.find("world");
+if (pos != string::npos) {
+    cout << pos; // Output: 7
+}
+````
+> **replace(pos, len, str)** - replaces len characters starting at position pos with str. Time complexity: O(len + k), where k is the length of str
+#### Example:
+
+````
+string s = "Hello, world!";
+s.replace(7, 5, "John");
+cout << s; // Output: Hello, John!
+````
+> **erase(pos, len)** - erases len characters starting at position pos. Time complexity: O(len)
+#### Example:
+
+````
+string s = "Hello, world!";
+s.erase(7, 5);
+cout << s; // Output: Hello, !
+````
+> **push_back(c)** - appends the character c at the end of the string. Time complexity: O(1)
+#### Example:
+
+````
+string s = "Hello, ";
+s.push_back('w');
+cout << s; // Output: Hello, w
+````
+
+> **at(pos)** - returns the character at position pos. Throws an exception of type out_of_range if pos is out of range. Time complexity: O(1)
+Sure, here are some more methods for manipulating strings using the STL string class:
+#### Example:
+
+````
+string s = "Hello, world!";
+char c = s.at(7);
+cout << c; // Output: w
+````
+> **front()** - returns the first character of the string. Throws an exception of type out_of_range if the string is empty. Time complexity: O(1)
+#### Example:
+
+````
+string s = "Hello, world!";
+char c = s.front();
+cout << c; // Output: H
+````
+> **back()** - returns the last character of the string. Throws an exception of type out_of_range if the string is empty. Time complexity: O(1)
+#### Example:
+
+````
+string s = "Hello, world!";
+char c = s.back();
+cout << c; // Output: !
+````
+> **compare(str)** - compares the string with str and returns 0 if they are equal, a value less than 0 if the string is less than str, and a value greater than 0 if the string is greater than str. Time complexity: O(n), where n is the length of the shorter string
+#### Example:
+
+````
+string s1 = "Hello, world!";
+string s2 = "Hello, John!";
+int cmp = s1.compare(s2);
+if (cmp == 0) {
+    cout << "The strings are equal";
+} else if (cmp < 0) {
+    cout << "s1 is less than s2";
+} else {
+    cout << "s1 is greater than s2";
+}
+````
+> **resize(len)** - resizes the string to have a length of len. If len is greater than the current length, the additional characters are set to the null character. If len is less than the current length, the string is truncated. Time complexity: O(len)
+#### Example:
+
+````
+string s = "Hello, world!";
+s.resize(10);
+cout << s; // Output: Hello, wo
+````
+> **reserve(len)** - reserves enough memory to store a string of length len. Time complexity: O(len)
+#### Example:
+
+````
+string s;
+s.reserve(100);
+s = "Hello, world!";
+cout << s; // Output: Hello, world!
+`````
+> **c_str()** - returns a const pointer to a null-terminated character array with the contents of the string. Time complexity: O(1)
+#### Example:
+
+````
+string s = "Hello, world!";
+const char* cstr = s.c_str();
+cout << cstr; // Output: Hello, world!
+````
+> **copy(char* dest, size_t len, size_t pos)** - copies at most len characters from the string starting at position pos to the character array pointed to by dest. Returns the number of characters copied. Time complexity: O(len)
+#### Example:
+
+````
+string s = "Hello, world!";
+char dest[6];
+s.copy(dest, 5, 7);
+cout << dest; // Output: world
+````
+> **find(str, pos)** - searches the string for the first occurrence of the substring str starting at position pos, and returns the position of the first character of the found substring, or string::npos if the substring is not found. Time complexity: O(n * m), where n is the length of the string and m is the length of the substring
+#### Example:
+
+````
+string s = "Hello, world!";
+size_t pos = s.find("world");
+if (pos != string::npos) {
+    cout << pos; // Output: 7
+}
+````
+> **rfind(str, pos)** - searches the string for the last occurrence of the substring str starting at position pos, and returns the position of the first character of the found substring, or string::npos if the substring is not found. Time complexity: O(n * m), where n is the length of the string and m is the length of the substring
+#### Example:
+
+````
+string s = "Hello, world!";
+size_t pos = s.rfind("o");
+if (pos != string::npos) {
+    cout << pos; // Output: 8
+}
+````
+
+> **substr(pos, len)** - returns a new string that is a substring of the original string, starting at position pos and consisting of len characters (or up to the end of the string if len is greater than the remaining length). Time complexity: O(len)
+#### Example:
+
+````
+string s = "Hello, world!";
+string sub = s.substr(7, 5);
+cout << sub; // Output: world
+````
+
+These are some more useful methods available for manipulating strings using the C++ STL string class.
+
+---------------------------------------------------------------------------------------------------------
 
