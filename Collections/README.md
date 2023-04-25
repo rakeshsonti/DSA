@@ -2323,3 +2323,250 @@ Note that the time complexity of lambda expressions is determined by the time co
 > **DoubleUnaryOperator** - a functional interface that takes a double argument and returns a double value
 
 --------------------------------------------------------------------------------------------------------------------------
+### Stream API
+
+> The Stream API is a powerful and flexible tool in Java for processing collections of data. It allows for functional-style operations to be performed on streams of data, such as filtering, mapping, and reducing. The basic idea behind a stream is that it represents a sequence of data that can be manipulated in various ways without modifying the original data source.
+
+> To use the Stream API, you first create a stream from a collection or array using the stream() or parallelStream() method. From there, you can chain together a series of stream operations to perform various transformations on the data. Finally, you use a terminal operation to collect or consume the results.
+
+#### Here are some important methods in the Stream API along with examples and time complexity:
+
+> **filter(Predicate<T> predicate)** - returns a stream consisting of the elements that satisfy the given predicate.
+
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+List<Integer> evenNumbers = numbers.stream()
+                                   .filter(n -> n % 2 == 0)
+                                   .collect(Collectors.toList());
+````								   
+#### Time complexity: O(n)
+
+> **map(Function<T, R> mapper)** - returns a stream consisting of the results of applying the given function to the elements of the stream.
+
+#### Example:
+
+````
+List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+List<Integer> nameLengths = names.stream()
+                                 .map(String::length)
+                                 .collect(Collectors.toList());
+````
+
+#### Time complexity: O(n)
+
+> **flatMap(Function<T, Stream<R>> mapper)** - returns a stream consisting of the concatenated results of applying the given function to the elements of the stream.
+
+#### Example:
+
+````
+List<List<Integer>> nestedNumbers = Arrays.asList(Arrays.asList(1, 2), Arrays.asList(3, 4), Arrays.asList(5, 6));
+List<Integer> flattenedNumbers = nestedNumbers.stream()
+                                              .flatMap(Collection::stream)
+                                              .collect(Collectors.toList());
+````
+#### Time complexity: O(n)
+
+> **distinct()** - returns a stream consisting of the distinct elements of the stream.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 2, 4, 5, 3);
+List<Integer> distinctNumbers = numbers.stream()
+                                       .distinct()
+                                       .collect(Collectors.toList());
+````
+#### Time complexity: O(n)
+
+> **sorted()** - returns a stream consisting of the elements of the stream sorted according to their natural order.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(3, 1, 4, 1, 5, 9, 2, 6, 5);
+List<Integer> sortedNumbers = numbers.stream()
+                                     .sorted()
+                                     .collect(Collectors.toList());
+````
+#### Time complexity: O(n log n)
+
+> **limit(long maxSize)** - returns a stream consisting of the first maxSize elements of the stream.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+List<Integer> firstThreeNumbers = numbers.stream()
+                                         .limit(3)
+                                         .collect(Collectors.toList());
+````
+#### Time complexity: O(n)
+
+> **skip(long n)** - returns a stream consisting of the remaining elements of the stream after discarding the first n elements.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+List<Integer> lastThreeNumbers = numbers.stream()
+                                        .skip(2)
+                                        .collect(Collectors.toList());
+````
+#### Time complexity: O(n)
+
+> **reduce(T identity, BinaryOperator<T> accumulator)** - returns the result of repeatedly applying a binary operator to the elements of the stream, starting with the identity value.
+
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+int sum = numbers.stream()
+                 .reduce(0, Integer::sum);
+````
+#### Time complexity: O(n)
+
+> **collect(Collector<T, A, R> collector)** - performs a mutable reduction operation on the elements of the stream using a Collector.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+List<Integer> squaredNumbers = numbers.stream()
+                                      .map(n -> n * n)
+                                      .collect(Collectors.toList());
+````
+#### Time complexity: O(n)
+
+> **forEach(Consumer<T> action)** - performs an action on each element of the stream.
+#### Example:
+
+````
+List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+names.stream()
+     .forEach(System.out::println);
+````
+#### Time complexity: O(n)
+
+> **count()** - returns the count of elements in the stream.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+long count = numbers.stream()
+                    .count();
+````
+#### Time complexity: O(n)
+
+> **anyMatch(Predicate<T> predicate)** - returns true if any element of the stream matches the given predicate.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+boolean hasEvenNumber = numbers.stream()
+                               .anyMatch(n -> n % 2 == 0);
+````
+#### Time complexity: O(n)
+
+> **allMatch(Predicate<T> predicate)** - returns true if all elements of the stream match the given predicate.
+#### Example:
+````
+List<Integer> numbers = Arrays.asList(2, 4, 6, 8, 10);
+boolean areAllEvenNumbers = numbers.stream()
+                                   .allMatch(n -> n % 2 == 0);
+````
+#### Time complexity: O(n)
+
+> **noneMatch(Predicate<T> predicate)** - returns true if no elements of the stream match the given predicate.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 3, 5, 7, 9);
+boolean hasNoEvenNumbers = numbers.stream()
+                                  .noneMatch(n -> n % 2 == 0);
+````
+#### Time complexity: O(n)
+
+> **findFirst()** - returns an Optional containing the first element of the stream, or an empty Optional if the stream is empty.
+
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+Optional<Integer> firstNumber = numbers.stream()
+                                       .findFirst();
+````
+#### Time complexity: O(1) or O(n)
+
+> **findAny()** - returns an Optional containing any element of the stream, or an empty Optional if the stream is empty.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+Optional<Integer> anyNumber = numbers.stream()
+                                     .findAny();
+````									 
+#### Time complexity: O(1) or O(n)
+
+> Note that the time complexity of these Stream API methods depends on the characteristics of the stream and the operations being performed, and may vary between O(1), O(n), or O(n log n) in the worst case. It is important to consider the performance implications of using these methods when working with large streams of data.
+
+> **max(Comparator<T> comparator)** - returns the maximum element of the stream according to the provided Comparator.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+Optional<Integer> maxNumber = numbers.stream()
+                                      .max(Comparator.naturalOrder());
+````
+#### Time complexity: O(n)
+
+> **min(Comparator<T> comparator)** - returns the minimum element of the stream according to the provided Comparator.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+Optional<Integer> minNumber = numbers.stream()
+                                      .min(Comparator.naturalOrder());
+````
+#### Time complexity: O(n)
+
+> **toArray()** - returns an array containing the elements of the stream.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+Object[] numbersArray = numbers.stream()
+                               .toArray();
+````
+#### Time complexity: O(n)
+
+> **iterator()** - returns an iterator over the elements of the stream.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+Iterator<Integer> iterator = numbers.stream()
+                                    .iterator();
+````
+#### Time complexity: O(1)
+
+> **spliterator()** - returns a spliterator over the elements of the stream.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+Spliterator<Integer> spliterator = numbers.stream()
+                                          .spliterator();
+````
+#### Time complexity: O(1)
+
+> **sorted(Comparator<T> comparator)** - returns a new stream containing the elements of the original stream sorted according to the provided Comparator.
+#### Example:
+
+````
+List<Integer> numbers = Arrays.asList(5, 2, 4, 1, 3);
+List<Integer> sortedNumbers = numbers.stream()
+                                     .sorted()
+                                     .collect(Collectors.toList());
+````
+#### Time complexity: O(n log n)
+
+> Note that the time complexity of these Stream API methods depends on the characteristics of the stream and the operations being performed, and may vary between O(1), O(n), O(n log n), or even O(n^2) in the worst case. It is important to consider the performance implications of using these methods when working with large streams of data.
+
+-------------------------------------------------------------------------------------------------------------------------
