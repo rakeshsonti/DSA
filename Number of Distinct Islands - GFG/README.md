@@ -1,4 +1,4 @@
-# Number of Distinct Islands
+# [Number of Distinct Islands](https://practice.geeksforgeeks.org/problems/number-of-distinct-islands/1)
 ## Medium
 <div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given a boolean 2D matrix <strong>grid&nbsp;</strong>of size <strong>n</strong> * <strong>m</strong>. You have to find the number of distinct islands where a group of connected 1s (horizontally or vertically) forms an island. Two islands are considered to be distinct if and only if one island is not equal to another (not rotated or reflected).</span></p>
 
