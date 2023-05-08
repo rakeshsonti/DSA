@@ -278,7 +278,7 @@
 
 ##### 11) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0127-word-ladder) 127. Word Ladder [problem link](https://leetcode.com/problems/word-ladder/submissions/)
 
-##### 12) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Hard/Word%20Ladder%20II) Word Ladder II [problem link](https://practice.geeksforgeeks.org/problems/word-ladder-ii/1)
+##### 12) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Hard/Word%20Ladder%20II) Word Ladder II [Leetcode link](https://github.com/rakeshsonti/DSA/tree/master/0126-word-ladder-ii)
 
 ##### 13) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Topological%20sort%20-%20GFG) Topological sort [problem link](https://practice.geeksforgeeks.org/problems/topological-sort/1)
 
