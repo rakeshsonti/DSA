@@ -276,13 +276,13 @@
 
 ##### 10) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/1020-number-of-enclaves) 1020. Number of Enclaves
 
-##### 11) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0127-word-ladder) 127. Word Ladder
+##### 11) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0127-word-ladder) 127. Word Ladder [problem link](https://leetcode.com/problems/word-ladder/submissions/)
 
-##### 12) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Hard/Word%20Ladder%20II) Word Ladder II
+##### 12) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Hard/Word%20Ladder%20II) Word Ladder II [problem link](https://practice.geeksforgeeks.org/problems/word-ladder-ii/1)
 
-##### 13) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Topological%20sort%20-%20GFG) Topological sort
+##### 13) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Topological%20sort%20-%20GFG) Topological sort [problem link](https://practice.geeksforgeeks.org/problems/topological-sort/1)
 
-##### 14) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Number%20of%20Distinct%20Islands%20-%20GFG) Number of Distinct Islands
+##### 14) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Number%20of%20Distinct%20Islands%20-%20GFG) Number of Distinct Islands [problem link](https://practice.geeksforgeeks.org/problems/number-of-distinct-islands/1)
 
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
