@@ -282,6 +282,8 @@
 
 ##### 13) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Topological%20sort%20-%20GFG) Topological sort
 
+##### 14) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Number%20of%20Distinct%20Islands%20-%20GFG) Number of Distinct Islands
+
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
