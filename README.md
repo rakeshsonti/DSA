@@ -284,6 +284,8 @@
 
 ##### 14) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Number%20of%20Distinct%20Islands%20-%20GFG) Number of Distinct Islands [problem link](https://practice.geeksforgeeks.org/problems/number-of-distinct-islands/1)
 
+##### 15) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0785-is-graph-bipartite) 785. Is Graph Bipartite? [problem link](https://leetcode.com/problems/is-graph-bipartite/)
+
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
