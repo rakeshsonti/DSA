@@ -22,7 +22,10 @@ class Solution {
     // Function to detect cycle in a directed graph.
     bool isCyclic(int V, vector<int> adj[]) {
         // code here
+        //for tracking the visiting node
         vector<int> vis(V,0);
+        //for tracking if visiting node is in same direction of oposite direction
+        //in oposite direction will not be consider as a cyclic graph
         vector<int> dfsVis(V,0);
         for(int i=0;i<V;i++){
             if(!vis[i]){
