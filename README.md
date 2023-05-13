@@ -286,6 +286,7 @@
 
 ##### 15) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0785-is-graph-bipartite) 785. Is Graph Bipartite? [problem link](https://leetcode.com/problems/is-graph-bipartite/)
 
+##### 16) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Detect%20cycle%20in%20a%20directed%20graph%20-%20GFG) Detect cycle in a directed graph [problem link](https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1)
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
