@@ -292,6 +292,8 @@
 
 ##### 18) [ Path Folder LeetCode](https://github.com/rakeshsonti/DSA/tree/master/0210-course-schedule-ii) 210. Course Schedule II [problem link Leetcode](https://leetcode.com/problems/course-schedule-ii/)
 
+##### 19) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Eventual%20Safe%20States%20-%20GFG) Eventual Safe States [problem link](https://practice.geeksforgeeks.org/problems/eventual-safe-states/1)
+
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
