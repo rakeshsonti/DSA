@@ -8,6 +8,7 @@ using namespace std;
 class Solution
 {
     // tc->O(U+V) sc-> O(U+V)+O(U+V)=O(U+V)
+    //Kahn's Algorithms
 	public:
 	//Function to return list containing vertices in Topological order. 
 	vector<int> topoSort(int V, vector<int> adj[]) 
