@@ -280,7 +280,7 @@
 
 ##### 12) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Hard/Word%20Ladder%20II) Word Ladder II [Leetcode link](https://github.com/rakeshsonti/DSA/tree/master/0126-word-ladder-ii)
 
-##### 13) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Topological%20sort%20-%20GFG) Topological sort [problem link](https://practice.geeksforgeeks.org/problems/topological-sort/1)
+##### 13) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Topological%20sort%20-%20GFG) Topological sort (kahn's algo) [problem link](https://practice.geeksforgeeks.org/problems/topological-sort/1)
 
 ##### 14) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Number%20of%20Distinct%20Islands%20-%20GFG) Number of Distinct Islands [problem link](https://practice.geeksforgeeks.org/problems/number-of-distinct-islands/1)
 
