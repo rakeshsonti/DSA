@@ -4,6 +4,8 @@ using namespace std;
 
 // } Driver Code Ends
 class Solution {
+    //cycle detection using bfs
+    //tc-> O(V+E) sc-> O(2E)
     private:
     	bool topoSort(int V, vector<int> adj[]) 
 	{
@@ -15,6 +17,8 @@ class Solution {
 	    }
 	    //push the element whoose degree is 0
 	    for(int i=0;i<V;i++)if(vis[i]==0)q.push(i);
+	    //instead of storing the topo sort we only detect if no of count element is equals to the vetices that means toposort possible and cycle does not exists
+	    // if graph is a acyclic and directed then only topo sort is possible
 	    int count=0;
 	    while(!q.empty()){
 	        int val=q.front();
