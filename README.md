@@ -290,6 +290,8 @@
 
 ##### 17) [ Path Folder LeetCode](https://github.com/rakeshsonti/DSA/tree/master/0207-course-schedule) 207. Course Schedule [problem link Leetcode](https://leetcode.com/problems/course-schedule/) || [Path GFG](https://github.com/rakeshsonti/DSA/tree/master/Course%20Schedule%20-%20GFG) -->  [problem link GFG](https://practice.geeksforgeeks.org/problems/course-schedule/1)
 
+##### 18) [ Path Folder LeetCode](https://github.com/rakeshsonti/DSA/tree/master/0210-course-schedule-ii) 210. Course Schedule II [problem link Leetcode](https://leetcode.com/problems/course-schedule-ii/)
+
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
