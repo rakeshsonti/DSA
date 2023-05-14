@@ -288,7 +288,7 @@
 
 ##### 16) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Detect%20cycle%20in%20a%20directed%20graph%20-%20GFG) Detect cycle in a directed graph [problem link](https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1)
 
-##### 17) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0207-course-schedule) 207. Course Schedule [problem link](https://leetcode.com/problems/course-schedule/)
+##### 17) [ Path Folder LeetCode](https://github.com/rakeshsonti/DSA/tree/master/0207-course-schedule) 207. Course Schedule [problem link Leetcode](https://leetcode.com/problems/course-schedule/) [Path GFG](https://github.com/rakeshsonti/DSA/tree/master/Course%20Schedule%20-%20GFG) [problem link GFG](https://practice.geeksforgeeks.org/problems/course-schedule/1)
 
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
