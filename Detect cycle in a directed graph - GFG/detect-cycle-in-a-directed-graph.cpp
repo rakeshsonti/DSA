@@ -4,6 +4,37 @@ using namespace std;
 
 // } Driver Code Ends
 class Solution {
+    private:
+    	bool topoSort(int V, vector<int> adj[]) 
+	{
+	    vector<int> vis(V,0);
+	    queue<int> q;
+	    //count degree of the vertices (incoming adges)
+	    for(int i=0;i<V;i++){
+	        for(auto ind: adj[i])vis[ind]++;
+	    }
+	    //push the element whoose degree is 0
+	    for(int i=0;i<V;i++)if(vis[i]==0)q.push(i);
+	    int count=0;
+	    while(!q.empty()){
+	        int val=q.front();
+	        q.pop();
+	        count++;
+	        for(auto it:adj[val]){
+	            //decrease the edges and push once incoming adge is zero
+	            vis[it]--;
+	            if(vis[it]==0)q.push(it);
+	        }
+	    }
+	    return (V!=count);
+	}
+    public:
+     bool isCyclic(int V, vector<int> adj[]) {
+         return topoSort(V,adj);
+     }
+};
+/*
+ class Solution{
     //tc-> O(V+E)
     //SC-> O(2N)+O(N)
     private:
@@ -35,6 +66,7 @@ class Solution {
         return false;
     }
 };
+*/
 
 //{ Driver Code Starts.
 
