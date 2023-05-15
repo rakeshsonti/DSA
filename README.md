@@ -294,6 +294,8 @@
 
 ##### 19) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Eventual%20Safe%20States%20-%20GFG) Eventual Safe States [problem link gfg](https://practice.geeksforgeeks.org/problems/eventual-safe-states/1) || [path folder lc](https://github.com/rakeshsonti/DSA/tree/master/0802-find-eventual-safe-states) --> [problem link lc](https://leetcode.com/problems/find-eventual-safe-states/)
 
+##### 20) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Alien%20Dictionary%20-%20GFG) Alien Dictionary [problem link gfg](https://practice.geeksforgeeks.org/problems/alien-dictionary/1)
+
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
