@@ -10,12 +10,14 @@ class Solution {
   public:
     vector<int> shortestPath(vector<vector<int>>& edges, int N,int M, int src){
         int v=N;
+        //convert to adjacent node
         vector<int> adj[v];
         for(auto e:edges){
             adj[e[0]].push_back(e[1]);
             adj[e[1]].push_back(e[0]);
         }
         queue<int>q;
+        //assign max value so that we could found min distance for each edge
         vector<int> dist(v,1e9);
         dist[src]=0;
         q.push(src);
@@ -23,12 +25,15 @@ class Solution {
             auto node=q.front();
             q.pop();
             for(auto it:adj[node]){
+                //if parent +1 distance is greater than will update the minimum one
+                //may be child node already have correct distance that is parent+1 so no need to change
                 if(dist[node]+1<dist[it]){
                     dist[it]=1+dist[node];
                     q.push(it);
                 }
             }
         }
+        //store result in proper ways
         vector<int> ans(v,-1);
        for(int i=0;i<v;i++){
            if(dist[i]!=1e9)ans[i]=dist[i];
