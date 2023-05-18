@@ -296,6 +296,8 @@
 
 ##### 20) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Alien%20Dictionary%20-%20GFG) Alien Dictionary [problem link gfg](https://practice.geeksforgeeks.org/problems/alien-dictionary/1)
 
+##### 21) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Shortest%20path%20in%20Undirected%20Graph%20having%20unit%20distance%20-%20GFG) Shortest path in Undirected Graph having unit distance [problem link gfg](https://practice.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/1)
+
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
