@@ -208,7 +208,9 @@
 -------------------------------------------
 #### DP Practice
 
-##### 39) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0877-stone-game) 877. Stone Game : [Problem Link](https://leetcode.com/problems/stone-game/submissions/)
+##### 40) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0877-stone-game) 877. Stone Game : [Problem Link](https://leetcode.com/problems/stone-game/submissions/)
+
+##### 41) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/1387-sort-integers-by-the-power-value) 1387. Sort Integers by The Power Value : [Problem Link](https://leetcode.com/problems/sort-integers-by-the-power-value/)
 
 
 
