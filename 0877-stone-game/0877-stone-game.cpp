@@ -4,6 +4,16 @@ class Solution
     public:
         bool stoneGame(vector<int> &piles)
         {
+          return true;
+        }
+};
+/*
+class Solution
+{
+  //tc-> O(4*n) sc-> O(N*N)
+    public:
+        bool stoneGame(vector<int> &piles)
+        {
             int vis[501][501];
             memset(vis, -1, sizeof(vis));
            	//calculate only for the alex
@@ -33,4 +43,4 @@ class Solution
       //return max of all because we want always alex win
         return vis[start][end] = max(left, right);
     }
-};
+};*/
