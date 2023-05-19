@@ -1,6 +1,5 @@
 class Solution
 {
-  //tc-> O(4*n) sc-> O(N*N)
     public:
         bool stoneGame(vector<int> &piles)
         {
