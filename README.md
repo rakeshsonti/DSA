@@ -205,6 +205,10 @@
 ##### 38) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Longest_Bitonic_Sequence.cpp) Longest Bitonic Sequence : [Problem Link](https://www.codingninjas.com/codestudio/problems/longest-bitonic-sequence_1062688)
 
 ##### 39) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/dp/Longest_Bitonic_Sequence.cpp) 673. Number of Longest Increasing Subsequence : [Problem Link](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/)
+-------------------------------------------
+#### DP Practice
+
+##### 39) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0877-stone-game) 877. Stone Game : [Problem Link](https://leetcode.com/problems/stone-game/submissions/)
 
 
 
@@ -297,6 +301,8 @@
 ##### 20) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Alien%20Dictionary%20-%20GFG) Alien Dictionary [problem link gfg](https://practice.geeksforgeeks.org/problems/alien-dictionary/1)
 
 ##### 21) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Shortest%20path%20in%20Undirected%20Graph%20having%20unit%20distance%20-%20GFG) Shortest path in Undirected Graph having unit distance [problem link gfg](https://practice.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/1)
+
+
 
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
