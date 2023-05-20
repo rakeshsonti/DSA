@@ -212,6 +212,8 @@
 
 ##### 41) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/1387-sort-integers-by-the-power-value) 1387. Sort Integers by The Power Value : [Problem Link](https://leetcode.com/problems/sort-integers-by-the-power-value/)
 
+##### 42) [ Path Folder](https://leetcode.com/problems/solving-questions-with-brainpower/) 2140. Solving Questions With Brainpower : [Problem Link](https://github.com/rakeshsonti/DSA/tree/master/2140-solving-questions-with-brainpower)
+
 
 
 
