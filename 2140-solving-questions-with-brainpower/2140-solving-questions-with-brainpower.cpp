@@ -6,23 +6,26 @@ class Solution
         {
             int n = questions.size(), jumpInd = 0;
             long long pick = 0, notPick = 0;
-            vector < long long > dp(n, 0);
+            vector < long long > vis(n, 0);
             for (int ind = n - 1; ind >= 0; ind--)
             {
+               	//in case of include calculate jump index
                 jumpInd = ind + questions[ind][1] + 1;
+               	//include current element
                 pick = questions[ind][0];
                 if (jumpInd < n)
                 {
-                    pick += dp[jumpInd];
+                    pick += vis[jumpInd];
                 }
                 notPick = 0;
+               	//include just next element
                 if (ind + 1 < n)
                 {
-                    notPick += dp[ind + 1];
+                    notPick += vis[ind + 1];
                 }
-                dp[ind] = max(pick, notPick);
+                vis[ind] = max(pick, notPick);
             }
-            return dp[0];
+            return vis[0];
         }
 };
 /*
