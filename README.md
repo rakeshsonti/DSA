@@ -214,6 +214,8 @@
 
 ##### 42) [ Path Folder](https://leetcode.com/problems/solving-questions-with-brainpower/) 2140. Solving Questions With Brainpower : [Problem Link](https://github.com/rakeshsonti/DSA/tree/master/2140-solving-questions-with-brainpower)
 
+##### 43) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0396-rotate-function) 396. Rotate Function : [Problem Link](https://leetcode.com/problems/rotate-function/)
+
 
 
 
