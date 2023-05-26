@@ -7,6 +7,7 @@ using namespace std;
 // } Driver Code Ends
 // User function Template for C++
 class Solution {
+    //O(N+M) //TOPO SHORT ALGO
   public:
   void dfs(vector<pair<int,int>> adj[],vector<bool> &vis,int ind,stack<int> &st){
       vis[ind]=true;
@@ -32,6 +33,7 @@ class Solution {
         int distance=0;
          vector<int> dis(v,1e9);
          dis[0]=0;
+         //O(N+M)
         while(!st.empty()){
            auto it=st.top();
            st.pop();
