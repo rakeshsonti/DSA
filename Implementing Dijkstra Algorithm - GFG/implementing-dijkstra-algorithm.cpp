@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution
 {
-    //Solutio using Set
+    //Solutio using Set(here we are deleting the value if found better distance but we can't in min heap so there is a minor difference in performance but we can say set is better because whise erase the element it will take log(n) time complexity so it's depend on the size of input )
     //tc-> O(E+log(V)) E is the total edges and V is the total no of nodes
 	//sc-> O(V)
 	public:
@@ -24,9 +24,10 @@ class Solution
        dis[S]=0;
        while(!st.empty()){
            //distance till now
-           int dist=(*st.begin()).first;
-           int node=(*st.begin()).second;
-            st.erase(st.begin(),++st.begin());
+           auto itr=*st.begin();
+           int dist=itr.first;
+           int node=itr.second;
+            st.erase(itr);
            for(auto it1:adj[node]){
                int currWeight=it1[1];
                int currNode=it1[0];
@@ -34,6 +35,10 @@ class Solution
                int currDist=dist+currWeight;
                //update the distance is found better
                if(dis[currNode]>currDist){
+                   //if someone reached to the node then delete the pair from the set because we got better value then this
+                   if(dis[currNode]!=1e9){
+                       st.erase({dis[currNode],currNode});
+                   }
                    dis[currNode]=currDist;
                    st.insert({currDist,currNode});
                }
