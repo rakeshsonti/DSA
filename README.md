@@ -313,6 +313,8 @@
 
 ##### 23) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Implementing%20Dijkstra%20Algorithm%20-%20GFG) Implementing Dijkstra Algorithm  [problem link gfg](https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1)
 
+##### 24) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Shortest%20Path%20in%20Weighted%20undirected%20graph%20-%20GFG) Shortest Path in Weighted undirected graph  [problem link gfg](https://practice.geeksforgeeks.org/problems/shortest-path-in-weighted-undirected-graph/1)
+
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
