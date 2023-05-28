@@ -4,10 +4,23 @@ using namespace std;
 
 // } Driver Code Ends
 class Solution {
-    //tc-> O(E+log(V)) sc-> O(V)
+     // Time complexity: O(E + log(V)), where E is the number of edges and V is the number of vertices
+    // Space complexity: O(V)
+/*    The code implements Dijkstra's algorithm to find the shortest path from a source node to a destination node in a weighted graph.
+
+Generate adjacency list: Iterate through the edges vector and add edges and weights to the adjacency list.
+
+Initialize data structures: Create a priority queue, parent vector, and distance vector.
+
+Apply Dijkstra's algorithm: Push the source node to the priority queue with a distance of 0. While the queue is not empty, pop the node with the minimum distance. Update distances and parent nodes for neighboring nodes.
+
+Check if the destination is reachable: If the shortest distance to the destination is infinity, return [-1].
+
+Retrieve the shortest path: Starting from the destination node, iterate through parent nodes and add them to the path vector. Reverse the path vector and return it.
+*/
   public:
     vector<int> shortestPath(int n, int m, vector<vector<int>>& edges) {
-        //generate adjacency matrix
+        // Generate adjacency list
         vector<pair<int,int>> adj[n+1];
         for(auto x:edges){
             adj[x[0]].push_back({x[1],x[2]});
@@ -38,7 +51,7 @@ class Solution {
                 }
             }
         }
-        //if not able to reach 
+        // If not able to reach the destination node
         if(dis[n]==1e9)return {-1};
         //calculate the path
         int node1=n;
