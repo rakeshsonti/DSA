@@ -15,7 +15,8 @@ class Solution {
         }
         
         priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq;
-        vector<int> parent(n+1);
+        vector<int> parent;
+        parent.reserve(n+1);
         for(int i=1;i<=n;i++){
             parent[i]=i;
         }
@@ -42,12 +43,12 @@ class Solution {
         //calculate the path
         int node1=n;
         vector<int> ans;
-        
+        ans.reserve(n);  // Reserve space for n elements
         while(parent[node1]!=node1){
-            ans.push_back(node1);
+            ans.emplace_back(node1);
             node1=parent[node1];
         }
-        ans.push_back(1);
+        ans.emplace_back(1);
         reverse(ans.begin(),ans.end());
         return ans;
         
