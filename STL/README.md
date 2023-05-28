@@ -25,7 +25,8 @@
 
 1.	std::stack
 2.	std::queue
-3.	std::priority_queue
+3.	std::priority_queue (max heap)
+4.	std::priority_queue (min heap)
 #### Other Containers:
 
 1.	std::bitset
@@ -2076,7 +2077,7 @@ std::queue<int, std::list<int>> q5(std::move(d), std::allocator<int>{});
 std::queue<int, std::list<int>> q6(q1, std::allocator<int>{});
 ````
 -----------------------------------------------------------------------------------------------------------------------------
-###  std::priority_queue
+###  std::priority_queue (max heap)
 
 > list of all methods with time complexity and example
 Here are the common methods of std::priority_queue container in C++ with their time complexity:
@@ -2146,6 +2147,131 @@ pq.push(4);
 pq.pop();
 std::cout << "Top element of priority queue: " << pq.top() << std::endl;
 ````
+
+----------------------------------------------------------------------------------------------------
+#### priority_queue (min heap)
+
+
+> The data structure you mentioned is a std::priority_queue implementation using std::vector as the underlying container and std::greater<int> as the comparison function. This creates a min heap, where the smallest element is always at the top. Here are the main methods and their time complexities for this data structure:
+
+
+> **push**: Inserts an element into the min heap.
+
+##### Example:
+
+````
+std::priority_queue<int, std::vector<int>, std::greater<int>> q1;
+q1.push(5);
+q1.push(2);
+q1.push(7);
+````
+
+###### Time complexity: O(log N), where N is the number of elements in the heap.
+
+> **top**: Returns the minimum element from the min heap.
+
+##### Example:
+
+````
+std::priority_queue<int, std::vector<int>, std::greater<int>> q1;
+q1.push(5);
+q1.push(2);
+q1.push(7);
+int minElement = q1.top();  // Returns 2
+````
+
+###### Time complexity: O(1).
+
+> **pop**: Removes the minimum element from the min heap.
+##### Example:
+
+````
+std::priority_queue<int, std::vector<int>, std::greater<int>> q1;
+q1.push(5);
+q1.push(2);
+q1.push(7);
+q1.pop();
+````
+
+###### Time complexity: O(log N), where N is the number of elements in the heap.
+
+> **size**: Returns the number of elements in the min heap.
+
+##### Example:
+
+````
+std::priority_queue<int, std::vector<int>, std::greater<int>> q1;
+q1.push(5);
+q1.push(2);
+q1.push(7);
+int heapSize = q1.size();  // Returns 3
+````
+
+###### Time complexity: O(1).
+
+> **empty**: Checks if the min heap is empty.
+
+##### Example:
+
+````
+std::priority_queue<int, std::vector<int>, std::greater<int>> q1;
+bool isEmpty = q1.empty();  // Returns true
+````
+
+###### Time complexity: O(1).
+
+The time complexities mentioned above are based on the standard implementation of std::priority_queue using a std::vector as the underlying container.
+
+
+> **emplace**: Constructs and inserts an element into the min heap.
+
+##### Example:
+
+````
+std::priority_queue<int, std::vector<int>, std::greater<int>> q1;
+q1.emplace(5);
+q1.emplace(2);
+q1.emplace(7);
+````
+
+###### Time complexity: O(log N), where N is the number of elements in the heap.
+
+> **swap**: Swaps the contents of two min heaps.
+
+##### Example:
+
+````
+std::priority_queue<int, std::vector<int>, std::greater<int>> q1;
+q1.push(5);
+q1.push(2);
+
+
+std::priority_queue<int, std::vector<int>, std::greater<int>> q2;
+q2.push(10);
+q2.push(3);
+
+q1.swap(q2);
+````
+
+###### Time complexity: O(1).
+
+> **container**: Returns a copy of the underlying container (vector in this case).
+
+##### Example:
+
+````
+std::priority_queue<int, std::vector<int>, std::greater<int>> q1;
+q1.push(5);
+q1.push(2);
+q1.push(7);
+
+std::vector<int> heapContainer = q1.container();
+````
+
+###### Time complexity: O(N), where N is the number of elements in the heap.
+
+> Note that the above methods are applicable to the std::priority_queue data structure with a min heap configuration using std::vector as the underlying container and std::greater<int> as the comparison function.
+
 -------------------------------------------------------------------------------------------------------
 ### std::unordered_set
 
