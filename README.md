@@ -315,6 +315,8 @@
 
 ##### 24) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Shortest%20Path%20in%20Weighted%20undirected%20graph%20-%20GFG) Shortest Path in Weighted undirected graph  [problem link gfg](https://practice.geeksforgeeks.org/problems/shortest-path-in-weighted-undirected-graph/1)
 
+##### 25) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Shortest%20Distance%20in%20a%20Binary%20Maze%20-%20GFG) Shortest Distance in a Binary Maze [problem link gfg](https://practice.geeksforgeeks.org/problems/shortest-path-in-a-binary-maze-1655453161/1)
+
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
