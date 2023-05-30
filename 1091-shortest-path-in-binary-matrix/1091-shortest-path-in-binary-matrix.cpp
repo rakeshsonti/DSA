@@ -3,9 +3,11 @@ class Solution
     public:
         int shortestPathBinaryMatrix(vector<vector < int>> &grid)
         {
-           	// cout<<grid.size()<<endl;
+          //if size if 1 and start point is not valid
             if (grid.size() == 1 && grid[0][0] == 1) return -1;
             if (grid[0].size() == 1) return 1;
+            if (grid[0][0] == 1) return -1;
+          
             int n = grid.size();
             int m = grid[0].size();
             pair<int, int> source = { 0,
@@ -14,9 +16,9 @@ class Solution
             pair<int, int> destination = { n - 1,
                 m - 1
             };
-            if (grid[0][0] == 1) return -1;
-            if (source.first == destination.first && source.second == destination.second)
-                return 0;
+
+            // if (source.first == destination.first && source.second == destination.second)
+            //     return 0;
 
             queue<pair<int, pair<int, int>>> q;
 
