@@ -317,6 +317,7 @@
 
 ##### 25) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Shortest%20Distance%20in%20a%20Binary%20Maze%20-%20GFG) Shortest Distance in a Binary Maze [problem link gfg](https://practice.geeksforgeeks.org/problems/shortest-path-in-a-binary-maze-1655453161/1) || [Path LC](https://github.com/rakeshsonti/DSA/tree/master/1091-shortest-path-in-binary-matrix) --> [Problem Link LC](https://leetcode.com/problems/shortest-path-in-binary-matrix/submissions/)
 
+##### 26) [ Path Folder gfg](https://github.com/rakeshsonti/DSA/tree/master/Path%20With%20Minimum%20Effort%20-%20GFG) 1631. Path With Minimum Effort [problem link gfg](https://practice.geeksforgeeks.org/problems/path-with-minimum-effort/1) || [Path LC](https://github.com/rakeshsonti/DSA/tree/master/1091-shortest-path-in-binary-matrix) --> [Problem Link LC](https://leetcode.com/problems/path-with-minimum-effort/)
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
