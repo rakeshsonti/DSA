@@ -1,2 +1,1 @@
-#### Time and space complexity
-The time complexity of the algorithm is O(E * log(V)), where E is the number of edges in the graph and V is the number of vertices in the graph. This is because the algorithm uses a breadth-first search, which visits each vertex exactly once. The space complexity of the algorithm is O(V * M), where V is the number of vertices in the graph and M is the number of edges in the graph. This is because the algorithm stores the distance to each vertex in the graph.
+​
