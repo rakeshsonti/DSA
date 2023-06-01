@@ -28,7 +28,7 @@ class Solution
                 int d = node.second.second;
                 for (auto it: adj[val])
                 {
-                    if (stop > k) continue;
+                    if (stop > k) break;
                     int newWeight = d + it.second;
                     int newNode = it.first;
 
