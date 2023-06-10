@@ -1,6 +1,6 @@
 class Solution
 {
-   	//tc-> O(E+log(V)) E is the total edges and V is the total no of nodes
+   	//tc-> O(E+V) E is the total edges and V is the total no of nodes
    	//sc-> O(V)
     public:
         int networkDelayTime(vector<vector < int>> &times, int n, int k)
@@ -49,6 +49,8 @@ class Solution
 /*
 class Solution
 {
+   	//tc-> O(E+log(V)) E is the total edges and V is the total no of nodes
+   	//sc-> O(V)
     public:
         int networkDelayTime(vector<vector < int>> &times, int n, int k)
         {
