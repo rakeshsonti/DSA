@@ -1,5 +1,7 @@
 class Solution
 {
+   	//tc-> O(E+log(V)) E is the total edges and V is the total no of nodes
+   	//sc-> O(V)
     public:
         int networkDelayTime(vector<vector < int>> &times, int n, int k)
         {
@@ -14,7 +16,7 @@ class Solution
             dis[k] = 0;
             dis[0] = 0;
            	//min heap
-            set<pair<int,int>>st;
+            set<pair<int, int>> st;
             st.insert({ 0,
                 k });
             while (!st.empty())
@@ -61,7 +63,7 @@ class Solution
             dis[k] = 0;
             dis[0] = 0;
            	//min heap
-            priority_queue<pair<int, int>, vector< pair<int, int>>, greater<pair<int, int>>> pq;
+            priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
             pq.push({ 0,
                 k });
             while (!pq.empty())
