@@ -321,6 +321,8 @@
 
 ##### 27) [ Path Folder](https://leetcode.com/problems/cheapest-flights-within-k-stops/) 787. Cheapest Flights Within K Stops [Problem Link](https://github.com/rakeshsonti/DSA/tree/master/0787-cheapest-flights-within-k-stops)
 
+##### 28) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0743-network-delay-time) 743. Network Delay Time [Problem Link](https://leetcode.com/problems/network-delay-time/submissions/)
+
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
