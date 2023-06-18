@@ -323,6 +323,8 @@
 
 ##### 28) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0743-network-delay-time) 743. Network Delay Time [Problem Link](https://leetcode.com/problems/network-delay-time/submissions/)
 
+##### 29) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/1976-number-of-ways-to-arrive-at-destination) 1976. Number of Ways to Arrive at Destination [Problem Link](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/) [GFG Link]( https://practice.geeksforgeeks.org/problems/number-of-ways-to-arrive-at-destination/1)
+
 ----------------------------------------------------------------------------------------------------------------
 ### bIT Manipulation
 
