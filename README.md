@@ -265,6 +265,14 @@
 
 ##### 2) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0705-design-hashset) 705. Design HashSet
 
+##### 3) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Introduction%20to%20Linked%20List%20-%20GFG) Introduction to Linked List [Problem Link](https://practice.geeksforgeeks.org/problems/introduction-to-linked-list/1)
+
+##### 4) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Basic/Linked%20List%20Insertion) Linked List Insertion [Problem Link](https://practice.geeksforgeeks.org/problems/linked-list-insertion-1587115620/0)
+
+##### 5) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/0237-delete-node-in-a-linked-list) 237. Delete Node in a Linked List [Problem Link](https://leetcode.com/problems/delete-node-in-a-linked-list/)
+
+##### 6) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Introduction%20to%20Doubly%20Linked%20List%20-%20GFG) Introduction to Doubly Linked List [Problem Link](https://practice.geeksforgeeks.org/problems/introduction-to-doubly-linked-list/1)
+
 ----------------------------------------------------------------------------------------------------------------------
 ### Graph
 ##### 1) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/bfs.cpp) BFS of graph : [Problem Link](https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1)
