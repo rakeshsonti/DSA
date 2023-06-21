@@ -273,6 +273,10 @@
 
 ##### 6) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Introduction%20to%20Doubly%20Linked%20List%20-%20GFG) Introduction to Doubly Linked List [Problem Link](https://practice.geeksforgeeks.org/problems/introduction-to-doubly-linked-list/1)
 
+##### 7) [ Path Folder](https://github.com/rakeshsonti/DSA/tree/master/Doubly%20linked%20list%20Insertion%20at%20given%20position%20-%20GFG) Doubly linked list Insertion at given position [Problem Link](https://practice.geeksforgeeks.org/problems/insert-a-node-in-doubly-linked-list/1)
+
+
+
 ----------------------------------------------------------------------------------------------------------------------
 ### Graph
 ##### 1) [ Path Folder](https://github.com/rakeshsonti/DSA/blob/master/graph/bfs.cpp) BFS of graph : [Problem Link](https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1)
